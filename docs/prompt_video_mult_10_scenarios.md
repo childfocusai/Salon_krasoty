@@ -1440,4 +1440,929 @@ Children don’t need an audience. They need one pair of eyes that was actually 
 #ChildFocus #MindfulParenting #BeThere #ChildConfidence #ParentingSupport #FirstTimes #ConsciousParenting #QualityTime #IceSkating #RaisingKids
 ```
 
-<!-- APPEND-MARKER -->
+---
+---
+
+# Сценарий 7 — «Он хотел сказать сам»
+
+**Герой:** Truey
+**Локация:** барбершоп
+**Свет:** холодный дневной свет, мятная плитка, хром и зеркала
+**Предмет-символ:** вырезанная из журнала фотография причёски
+**Механика вины:** родитель отвечает за ребёнка и вслух называет его стеснительным
+**Хук 0–3 сек:** затёртая вырезка в детских руках, которую медленно складывают и прячут под накидку
+
+## Концепт
+
+Truey принёс вырезку. Он носил её в кармане несколько дней и репетировал, как сам попросит такую стрижку.
+
+Мастер спрашивает. Truey открывает рот и начинает поднимать вырезку — папа отвечает быстрее и заказывает привычное «как обычно, покороче», а потом дружелюбно бросает знакомому: он у нас молчун.
+
+Стрижка идёт своим ходом. Вырезка складывается под накидкой в четыре раза.
+
+Когда накидку снимают, сложенная бумажка падает в состриженные волосы. Папа поднимает её, разворачивает и садится на корточки. Волосы уже подстрижены, вернуть их нельзя. Но вырезку в следующий раз мастеру отдаёт сам Truey.
+
+## Почему это может сработать
+
+- Хук показывает бессилие: ребёнок держит своё решение в руках и убирает его.
+- Ярлык «он у нас стеснительный» — универсальная родительская фраза.
+- Зеркало барбершопа позволяет показать два лица одновременно.
+- Финал ничего не отменяет: волосы уже короткие, но право голоса возвращено.
+
+## Палитра
+
+- мятная плитка: `#CFE7DE`
+- хром и инструменты: `#B7BEC2`
+- чёрное кожаное кресло: `#24282A`
+- зеркала: `#DCE3E4`
+- пол и стойка: `#8C8478`
+- бумага вырезки: `#F4EFE6`
+- накидка: `#3C4448`
+- экран приложения: `#FFFFFF`, `#E5F7F0`, `#00985E`, `#00CE7F`, `#1A1A1A`
+
+## Prompt 1 — раскадровка (GPT Image 2)
+
+```text
+Create one single vertical 9:16 cinematic storyboard sheet with exactly 16 panels in a clean 4-column by 4-row grid. Number the panels 1 to 16 inside the storyboard gutters only. Keep all panels evenly sized and arranged left to right, top to bottom.
+
+STORY TITLE:
+“He Wanted to Say It Himself”
+
+STORY CONCEPT:
+A short emotionally resonant 3D animated story about Truey and his father in a barbershop.
+
+Truey brought a picture he cut out of a magazine. He carried it in his pocket for days and rehearsed asking for that haircut himself.
+
+The barber asks what haircut he wants. Truey opens his mouth and starts lifting the picture, but his father answers faster and orders the usual short cut, then tells an acquaintance warmly that his son is the quiet one.
+
+The haircut proceeds. Under the cape, the picture is folded again and again.
+
+When the cape comes off, the folded paper falls into the cut hair. The father picks it up, unfolds it, and crouches down. The hair is already short and cannot be undone, but next time Truey hands the picture to the barber himself.
+
+CHARACTER REFERENCE:
+Use the attached Truey reference image as the only source of truth for his face, hairstyle, clothing, colors, age, and proportions. Preserve his identity in all 16 panels. Do not copy the background of the reference image. His hair starts slightly longer than the reference and becomes shorter after the haircut, but his face, eyes, clothing, and proportions never change.
+
+TRUEY:
+A boy approximately 6–8 years old with large brown eyes and warm brown hair styled upward, an olive-green zip hoodie, a dark charcoal T-shirt, taupe jogger trousers, and white sneakers with green accents. In the chair he wears a dark barber cape over his clothes. Remove all footwear brand marks and letters. Do not add glasses, a backpack, or accessories.
+
+His emotional performance is subtle: rehearsed courage, restrained disappointment, quiet sadness, cautious confidence. Never theatrical.
+
+FATHER:
+A loving, sociable man approximately 34–40 years old. Short dark hair, light stubble, a navy overshirt over a plain white T-shirt, dark jeans, brown boots. Keep him identical in every panel. He is friendly and confident, never angry, never mocking his son cruelly. His label “he is the quiet one” is affectionate and thoughtless, not hostile.
+
+BARBER:
+A calm barber approximately 28–35 years old in a plain dark apron, patient and attentive. Keep consistent. No visible tattoos with letters, no readable badges.
+
+VISUAL STYLE:
+Premium stylized 3D animated feature-film quality. Expressive but restrained faces, detailed hair strands, realistic chrome and mirror reflections, cinematic depth of field, clean tiled surfaces. Original style, no imitation of any named studio or franchise.
+
+LIGHTING AND PALETTE:
+Cool daylight from a shop window, mint tiles, chrome highlights, no warm bulbs.
+
+Mint tiles #CFE7DE, chrome and tools #B7BEC2, black leather chair #24282A, mirrors #DCE3E4, floor and counter #8C8478, cutout paper #F4EFE6, cape #3C4448.
+
+No warm golden light, no vintage amber bulbs, no blue application palette.
+
+LOCATION:
+A modern unbranded barbershop. Mint tiled wall, large mirror, chrome tools, a waiting bench, a window with cool daylight. All posters, price lists, bottles, magazines, mirrors, and aprons must be blank, abstract, or purely pictographic. The magazine cutout shows a hairstyle photograph only, with no letters anywhere on it.
+
+PANEL PLAN:
+
+PANEL 1:
+Extreme close-up of small hands holding a worn magazine cutout showing a hairstyle. The paper is soft and creased from being carried. No letters on it. Immediate emotional hook.
+
+PANEL 2:
+Wide shot of the barbershop. Truey sits in the big chair with a cape on, feet not reaching the floor. His father stands behind him. The barber approaches.
+
+PANEL 3:
+The barber asks with a friendly open gesture what haircut he would like, looking directly at Truey.
+
+PANEL 4:
+Truey opens his mouth and starts lifting the cutout from under the cape. Real courage on his face.
+
+PANEL 5:
+The father answers first with a quick friendly gesture describing the usual short cut and affectionately ruffles Truey’s hair. He must not be holding or looking at a phone.
+
+PANEL 6:
+The barber nods and starts working. Truey lowers the cutout back under the cape.
+
+PANEL 7:
+Close-up of Truey’s face in the mirror with the barber and another customer visible. He holds a small brave smile that does not reach his eyes. No tears yet.
+
+PANEL 8:
+The father talks with another waiting customer and gestures warmly toward his son with an easy “he is the quiet one” attitude. Truey hears it and looks down.
+
+PANEL 9:
+Macro close-up under the cape: the cutout being folded in half, then in half again.
+
+PANEL 10:
+Cut hair falls onto the cape and the floor. The haircut is clearly not the one in the picture.
+
+PANEL 11:
+Wide shot. The other customer leaves, the shop becomes quiet, only the chair, the mirror, and cool window light remain.
+
+PANEL 12:
+The cape is removed. The small folded paper falls out and lands among the cut hair on the floor.
+
+PANEL 13:
+Tight close-up of Truey in the mirror. The brave smile is gone, eyes lowered and shining. No sobbing.
+
+PANEL 14:
+The father picks up the folded paper, unfolds it, and understands. He crouches beside the chair at Truey’s eye level with open hands, no lecture and no joke. Truey points at the picture and finally speaks.
+
+PANEL 15:
+Natural close-up of the father’s phone held low between them, only after contact has started. Clean ChildFocus interface in white, mint #E5F7F0, primary green #00985E, bright green #00CE7F, dark text #1A1A1A. Only readable words: “ChildFocus”, “Truey”, “Task”, “Start”. He taps “Start”. If clean rendering is impossible, use icons instead.
+
+PANEL 16:
+The phone is away and no longer visible. Truey himself holds the unfolded cutout out to the barber while his father stands back with a hand resting on the chair, letting his son speak. The hair is still short, the paper still creased.
+
+CONTINUITY:
+One single magazine cutout throughout: worn, then folded twice under the cape, then unfolded with permanent fold lines that must stay visible. Never replace it, never flatten it perfectly, never duplicate it, never add writing to it.
+
+Truey’s hair is slightly longer in panels 1–9 and clearly shorter from panel 10 onward, and it never grows back. Keep his face, eyes, clothing, and proportions identical everywhere. Make the transition from an occupied shop in panels 2–10 to an empty one in panels 11–16 visually obvious.
+
+TEXT RESTRICTIONS:
+Outside the storyboard panel numbers, do not render captions, subtitles, speech bubbles, titles, price lists, posters, product labels, magazine text, apron badges, logos, watermarks, or random letters. The cutout must show a photograph of a hairstyle only. The only in-world text exception is panel 15 on the phone screen: “ChildFocus”, “Truey”, “Task”, “Start”.
+
+NEGATIVE CONSTRAINTS:
+No Sunny. No Crafty. No apartment. No warm golden light. No vintage amber bulbs. No phone before panel 15. No parental anger. No cruel mockery. No crying child in the chair. No tears before panel 13. No exaggerated crying. No magically restored hair. No flattened cutout. No duplicate paper. No readable magazine. No character redesign. No extra fingers. No deformed hands.
+```
+
+## Prompt 2 — видео (Seedance 2.0 Pro)
+
+```text
+Use @image1 as the character, composition, location, color, and story reference for one finished 15-second vertical 9:16 cinematic 3D animated short.
+
+The storyboard contains 16 reference panels, but the video must not become a 16-shot slideshow. Combine it into 6 smooth connected cinematic shots.
+
+STORYBOARD NUMBER RULE:
+All panel numbers, borders, gutters, and grid lines in @image1 are production annotations only. Never render, animate, display, mention, point at, or react to them. If a number is unclear, follow the panels visually from left to right and top to bottom. The finished video must fill the whole 9:16 frame and must never show the storyboard sheet.
+
+CORE STORY:
+In a barbershop, Truey brought a magazine cutout of the haircut he wanted and rehearsed asking for it himself. The barber asks him directly, but his father answers first with the usual short cut and warmly calls him the quiet one. Truey folds the cutout under the cape. When the cape comes off, the folded paper falls into the cut hair. His father picks it up, unfolds it, crouches down, and lets Truey speak to the barber himself.
+
+EMOTIONAL RULE:
+Before the cape comes off, Truey holds rehearsed courage and then a small brave smile. He must not cry or protest. After the paper falls, his smile disappears and tears gather silently. At the end show cautious confidence, not triumph. The haircut is not undone.
+
+TIMELINE:
+
+SHOT 1 — 0.0 TO 2.0 — HOOK:
+Extreme close-up of small hands holding a worn magazine cutout of a hairstyle, creased from days in a pocket. Rack focus to Truey in the barber chair, cape on, feet not reaching the floor, gathering his courage. No title, no caption.
+
+SHOT 2 — 2.0 TO 4.5 — ANSWERED FOR:
+One smooth medium shot. The barber asks Truey directly with an open friendly gesture. Truey opens his mouth and starts lifting the cutout. His father answers first, describing the usual short cut with a quick gesture, and ruffles his hair affectionately. He must never hold or look at a phone. His warmth is genuine and his interruption is thoughtless, not cruel.
+
+SHOT 3 — 4.5 TO 6.8 — PUBLIC MASK:
+Close-up of Truey’s face in the mirror while the barber works and another customer waits. He holds a small brave smile. His father gestures toward him with an easy “he is the quiet one” attitude to the other customer. Truey hears it, looks down, and under the cape the cutout is folded in half, then in half again.
+
+SHOT 4 — 6.8 TO 9.3 — PRIVATE BREAK:
+Cut hair falls on the cape and floor. The haircut is clearly not the one in the picture. The other customer leaves and the shop goes quiet. The cape is removed and the small folded paper falls into the cut hair on the floor with a barely audible sound. Hold on Truey in the mirror as the brave smile disappears and tears gather silently. No sobbing.
+
+SHOT 5 — 9.3 TO 12.3 — THE FATHER NOTICES:
+The father picks up the folded paper and unfolds it. His sociable energy drops into quiet realization as he looks from the picture to his son’s new haircut. One smooth camera move as he crouches beside the chair at Truey’s eye level with open hands. He does not laugh it off, does not apologize theatrically, does not promise a new haircut. Truey points at the picture and finally speaks. Hold their eye contact.
+
+SHOT 6 — 12.3 TO 15.0 — SMALL STEP:
+About one second of the father’s phone held low between them, the first phone in the film. Minimal ChildFocus interface in #00985E, #00CE7F, #E5F7F0, #FFFFFF, #1A1A1A. Only readable words: “ChildFocus”, “Truey”, “Task”, “Start”. He taps “Start” once and puts the phone away. End with Truey himself holding the unfolded cutout out to the barber while his father stands back, hand on the chair, letting his son speak. Hair still short, paper still creased.
+
+CHARACTER CONTINUITY:
+Truey keeps his exact face, large brown eyes, olive-green zip hoodie, charcoal T-shirt, taupe joggers, white sneakers with green accents, age, height, and proportions in every shot. His hair is slightly longer before the haircut and clearly shorter afterwards, and it never grows back. Remove footwear logos. Do not add glasses, a backpack, or accessories.
+
+The father keeps the same face, short dark hair, light stubble, navy overshirt, white T-shirt, dark jeans, brown boots. He is friendly and confident, never hostile. The barber keeps a plain dark apron and calm attentive behavior.
+
+PROP CONTINUITY:
+One single magazine cutout showing a hairstyle photograph with no letters. Worn, then folded twice, then unfolded with permanent fold lines visible through the final frame. Never flatten it perfectly, never duplicate it, never replace it, never add writing.
+
+CAMERA AND EDITING:
+Only 6 connected shots with motivated movement, mirror framing, restrained cuts, natural rack focus, subtle depth of field. No slideshow, no split screens, no time reversal, no sudden jumps. Keep mirror logic physically correct.
+
+LIGHTING AND COLOR:
+Mint tiles #CFE7DE, chrome #B7BEC2, chair #24282A, mirrors #DCE3E4, floor and counter #8C8478, cutout paper #F4EFE6, cape #3C4448. Keep cool daylight throughout. No warm bulbs, no amber vintage light.
+
+AUDIO:
+Clipper hum, scissors, a spray bottle, hair falling on the cape, quiet shop ambience, indistinct adult conversation with no recognizable words, a door chime without voices, one soft paper sound when the folded cutout lands. Minimal restrained instrumental score that becomes gently hopeful at the end. No narration, no dialogue, no lyrics, no slogan.
+
+NO ON-SCREEN TEXT RULE:
+Do not generate subtitles, captions, titles, end cards, floating words, overlays, price lists, posters, product labels, magazine text, apron badges, credits, watermarks, or random letters.
+
+CONTROLLED PHONE UI TEXT EXCEPTION:
+Readable text is allowed only on the physical phone screen in shot 6, strictly limited to “ChildFocus”, “Truey”, “Task”, “Start”. No other words, numbers, or notifications. If clean rendering is impossible, use simple green and mint icons.
+
+FINAL FRAME:
+Phone fully put away. Truey holding the cutout out to the barber himself, father standing back, hair short, paper creased. No logo overlay, no text, no call to action, no restored hair, no makeover reveal.
+
+NEGATIVE CONSTRAINTS:
+No Sunny, no Crafty, no apartment, no warm light, no amber bulbs, no phone before 12.3 seconds, no parental anger, no cruel mockery, no crying in the chair, no exaggerated sobbing, no instant confidence, no magically restored hair, no flattened cutout, no duplicate paper, no readable magazine, no character morphing, no clothing changes, no extra fingers, no warped hands, no storyboard numbers, no readable environmental text.
+```
+
+## Instagram caption
+
+He practiced the words for days.  
+It took us one second to answer for him.
+
+“He’s the quiet one” isn’t a description. It’s an instruction children learn to follow.
+
+Letting them speak takes three seconds of silence from us.
+
+**ChildFocus — one small step toward being more present.**
+
+## Hashtags
+
+```text
+#ChildFocus #LetThemSpeak #MindfulParenting #ChildConfidence #ParentingSupport #ShyKids #ConsciousParenting #ChildPsychology #RaisingKids #ParentingTips
+```
+
+---
+---
+
+# Сценарий 8 — «Кривой росток»
+
+**Герой:** Sunny
+**Локация:** школьная теплица на уроке посадки
+**Свет:** рассеянный свет сквозь запотевшее стекло, влажный воздух
+**Предмет-символ:** росток в йогуртовом стаканчике
+**Механика вины:** родитель переделывает работу ребёнка «как надо»
+**Хук 0–3 сек:** детские грязные руки утрамбовывают землю вокруг кривого ростка, взрослые руки вынимают росток и сажают заново ровно
+
+## Концепт
+
+Sunny посадила росток. Он кривой, земля просыпана, стаканчик грязный, руки чёрные — и она страшно этим гордится.
+
+Мама искренне хочет помочь. Она пересаживает росток ровно, вытирает края стаканчика, вытирает Sunny руки и ставит идеальный результат на стол.
+
+Sunny держит улыбку. Потом тянется за вторым стаканчиком и убирает руку. Она вытирает ладони насухо и больше ничего не сажает.
+
+В опустевшей теплице мама видит её отражение в запотевшем стекле. Она садится рядом, придвигает пустой стаканчик и убирает свои руки за спину.
+
+## Почему это может сработать
+
+- Хук показывает перфекционизм в одном движении: работу ребёнка вынули и переделали.
+- Это самая «безобидная» вина в подборке, поэтому она бьёт по самой большой аудитории.
+- Чистые руки ребёнка — сильная метафора отказа пробовать.
+- Финал буквально показывает, что помощь иногда значит убрать свои руки.
+
+## Палитра
+
+- запотевшее стекло: `#D6E6DE`
+- листва: `#4C7A5A`
+- земля: `#4A3B2E`
+- конденсат и дымка: `#B8C7C1`
+- йогуртовый стаканчик: `#EFD97A`
+- росток: `#8CC26A`
+- деревянный стол: `#7E6B52`
+- экран приложения: `#FFFFFF`, `#E5F7F0`, `#00985E`, `#00CE7F`, `#1A1A1A`
+
+## Prompt 1 — раскадровка (GPT Image 2)
+
+```text
+Create one single vertical 9:16 cinematic storyboard sheet with exactly 16 panels in a clean 4-column by 4-row grid. Number the panels 1 to 16 inside the storyboard gutters only. Keep all panels evenly sized and arranged left to right, top to bottom.
+
+STORY TITLE:
+“The Crooked Sprout”
+
+STORY CONCEPT:
+A short emotionally resonant 3D animated story about Sunny and her mother during a school planting class in a greenhouse.
+
+Sunny plants a sprout. It leans, the soil is spilled, the cup is dirty, her hands are black, and she is enormously proud of it.
+
+Her mother genuinely wants to help. She replants the sprout perfectly straight, wipes the rim of the cup, cleans Sunny’s hands, and puts the perfect result on the table.
+
+Sunny keeps a small smile. Then she reaches for a second cup and pulls her hand back. She dries her palms and plants nothing else.
+
+In the emptied greenhouse her mother sees her reflection in the fogged glass, sits down beside her, pushes an empty cup toward her, and puts her own hands behind her back.
+
+CHARACTER REFERENCE:
+Use the attached Sunny reference image as the only source of truth for her face, hairstyle, clothing, colors, age, and proportions. Preserve her identity in all 16 panels. Do not copy the background of the reference image.
+
+SUNNY:
+A girl approximately 5–7 years old, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, clean white sneakers. Remove all footwear brand marks and letters. Do not add glasses, a backpack, or accessories.
+
+Her hands are dirty with soil from panel 1 until they are wiped clean, then clean until the final panel where they are dirty again. Her emotional performance is subtle: pride, confusion, restrained disappointment, quiet sadness, cautious courage. Never theatrical.
+
+MOTHER:
+A loving, well-organized woman approximately 32–38 years old. Light brown hair in a neat ponytail, a soft sage cardigan, a white blouse, dark jeans, clean sneakers, a folded cloth in her pocket. Keep her identical in every panel. She is caring and helpful, never angry, never scolding. Her perfectionism is affectionate, not hostile.
+
+VISUAL STYLE:
+Premium stylized 3D animated feature-film quality. Expressive but restrained faces, detailed soil and plant materials, condensation on glass, humid atmosphere, cinematic depth of field. Original style, no imitation of any named studio or franchise.
+
+LIGHTING AND PALETTE:
+Soft diffused daylight through fogged greenhouse glass, humid and slightly cool.
+
+Fogged glass #D6E6DE, foliage #4C7A5A, soil #4A3B2E, condensation haze #B8C7C1, yogurt cup #EFD97A, sprout #8CC26A, wooden table #7E6B52.
+
+No warm golden light, no direct sunbeams, no blue application palette.
+
+LOCATION:
+A modern unbranded school greenhouse during a planting class. Long wooden potting table, seedling trays, watering cans, condensation on the glass, a few children and parents. All plant labels, seed packets, instruction posters, signs, and clothing labels must be blank, abstract, or purely pictographic. Reused yogurt cups must have no readable packaging.
+
+PANEL PLAN:
+
+PANEL 1:
+Extreme close-up of small dirty hands patting soil around a crooked sprout in a yogurt cup. Adult hands enter the frame and pull the sprout out. Immediate emotional hook.
+
+PANEL 2:
+Wide shot of the greenhouse. Children and parents plant along the potting table. Fogged glass, green plants, humid light.
+
+PANEL 3:
+Sunny finishes her cup with visible pride. Soil is everywhere, the sprout leans, her hands are black.
+
+PANEL 4:
+The mother takes the cup with a warm helpful smile and replants the sprout perfectly straight, pressing the soil down firmly.
+
+PANEL 5:
+She wipes the rim of the cup clean with a cloth and sets the corrected result on the table.
+
+PANEL 6:
+She gently wipes Sunny’s hands clean, still smiling, still helping. She must not be holding or looking at a phone.
+
+PANEL 7:
+Close-up of Sunny’s face with other children and parents around. She holds a small brave smile and hides her clean hands behind her back. No tears yet.
+
+PANEL 8:
+Wide shot. Other children keep planting messily and laughing. Sunny stands still and does not take a new cup.
+
+PANEL 9:
+She reaches toward a second empty cup, hesitates, and pulls her hand back.
+
+PANEL 10:
+Macro close-up of the corrected plant: perfectly straight, but one lower leaf is broken from the replanting and the soil is pressed too hard.
+
+PANEL 11:
+Wide shot. The class ends, the other families leave, the greenhouse is nearly empty. Condensation runs down the glass.
+
+PANEL 12:
+Tight close-up of Sunny. The brave smile is gone. She looks at her own clean hands, eyes shining. No sobbing.
+
+PANEL 13:
+The mother sees Sunny’s reflection in the fogged glass. Quiet realization and love, not panic or guilt theatrics.
+
+PANEL 14:
+The mother kneels beside her, pushes an empty cup and a tray of soil toward Sunny, and deliberately puts her own hands behind her back.
+
+PANEL 15:
+Natural close-up of the mother’s phone held low between them, only after contact has started. Clean ChildFocus interface in white, mint #E5F7F0, primary green #00985E, bright green #00CE7F, dark text #1A1A1A. Only readable words: “ChildFocus”, “Sunny”, “Task”, “Start”. She taps “Start”. If clean rendering is impossible, use icons instead.
+
+PANEL 16:
+The phone is away and no longer visible. Two cups stand side by side on the table: one perfectly straight with a broken leaf, one freshly planted and crooked. Sunny’s hands are dirty again. Her mother sits beside her with dirty hands too, not correcting anything.
+
+CONTINUITY:
+One single first cup with one single sprout, and one single second cup planted at the end. After panel 4 the first plant stays perfectly straight with a broken lower leaf that must remain visible. Never repair the leaf, never duplicate the cups, never let the mother replant the second cup.
+
+Track hand cleanliness precisely: dirty in panels 1–5, clean from panel 6 to panel 15, dirty again in panel 16. Make the transition from a busy class in panels 2–9 to an empty greenhouse in panels 11–16 visually obvious.
+
+TEXT RESTRICTIONS:
+Outside the storyboard panel numbers, do not render captions, subtitles, speech bubbles, titles, plant labels, seed packets, instruction posters, yogurt packaging, signs, logos, watermarks, or random letters. The only in-world text exception is panel 15 on the phone screen: “ChildFocus”, “Sunny”, “Task”, “Start”.
+
+NEGATIVE CONSTRAINTS:
+No Truey. No Crafty. No apartment. No warm golden light. No direct sunbeams. No phone before panel 15. No parental anger. No scolding. No tantrum. No tears before panel 12. No exaggerated crying. No repaired leaf. No perfectly clean ending. No mother planting the second cup. No duplicate plants. No flowers blooming instantly. No character redesign. No extra fingers. No deformed hands.
+```
+
+## Prompt 2 — видео (Seedance 2.0 Pro)
+
+```text
+Use @image1 as the character, composition, location, color, and story reference for one finished 15-second vertical 9:16 cinematic 3D animated short.
+
+The storyboard contains 16 reference panels, but the video must not become a 16-shot slideshow. Combine it into 6 smooth connected cinematic shots.
+
+STORYBOARD NUMBER RULE:
+All panel numbers, borders, gutters, and grid lines in @image1 are production annotations only. Never render, animate, display, mention, point at, or react to them. If a number is unclear, follow the panels visually from left to right and top to bottom. The finished video must fill the whole 9:16 frame and must never show the storyboard sheet.
+
+CORE STORY:
+During a school planting class, Sunny proudly plants a crooked sprout with dirty hands. Her mother, wanting to help, replants it perfectly straight, cleans the cup, and wipes Sunny’s hands. Sunny keeps a small smile, then reaches for a second cup and pulls her hand back. In the emptied greenhouse her mother sees her reflection in the fogged glass, kneels beside her, pushes an empty cup toward her, and puts her own hands behind her back.
+
+EMOTIONAL RULE:
+Before she pulls her hand back, Sunny is proud and then keeps a small brave smile. She must not cry or protest. After she pulls her hand back, the smile disappears and tears gather silently. At the end show cautious courage, not celebration. The corrected plant is never repaired.
+
+TIMELINE:
+
+SHOT 1 — 0.0 TO 2.0 — HOOK:
+Extreme close-up of small dirty hands patting soil around a crooked sprout in a yogurt cup. Adult hands enter and pull the sprout out of the soil. Rack focus to Sunny’s proud face as it freezes. The correction must read within the first second. No title, no caption.
+
+SHOT 2 — 2.0 TO 4.5 — THE HELPFUL CORRECTION:
+One smooth medium shot at the potting table. The mother replants the sprout perfectly straight, presses the soil firmly, wipes the rim of the cup with a cloth, sets the corrected result on the table, and gently cleans Sunny’s hands. Every movement is warm, efficient, and well-meant. She must never hold or look at a phone and must never scold.
+
+SHOT 3 — 4.5 TO 6.8 — PUBLIC MASK:
+Close-up of Sunny with other children and parents planting messily and laughing behind her. She holds a small brave smile and hides her clean hands behind her back. She reaches toward a second empty cup, hesitates, and pulls her hand back. Show the decision only through her hand and her eyes.
+
+SHOT 4 — 6.8 TO 9.3 — PRIVATE BREAK:
+The class ends and the other families leave. The greenhouse becomes quiet and humid, condensation running down the glass. Macro shot of the corrected plant: perfectly straight, soil pressed too hard, one lower leaf broken from the replanting. Hold on Sunny looking at her own clean palms as the brave smile disappears and tears gather silently. No sobbing.
+
+SHOT 5 — 9.3 TO 12.3 — THE MOTHER NOTICES:
+The mother sees Sunny’s reflection in the fogged glass and stops tidying. Quiet realization and love. One smooth camera move as she kneels beside her, pushes an empty cup and a tray of soil toward Sunny, and deliberately puts her own hands behind her back. She does not demonstrate, does not correct, does not lecture. Sunny looks at the empty cup, then at her mother.
+
+SHOT 6 — 12.3 TO 15.0 — SMALL STEP:
+About one second of the mother’s phone held low between them, the first phone in the film. Minimal ChildFocus interface in #00985E, #00CE7F, #E5F7F0, #FFFFFF, #1A1A1A. Only readable words: “ChildFocus”, “Sunny”, “Task”, “Start”. She taps “Start” once and puts the phone away. End on two cups side by side: one perfectly straight with a broken leaf, one freshly planted and crooked. Sunny’s hands are dirty again and her mother’s hands are dirty too.
+
+CHARACTER CONTINUITY:
+Sunny keeps her exact face, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, white sneakers, age, height, and proportions in every shot. Remove footwear logos. Do not add glasses, a backpack, or accessories. Track her hands precisely: dirty at the start, clean after they are wiped, dirty again only in the final beat.
+
+The mother keeps the same face, light brown neat ponytail, sage cardigan, white blouse, dark jeans, clean sneakers, and cloth. She is caring and helpful, never hostile.
+
+PROP CONTINUITY:
+One first yogurt cup with one sprout, and one second cup planted at the end. After the replanting, the first plant stays perfectly straight with one broken lower leaf that must remain visible through the final frame. Never repair the leaf, never duplicate the cups, never let the mother plant the second cup, never let anything bloom.
+
+CAMERA AND EDITING:
+Only 6 connected shots with motivated movement, macro inserts, restrained cuts, natural rack focus, subtle depth of field. No slideshow, no split screens, no time reversal, no sudden jumps. Keep table geography and screen direction consistent.
+
+LIGHTING AND COLOR:
+Fogged glass #D6E6DE, foliage #4C7A5A, soil #4A3B2E, condensation haze #B8C7C1, yogurt cup #EFD97A, sprout #8CC26A, wooden table #7E6B52. Keep soft humid diffused daylight throughout. No warm golden light, no direct sunbeams, no sudden sunshine.
+
+AUDIO:
+Greenhouse ambience, soil crumbling, water drops on glass, a watering can, distant children with no recognizable words, a door closing as the class leaves, quiet humid room tone. Minimal restrained instrumental score that becomes gently hopeful at the end. No narration, no dialogue, no lyrics, no slogan.
+
+NO ON-SCREEN TEXT RULE:
+Do not generate subtitles, captions, titles, end cards, floating words, overlays, plant labels, seed packets, instruction posters, yogurt packaging, signs, credits, watermarks, or random letters.
+
+CONTROLLED PHONE UI TEXT EXCEPTION:
+Readable text is allowed only on the physical phone screen in shot 6, strictly limited to “ChildFocus”, “Sunny”, “Task”, “Start”. No other words, numbers, or notifications. If clean rendering is impossible, use simple green and mint icons.
+
+FINAL FRAME:
+Phone fully put away. Two cups side by side, one straight with a broken leaf and one crooked and fresh, both pairs of hands dirty. No logo overlay, no text, no call to action, no blooming flower, no tidy perfect ending.
+
+NEGATIVE CONSTRAINTS:
+No Truey, no Crafty, no apartment, no warm light, no sunbeams, no phone before 12.3 seconds, no parental anger, no scolding, no tantrum, no crying before she pulls her hand back, no exaggerated sobbing, no instant happiness, no repaired leaf, no blooming plant, no mother planting the second cup, no duplicate cups, no character morphing, no clothing changes, no extra fingers, no warped hands, no storyboard numbers.
+```
+
+## Instagram caption
+
+She planted it crooked, with soil everywhere and black hands.  
+We fixed it in ten seconds, out of love.
+
+Then she stopped reaching for the next cup.
+
+Sometimes helping means putting our own hands behind our back.
+
+**ChildFocus — one small step toward being more present.**
+
+## Hashtags
+
+```text
+#ChildFocus #LetThemTry #MindfulParenting #PerfectionismInParenting #ChildIndependence #ParentingSupport #GentleParenting #ChildDevelopment #RaisingKids #FamilyMoments
+```
+
+---
+---
+
+# Сценарий 9 — «Порванная лямка»
+
+**Герой:** Crafty
+**Локация:** платформа метро вечером
+**Свет:** холодный свет ламп, бирюзовая плитка, чёрный тоннель
+**Предмет-символ:** оторванная лямка кожаного рюкзака
+**Механика вины:** родитель настолько вымотан, что ребёнок решает не добавлять проблем
+**Хук 0–3 сек:** детские пальцы сжимают порванную лямку, чтобы рюкзак не упал, и ребёнок поднимает голову с улыбкой
+
+## Концепт
+
+У Crafty оторвалась лямка рюкзака. Ничего страшного — но он хочет сказать.
+
+Он поднимает глаза на маму. Мама только что закончила рабочий день: она тяжело выдыхает, закрывает глаза на секунду и трёт виски. Она не злится. Она просто на пределе.
+
+Crafty закрывает рот и разворачивает рюкзак так, чтобы разрыв был со спины. Всю дорогу он держит лямку пальцами и улыбается, когда на него смотрят.
+
+Поезд уходит, платформа пустеет. Мама видит в тёмном стекле и лямку, и его лицо. Она садится на корточки, забирает вес рюкзака и слушает.
+
+## Почему это может сработать
+
+- Хук физический и понятный: ребёнок держит поломку руками.
+- Механика бьёт по самой болезненной родительской мысли: «он не рассказал, потому что берёг меня».
+- Метро даёт новую фактуру: холод, ветер поезда, чужие люди.
+- Финал не про починку рюкзака, а про то, что мама забрала вес.
+
+## Палитра
+
+- плитка платформы: `#2F5F63`
+- холодный свет ламп: `#DCE7E6`
+- бетон: `#7B8481`
+- тоннель: `#14201F`
+- кожа рюкзака: `#7A5A3C`
+- толстовка Crafty: `#2F4A34`
+- стекло вагона: `#3E5B60`
+- экран приложения: `#FFFFFF`, `#E5F7F0`, `#00985E`, `#00CE7F`, `#1A1A1A`
+
+## Prompt 1 — раскадровка (GPT Image 2)
+
+```text
+Create one single vertical 9:16 cinematic storyboard sheet with exactly 16 panels in a clean 4-column by 4-row grid. Number the panels 1 to 16 inside the storyboard gutters only. Keep all panels evenly sized and arranged left to right, top to bottom.
+
+STORY TITLE:
+“The Torn Strap”
+
+STORY CONCEPT:
+A short emotionally resonant 3D animated story about Crafty and his mother on a metro platform in the evening.
+
+The strap of Crafty’s leather backpack has torn. It is not a disaster, but he wants to tell her.
+
+He looks up at his mother. She has just finished a hard working day: she exhales heavily, closes her eyes for a second, and presses her temples. She is not angry. She is simply at her limit.
+
+Crafty closes his mouth and turns the backpack so the tear is hidden against his back. All the way he holds the strap together with his fingers and smiles whenever anyone looks at him.
+
+The train leaves and the platform empties. In the dark glass his mother sees both the torn strap and his face. She crouches down, takes the weight of the backpack, and listens.
+
+CHARACTER REFERENCE:
+Use the attached Crafty reference image as the only source of truth for his face, glasses, hairstyle, clothing, colors, age, and proportions. Preserve his identity in all 16 panels. Do not copy the background of the reference image.
+
+CRAFTY:
+A boy approximately 6–8 years old with round glasses, chestnut hair brushed upward, a dark green hoodie with one large letter “M”, brown corduroy trousers, white sneakers, and a brown leather backpack. The letter “M” is the only clothing mark allowed. Remove all footwear brand marks and any other lettering.
+
+His emotional performance is subtle: hesitation, protective silence, restrained strain, quiet sadness, cautious relief. Never theatrical.
+
+MOTHER:
+A loving, deeply exhausted woman approximately 33–39 years old. Dark hair in a loosening low bun, a long gray wool coat, a black work bag, dark trousers, flat ankle boots. Keep her identical in every panel. Her exhaustion must read as fatigue and stress, never as anger, coldness, or rejection.
+
+VISUAL STYLE:
+Premium stylized 3D animated feature-film quality. Expressive but restrained faces, detailed worn leather, realistic tiled surfaces, cinematic depth of field, train wind in hair and clothes. Original style, no imitation of any named studio or franchise.
+
+LIGHTING AND PALETTE:
+Cold artificial platform light, teal tiles, black tunnel, no warm lamps.
+
+Platform tiles #2F5F63, cold light #DCE7E6, concrete #7B8481, tunnel #14201F, backpack leather #7A5A3C, Crafty’s hoodie #2F4A34, train glass #3E5B60.
+
+No warm golden light, no sunset, no blue application palette.
+
+LOCATION:
+A modern unbranded metro platform in the evening. Teal tiled wall, concrete floor, benches, a few tired commuters, a train arriving and leaving. All station names, route maps, advertisements, direction signs, train numbers, screens, and clothing labels must be blank, abstract, or purely pictographic.
+
+PANEL PLAN:
+
+PANEL 1:
+Extreme close-up of small fingers pinching a torn brown leather backpack strap together so the bag does not fall. Cold teal tiles behind. Immediate emotional hook.
+
+PANEL 2:
+Close-up of Crafty looking up with an instant small smile, glasses catching the cold platform light.
+
+PANEL 3:
+Wide shot of the platform. Commuters wait. His mother stands beside him with a work bag, shoulders low.
+
+PANEL 4:
+Crafty turns toward her and starts to open his mouth, one hand still holding the strap.
+
+PANEL 5:
+The mother exhales heavily, closes her eyes for a second, and presses her temples. Pure fatigue, no anger, no phone in her hands.
+
+PANEL 6:
+Crafty closes his mouth and quietly turns the backpack so the torn side faces away from her.
+
+PANEL 7:
+Close-up of Crafty with commuters around him. He holds a small brave smile and grips the strap tighter under his palm. No tears yet.
+
+PANEL 8:
+The train arrives. Wind moves his hair and his hoodie. He keeps holding the strap.
+
+PANEL 9:
+A passenger brushes past him. He grips harder and the tear widens slightly.
+
+PANEL 10:
+Macro close-up of the leather fibers separating along the torn edge, stitching pulled loose.
+
+PANEL 11:
+Wide shot. Passengers board and the train leaves. The platform is now nearly empty and very quiet.
+
+PANEL 12:
+Tight close-up of Crafty. The brave smile is gone. He looks down at the strap in his fist, eyes shining behind his glasses. No sobbing.
+
+PANEL 13:
+The mother sees the torn strap and his face reflected in the dark tiled wall and the departing train glass. Quiet realization and love, her tension dropping.
+
+PANEL 14:
+She crouches to his eye level and takes the weight of the backpack out of his hand. No scolding, no immediate repair, no tape.
+
+PANEL 15:
+Natural close-up of the mother’s phone held low between them, only after contact has started. Clean ChildFocus interface in white, mint #E5F7F0, primary green #00985E, bright green #00CE7F, dark text #1A1A1A. Only readable words: “ChildFocus”, “Crafty”, “Task”, “Start”. She taps “Start”. If clean rendering is impossible, use icons instead.
+
+PANEL 16:
+The phone is away and no longer visible. The mother carries the backpack by its intact strap over her own shoulder and sits beside Crafty on the platform bench while they wait for the next train. The tear is still there and the platform is still cold.
+
+CONTINUITY:
+One single brown leather backpack with one torn strap throughout. The tear starts small, widens slightly after the passenger bumps him, and stays torn in the final panel. Never repair it, never tape it, never replace the backpack, never duplicate it.
+
+Keep Crafty’s glasses, hoodie letter “M”, and clothing identical everywhere. Make the transition from a crowded platform in panels 3–10 to an empty one in panels 11–16 visually obvious.
+
+TEXT RESTRICTIONS:
+Outside the storyboard panel numbers, do not render captions, subtitles, speech bubbles, titles, station names, route maps, advertisements, direction signs, train numbers, screens, logos, watermarks, or random letters. The letter “M” on Crafty’s hoodie and the phone screen in panel 15 are the only permitted text: “ChildFocus”, “Crafty”, “Task”, “Start”.
+
+NEGATIVE CONSTRAINTS:
+No Sunny. No Truey. No apartment. No warm golden light. No phone before panel 15. No parental anger. No scolding. No shouting. No danger at the platform edge. No accident. No bullying scene. No tears before panel 12. No exaggerated crying. No repaired strap. No tape. No new backpack. No duplicate props. No missing glasses. No character redesign. No extra fingers. No deformed hands.
+```
+
+## Prompt 2 — видео (Seedance 2.0 Pro)
+
+```text
+Use @image1 as the character, composition, location, color, and story reference for one finished 15-second vertical 9:16 cinematic 3D animated short.
+
+The storyboard contains 16 reference panels, but the video must not become a 16-shot slideshow. Combine it into 6 smooth connected cinematic shots.
+
+STORYBOARD NUMBER RULE:
+All panel numbers, borders, gutters, and grid lines in @image1 are production annotations only. Never render, animate, display, mention, point at, or react to them. If a number is unclear, follow the panels visually from left to right and top to bottom. The finished video must fill the whole 9:16 frame and must never show the storyboard sheet.
+
+CORE STORY:
+On an evening metro platform, the strap of Crafty’s leather backpack has torn. He wants to tell his mother, but she has just finished an exhausting workday and is visibly at her limit. He decides not to add to it, hides the tear, and holds the strap together with his fingers while smiling whenever anyone looks. When the train leaves and the platform empties, his mother sees the torn strap and his face in the dark glass, crouches down, takes the weight of the backpack, and listens.
+
+EMOTIONAL RULE:
+Before the platform empties, Crafty hides the problem and produces a quick small smile whenever he is seen. He must not cry or complain. After the platform empties, the smile disappears and tears gather silently behind his glasses. At the end show relief and safety, not cheerfulness. The mother must never look angry, only tired and then present.
+
+TIMELINE:
+
+SHOT 1 — 0.0 TO 2.0 — HOOK:
+Extreme close-up of small fingers pinching a torn brown leather strap together so the backpack does not fall. Rack focus to Crafty’s face as he looks up and instantly produces a small smile. The hidden effort must read within the first second. No title, no caption.
+
+SHOT 2 — 2.0 TO 4.5 — THE SWALLOWED SENTENCE:
+One smooth medium shot on the platform. Crafty turns toward his mother and starts to open his mouth. She exhales heavily, closes her eyes for a second, and presses her temples. Pure fatigue, no anger, no phone in her hands. Crafty closes his mouth and quietly turns the backpack so the torn side faces away from her.
+
+SHOT 3 — 4.5 TO 6.8 — PUBLIC MASK:
+Close-up of Crafty with tired commuters around him, holding a small brave smile and gripping the strap tighter. The train arrives, wind moves his hair and hoodie, a passenger brushes past him and he grips harder. Macro insert of leather fibers separating and stitching pulling loose.
+
+SHOT 4 — 6.8 TO 9.3 — PRIVATE BREAK:
+Passengers board, the train leaves, and the platform empties into a deep quiet. Hold on Crafty alone with his mother as the brave smile disappears and he looks down at the strap in his fist, tears gathering silently behind his glasses. No sobbing.
+
+SHOT 5 — 9.3 TO 12.3 — THE MOTHER NOTICES:
+The mother sees the torn strap and his face reflected in the dark tiled wall and the glass of the departing train. Her exhaustion turns into quiet realization and her shoulders soften. One smooth camera move as she crouches to his eye level and takes the weight of the backpack out of his hand. She does not scold, does not ask how it happened as an interrogation, does not fix it with tape. He finally shows her the tear and speaks. Hold their eye contact.
+
+SHOT 6 — 12.3 TO 15.0 — SMALL STEP:
+About one second of the mother’s phone held low between them, the first phone in the film. Minimal ChildFocus interface in #00985E, #00CE7F, #E5F7F0, #FFFFFF, #1A1A1A. Only readable words: “ChildFocus”, “Crafty”, “Task”, “Start”. She taps “Start” once and puts the phone away. End with the mother carrying the backpack by its intact strap over her own shoulder, sitting beside Crafty on the bench while they wait for the next train. The tear is still there.
+
+CHARACTER CONTINUITY:
+Crafty keeps his exact face, round glasses, chestnut hair brushed upward, dark green hoodie with one large letter “M”, brown corduroy trousers, white sneakers, and brown leather backpack in every shot. Remove footwear logos. Never remove his glasses, never change the hoodie letter, never change his age or proportions.
+
+The mother keeps the same face, dark loosening low bun, long gray wool coat, black work bag, dark trousers, flat ankle boots. She is exhausted and loving, never angry, cold, or rejecting.
+
+PROP CONTINUITY:
+One single brown leather backpack with one torn strap. The tear starts small, widens slightly when a passenger bumps him, and remains torn through the final frame. Never repair it, never tape it, never replace the backpack, never duplicate it.
+
+CAMERA AND EDITING:
+Only 6 connected shots with motivated movement, macro inserts, reflection framing, restrained cuts, natural rack focus, subtle depth of field. No slideshow, no split screens, no time reversal, no sudden jumps. Keep platform geography and screen direction consistent.
+
+LIGHTING AND COLOR:
+Platform tiles #2F5F63, cold light #DCE7E6, concrete #7B8481, tunnel #14201F, backpack leather #7A5A3C, hoodie #2F4A34, train glass #3E5B60. Keep cold artificial light throughout. No warm lamps, no golden light, no daylight.
+
+AUDIO:
+Metro ambience, an approaching train with rising wind, brakes, doors, footsteps, a departure signal without speech, deep tunnel reverb after the train leaves, one quiet leather-and-stitching sound when the tear widens. Minimal restrained instrumental score that becomes gently reassuring at the end. No narration, no dialogue, no lyrics, no slogan, no station announcements with words.
+
+NO ON-SCREEN TEXT RULE:
+Do not generate subtitles, captions, titles, end cards, floating words, overlays, station names, route maps, advertisements, direction signs, train numbers, screens, credits, watermarks, or random letters.
+
+CONTROLLED PHONE UI TEXT EXCEPTION:
+Readable text is allowed only on the physical phone screen in shot 6, strictly limited to “ChildFocus”, “Crafty”, “Task”, “Start”. The letter “M” on the hoodie is part of the character design and is allowed. No other words, numbers, or notifications. If clean rendering is impossible, use simple green and mint icons.
+
+FINAL FRAME:
+Phone fully put away. The mother carrying the backpack on her own shoulder, sitting beside Crafty on the bench, the tear still visible, the platform still cold and empty. No logo overlay, no text, no call to action, no repaired strap, no new backpack.
+
+NEGATIVE CONSTRAINTS:
+No Sunny, no Truey, no apartment, no warm light, no phone before 12.3 seconds, no parental anger, no scolding, no shouting, no danger at the platform edge, no accident, no bullying scene, no crying before the platform empties, no exaggerated sobbing, no instant happiness, no repaired strap, no tape, no new backpack, no missing glasses, no character morphing, no clothing changes, no extra fingers, no warped hands, no storyboard numbers, no readable environmental text.
+```
+
+## Instagram caption
+
+His backpack strap tore on the way home.  
+He held it together with his fingers and said nothing.
+
+Not because he was afraid of us. Because he saw how tired we were.
+
+Children protect us more often than we notice. They shouldn’t have to.
+
+**ChildFocus — one small step toward being more present.**
+
+## Hashtags
+
+```text
+#ChildFocus #ParentalBurnout #MindfulParenting #EmotionalSafety #WorkingParents #ParentingSupport #ChildPsychology #GentleParenting #FamilyConnection #RaisingKids
+```
+
+---
+---
+
+# Сценарий 10 — «Сердце в чемодане»
+
+**Герой:** Crafty
+**Локация:** выход на посадку в аэропорту
+**Свет:** бледный серо-голубой утренний свет из панорамных окон
+**Предмет-символ:** бумажное сердечко-брелок
+**Механика вины:** подарок приняли вежливо, но так и не посмотрели
+**Хук 0–3 сек:** детская ладонь протягивает бумажное сердечко, а взрослая рука занята чемоданом и просто убирает подарок в карман
+
+## Концепт
+
+Папа улетает в командировку. Crafty сделал бумажное сердечко-брелок и нарисовал на нём то, что не может сказать словами.
+
+Папа берёт подарок, тепло улыбается и, не глядя, убирает его в карман, потому что уже двигается очередь. Потом машинально перекладывает сердечко во внешний карман чемодана и застёгивает молнию.
+
+Crafty машет. Улыбается. Пока рядом люди.
+
+Уже в очереди папа тянется к карману за сердечком и не находит его. Он оборачивается и видит опущенную руку сына. Он выходит из очереди, достаёт помятое сердечко из кармана чемодана и наконец смотрит на рисунок.
+
+## Почему это может сработать
+
+- Хук про разминувшиеся руки: подарок отдан, но не встречен.
+- Аэропорт даёт таймер: очередь на посадку создаёт естественное напряжение.
+- Помятое сердечко под молнией — жёсткий, но точный образ.
+- Финал маленький и реальный: подарок переезжает из чемодана в нагрудный карман.
+
+## Палитра
+
+- серо-голубой свет: `#C6D3DC`
+- терминал: `#F1F4F6`
+- окна и небо: `#E3EDF2`
+- кресла зоны ожидания: `#3E4E5E`
+- чемодан: `#40464C`
+- бумажное сердечко: `#D9614F`
+- кожа рюкзака Crafty: `#7A5A3C`
+- экран приложения: `#FFFFFF`, `#E5F7F0`, `#00985E`, `#00CE7F`, `#1A1A1A`
+
+## Prompt 1 — раскадровка (GPT Image 2)
+
+```text
+Create one single vertical 9:16 cinematic storyboard sheet with exactly 16 panels in a clean 4-column by 4-row grid. Number the panels 1 to 16 inside the storyboard gutters only. Keep all panels evenly sized and arranged left to right, top to bottom.
+
+STORY TITLE:
+“The Heart in the Suitcase”
+
+STORY CONCEPT:
+A short emotionally resonant 3D animated story about Crafty and his father at an airport departure gate.
+
+The father is leaving on a work trip. Crafty made a paper heart keychain and drew on it what he cannot say in words.
+
+The father takes the gift, smiles warmly, and slips it into his pocket without looking, because the boarding line is already moving. Then, absent-mindedly, he moves the heart into the outer pocket of his suitcase and zips it shut.
+
+Crafty waves. He smiles while there are people around.
+
+Already in the line, the father reaches for the heart in his coat pocket and cannot find it. He turns and sees his son’s hand drop mid-wave. He steps out of the line, takes the bent paper heart out of the suitcase pocket, and finally looks at the drawing.
+
+CHARACTER REFERENCE:
+Use the attached Crafty reference image as the only source of truth for his face, glasses, hairstyle, clothing, colors, age, and proportions. Preserve his identity in all 16 panels. Do not copy the background of the reference image.
+
+CRAFTY:
+A boy approximately 6–8 years old with round glasses, chestnut hair brushed upward, a dark green hoodie with one large letter “M”, brown corduroy trousers, white sneakers, and a brown leather backpack. The letter “M” is the only clothing mark allowed. Remove all footwear brand marks and any other lettering.
+
+His emotional performance is subtle: hope, brave politeness, quiet sadness, cautious warmth. Never theatrical.
+
+FATHER:
+A loving, preoccupied man approximately 34–40 years old, dressed for business travel. Short dark hair, light stubble, a dark gray wool coat over a light blue shirt, navy trousers, dark leather shoes, a charcoal cabin suitcase, and a plain unmarked travel card in his hand. Keep him identical in every panel. He is warm and rushed, never cold, never dismissive on purpose.
+
+MOTHER:
+A quiet secondary presence standing a few steps behind Crafty, in a beige coat. She stays in the background and never becomes the focus.
+
+VISUAL STYLE:
+Premium stylized 3D animated feature-film quality. Expressive but restrained faces, detailed coat and paper materials, large windows with soft light, cinematic depth of field, clean reflective floor. Original style, no imitation of any named studio or franchise.
+
+LIGHTING AND PALETTE:
+Pale gray-blue morning light through large terminal windows, no warm interior lamps.
+
+Gray-blue light #C6D3DC, terminal surfaces #F1F4F6, windows and sky #E3EDF2, seating #3E4E5E, suitcase #40464C, paper heart #D9614F, backpack leather #7A5A3C.
+
+No warm golden light, no sunrise glow, no blue application palette.
+
+LOCATION:
+A modern unbranded airport departure gate. Large windows, aircraft silhouettes outside, rows of seats, a boarding line, a few travelers. All gate numbers, flight displays, signs, boarding passes, luggage tags, airline liveries, and clothing labels must be blank, abstract, or purely pictographic.
+
+PANEL PLAN:
+
+PANEL 1:
+Extreme close-up. A small open palm holds out a handmade paper heart keychain with a simple child’s drawing on it. An adult hand, already holding a suitcase handle and a plain unmarked card, reaches for it without stopping. Immediate emotional hook.
+
+PANEL 2:
+Wide shot of the gate. Pale morning light, aircraft outside, the boarding line starting to move. The father with his suitcase, Crafty in front of him, his mother a few steps behind.
+
+PANEL 3:
+The father takes the heart with a quick warm smile and slips it into his coat pocket without looking at the drawing.
+
+PANEL 4:
+Crafty starts explaining what is drawn on it, pointing with one finger. Real hope on his face.
+
+PANEL 5:
+The line moves. The father ruffles his hair affectionately and turns toward the gate. He must not be holding or looking at a phone.
+
+PANEL 6:
+He kneels briefly for a hug, and while checking his suitcase he absent-mindedly moves the paper heart from his coat into the outer suitcase pocket.
+
+PANEL 7:
+Macro close-up. The zipper closes over the paper heart, bending one corner under the fabric.
+
+PANEL 8:
+Close-up of Crafty with other travelers around. He holds a small brave smile and raises his hand to wave. No tears yet.
+
+PANEL 9:
+Wide shot. The father joins the boarding line. Crafty keeps waving. His mother stands quietly behind him.
+
+PANEL 10:
+The line advances and the seating area empties. Only a few people remain.
+
+PANEL 11:
+Tight close-up of Crafty. His hand drops mid-wave. The brave smile is gone, eyes shining behind his glasses. No sobbing.
+
+PANEL 12:
+In the line, the father reaches into his coat pocket for the heart and finds it empty. Quiet realization.
+
+PANEL 13:
+He turns and sees Crafty’s face through the gap in the emptying gate area. He steps out of the line.
+
+PANEL 14:
+He walks back, kneels at Crafty’s eye level, opens the suitcase pocket, and takes out the bent paper heart. He looks at the drawing properly for the first time while Crafty explains it. The bend stays.
+
+PANEL 15:
+Natural close-up of the father’s phone held low between them, only after contact has started. Clean ChildFocus interface in white, mint #E5F7F0, primary green #00985E, bright green #00CE7F, dark text #1A1A1A. Only readable words: “ChildFocus”, “Crafty”, “Task”, “Start”. He taps “Start”. If clean rendering is impossible, use icons instead.
+
+PANEL 16:
+The phone is away and no longer visible. The father puts the bent paper heart into his shirt pocket over his chest and holds Crafty’s hand while boarding continues behind them. The heart stays bent, the departure still happens.
+
+CONTINUITY:
+One single handmade paper heart keychain throughout: flat at first, then bent under the suitcase zipper, and permanently bent afterwards. The drawing on it stays identical and contains no letters. Never straighten it, never replace it, never duplicate it, never turn it into a bought souvenir.
+
+Keep Crafty’s glasses, hoodie letter “M”, and clothing identical everywhere. Keep the father’s coat, suitcase, and travel card consistent. Make the transition from a busy gate in panels 2–9 to an emptying one in panels 10–16 visually obvious.
+
+TEXT RESTRICTIONS:
+Outside the storyboard panel numbers, do not render captions, subtitles, speech bubbles, titles, gate numbers, flight displays, boarding pass text, luggage tags, airline names, signs, logos, watermarks, or random letters. The paper heart must contain drawing only. The letter “M” on Crafty’s hoodie and the phone screen in panel 15 are the only permitted text: “ChildFocus”, “Crafty”, “Task”, “Start”.
+
+NEGATIVE CONSTRAINTS:
+No Sunny. No Truey. No apartment. No warm golden light. No sunrise glow. No phone before panel 15. No parental anger. No scolding. No missed flight. No cancelled trip. No dramatic running through the terminal. No tears before panel 11. No exaggerated crying. No straightened heart. No bought gift. No duplicate props. No missing glasses. No character redesign. No extra fingers. No deformed hands.
+```
+
+## Prompt 2 — видео (Seedance 2.0 Pro)
+
+```text
+Use @image1 as the character, composition, location, color, and story reference for one finished 15-second vertical 9:16 cinematic 3D animated short.
+
+The storyboard contains 16 reference panels, but the video must not become a 16-shot slideshow. Combine it into 6 smooth connected cinematic shots.
+
+STORYBOARD NUMBER RULE:
+All panel numbers, borders, gutters, and grid lines in @image1 are production annotations only. Never render, animate, display, mention, point at, or react to them. If a number is unclear, follow the panels visually from left to right and top to bottom. The finished video must fill the whole 9:16 frame and must never show the storyboard sheet.
+
+CORE STORY:
+At an airport gate, Crafty gives his departing father a handmade paper heart keychain with a drawing on it. The father takes it warmly but never looks at it, and while checking his suitcase he absent-mindedly zips it into the outer pocket. Crafty waves and smiles while people are around. When the seating area empties, his hand drops. In the boarding line the father reaches for the heart, finds his pocket empty, sees his son’s face, steps out of the line, takes the bent heart out of the suitcase, and finally looks at the drawing.
+
+EMOTIONAL RULE:
+Before the gate empties, Crafty is hopeful and then keeps a small brave smile. He must not cry or cling. After the gate empties, his hand drops, the smile disappears, and tears gather silently behind his glasses. At the end show quiet warmth, not a rescued goodbye. The father still leaves.
+
+TIMELINE:
+
+SHOT 1 — 0.0 TO 2.0 — HOOK:
+Extreme close-up of a small open palm holding out a handmade paper heart keychain with a child’s drawing. An adult hand, already busy with a suitcase handle and a plain unmarked card, takes it without stopping and slips it into a coat pocket unlooked at. Rack focus to Crafty’s hopeful face. No title, no caption.
+
+SHOT 2 — 2.0 TO 4.5 — THE GIFT THAT WAS NEVER OPENED:
+One smooth medium shot at the gate. Crafty starts explaining what is drawn on the heart, pointing with one finger. The line moves, the father ruffles his hair, kneels briefly for a hug, and while checking his suitcase absent-mindedly moves the heart from his coat into the outer suitcase pocket. He must never hold or look at a phone. His warmth is genuine and his distraction is travel, not indifference.
+
+SHOT 3 — 4.5 TO 6.8 — PUBLIC MASK:
+Macro insert of the zipper closing over the paper heart and bending one corner. Cut to Crafty with other travelers around him, holding a small brave smile and raising his hand to wave as his father joins the boarding line. His mother stands quietly behind him. Show hope draining only through his eyes.
+
+SHOT 4 — 6.8 TO 9.3 — PRIVATE BREAK:
+The line advances and the seating area empties, ambient noise thinning out. Hold on Crafty as his hand drops mid-wave, the brave smile disappears, and tears gather silently behind his glasses. No sobbing, no running after his father.
+
+SHOT 5 — 9.3 TO 12.3 — THE FATHER NOTICES:
+In the line, the father reaches into his coat pocket for the heart and finds it empty. Quiet realization. He turns and sees Crafty’s face across the emptying gate area. One smooth camera move as he steps out of the line, walks back, kneels at his son’s eye level, opens the suitcase pocket, and takes out the bent paper heart. He looks at the drawing properly for the first time while Crafty explains it. No dramatic running, no missed flight, no theatrical apology. Hold their eye contact.
+
+SHOT 6 — 12.3 TO 15.0 — SMALL STEP:
+About one second of the father’s phone held low between them, the first phone in the film. Minimal ChildFocus interface in #00985E, #00CE7F, #E5F7F0, #FFFFFF, #1A1A1A. Only readable words: “ChildFocus”, “Crafty”, “Task”, “Start”. He taps “Start” once and puts the phone away. End with the father putting the bent paper heart into his shirt pocket over his chest and holding Crafty’s hand while boarding continues behind them. The heart stays bent and the trip still happens.
+
+CHARACTER CONTINUITY:
+Crafty keeps his exact face, round glasses, chestnut hair brushed upward, dark green hoodie with one large letter “M”, brown corduroy trousers, white sneakers, and brown leather backpack in every shot. Remove footwear logos. Never remove his glasses, never change the hoodie letter, never change his age or proportions.
+
+The father keeps the same face, short dark hair, light stubble, dark gray wool coat, light blue shirt, navy trousers, dark leather shoes, charcoal cabin suitcase, and plain unmarked travel card. He is warm and rushed, never cold or dismissive on purpose. The mother remains a quiet secondary figure in a beige coat.
+
+PROP CONTINUITY:
+One single handmade paper heart keychain with the same child’s drawing and no letters. Flat at first, bent under the suitcase zipper, and permanently bent afterwards. Never straighten it, never replace it, never duplicate it, never swap it for a bought souvenir.
+
+CAMERA AND EDITING:
+Only 6 connected shots with motivated movement, macro inserts, restrained cuts, natural rack focus, subtle depth of field. No slideshow, no split screens, no time reversal, no sudden jumps. Keep gate geography and screen direction consistent.
+
+LIGHTING AND COLOR:
+Gray-blue light #C6D3DC, terminal surfaces #F1F4F6, windows and sky #E3EDF2, seating #3E4E5E, suitcase #40464C, paper heart #D9614F, backpack leather #7A5A3C. Keep pale gray-blue morning light throughout. No warm lamps, no sunrise glow, no golden light.
+
+AUDIO:
+Terminal ambience, rolling suitcase wheels, distant aircraft, footsteps on hard floor, a boarding chime without words, a zipper closing, quiet breathing, thinning crowd noise. Minimal restrained instrumental score that becomes gently warm at the end. No narration, no dialogue, no lyrics, no slogan, no spoken announcements.
+
+NO ON-SCREEN TEXT RULE:
+Do not generate subtitles, captions, titles, end cards, floating words, overlays, gate numbers, flight displays, boarding pass text, luggage tags, airline names, signs, credits, watermarks, or random letters.
+
+CONTROLLED PHONE UI TEXT EXCEPTION:
+Readable text is allowed only on the physical phone screen in shot 6, strictly limited to “ChildFocus”, “Crafty”, “Task”, “Start”. The letter “M” on the hoodie is part of the character design and is allowed. No other words, numbers, or notifications. If clean rendering is impossible, use simple green and mint icons.
+
+FINAL FRAME:
+Phone fully put away. The bent paper heart in the father’s shirt pocket, his hand holding Crafty’s, boarding continuing behind them. No logo overlay, no text, no call to action, no cancelled flight, no straightened heart.
+
+NEGATIVE CONSTRAINTS:
+No Sunny, no Truey, no apartment, no warm light, no sunrise glow, no phone before 12.3 seconds, no parental anger, no scolding, no missed flight, no cancelled trip, no dramatic terminal chase, no crying before the gate empties, no exaggerated sobbing, no instant happiness, no straightened heart, no bought gift, no duplicate props, no missing glasses, no character morphing, no clothing changes, no extra fingers, no warped hands, no storyboard numbers, no readable environmental text.
+```
+
+## Instagram caption
+
+He made it himself and held it out with both hands.
+
+We took it, smiled, and zipped it into a suitcase pocket without ever looking at the drawing.
+
+A gift from a child is a sentence. It only counts if someone reads it.
+
+**ChildFocus — one small step toward being more present.**
+
+## Hashtags
+
+```text
+#ChildFocus #MindfulParenting #WorkTrip #ParentingSupport #ChildEmotions #LongDistanceParenting #ConsciousParenting #FamilyConnection #RaisingKids #ParentingTips
+```
+
+---
+
+## Дальнейшие шаги
+
+1. Прогнать раскадровки в GPT Image 2 с референсом нужного героя и проверить их по чек-листу: телефон появляется только в кадре 15, слёзы только после перелома, предмет-символ не меняет форму, локация пустеет к финалу.
+2. При расхождениях отправлять правку вторым сообщением в тот же чат, а не перегенерировать с нуля.
+3. Тестировать видео в 480p или 720p, финал собирать в 1080p.
+4. Для Crafty нужен свой референс-кадр в том же стиле, что и у Sunny и Truey, иначе сценарии 3, 9 и 10 не удержат лицо.
+
