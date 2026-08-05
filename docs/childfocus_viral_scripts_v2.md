@@ -34,11 +34,11 @@
 | `ACTIVE REFERENCES` | Явная привязка `@image1` (и что именно из него берётся: лицо, одежда, пропорции) — без этого модель может «доизобрести» персонажа. |
 | `STORYBOARD NUMBER RULE` | Отдельно оговаривается, что номера панелей — служебные пометки, а не часть мира. |
 | `LOCATION MAP` | Локация разложена на передний / средний / задний план и источник света — вместо одного абзаца прозы. Это то, чего не было в v1. |
-| `FIRST FRAME` | Что видно в самом первом кадре — фиксирует стартовую точку, чтобы не «плавала» композиция. |
-| `FORMAT MODE` | Один длинный дубль с внутренними `HARD CUT` по секундам — не слайд-шоу из 16 панелей. |
+| `FIRST FRAME` | Что видно в самом первом кадре — фиксирует стартовую точку, чтобы не «плавала» композиция. С v2.1 первый кадр — это `TEASE`, а не хронологическое начало истории (см. ниже). |
+| `FORMAT MODE` | Один длинный дубль с внутренними `HARD CUT` по секундам — не слайд-шоу из 16 панелей. С v2.1 внутри есть один намеренный «нехронологический» врез — тизер из развязки в самом начале. |
 | `OPTICS` | Угол поля зрения (FOV) и тип плана для каждого сегмента — раньше план был словесным («крупный», «средний»), теперь ещё и числовым, как в примерах. |
-| `CAMERA` | Поведение камеры (статика/трекинг/от третьего лица), кто мотивирует движение. |
-| `ACTION` | Таймлайн по секундам + **TRIGGER FRAME** — секунда, где символ-предмет физически меняется (падает, стирается, рвётся) — единый момент, к которому «пришиты» реакции обоих персонажей. Это прямое применение приёма «SINGLE SIMULTANEOUS TRIGGER FRAME» из примера 2, только не для спецэффекта, а для эмоционального перелома истории. |
+| `CAMERA` | Поведение камеры (статика/трекинг/от третьего лица), кто мотивирует движение. С v2.1 — жёсткое правило: ни один кадр не стоит статично дольше 1.5 секунды без нового события (`CONTINUOUS MOTION RULE`). |
+| `ACTION` | Таймлайн по секундам + **TRIGGER FRAME** — секунда, где символ-предмет физически меняется (падает, стирается, рвётся) — единый момент, к которому «пришиты» реакции обоих персонажей. Это прямое применение приёма «SINGLE SIMULTANEOUS TRIGGER FRAME» из примера 2, только не для спецэффекта, а для эмоционального перелома истории. С v2.1 таймлайн состоит из 7 сегментов: `SHOT 0` (тизер) + 6 хронологических. |
 | `PERFORMANCE` | Что именно играют лица — раньше это было частью «EMOTIONAL RULE», теперь отдельный раздел, как в примерах. |
 | `PHYSICS` | Как ведёт себя предмет-символ (мятая лента не расправляется, порванная лямка не срастается) — отдельный раздел вместо упоминания внутри «CONTINUITY». |
 | `WARDROBE` | Гардероб персонажей вынесен из общего «CHARACTER CONTINUITY» в отдельный блок. |
@@ -49,6 +49,15 @@
 | `POSITIVE LOCKS` | Свод самого важного одним абзацем в конце — то, что нельзя менять ни при каких обстоятельствах. Раньше в v1 был только `NEGATIVE CONSTRAINTS`; теперь есть оба — сначала что закреплено, потом что запрещено. |
 
 Раскадровка (`Prompt A`) сохраняет сетку 4×4 из 16 панелей (это уже отработанный для ChildFocus приём из примера 3), но каждая локация теперь тоже описана через `LOCATION MAP`, а не одним абзацем.
+
+### Ревизия v2.1 — почему зрители уходили на 3–5 секунде
+
+После первой версии пришли данные: многие досматривают ролик 3–5 секунд и пролистывают дальше. Разбор по таймлайну показал причину: `SHOT 1` (0.0–2.0s) давал сильный хук, но следующий `SHOT 2` (2.0–4.5s) был спокойной, объясняющей сценой без нового визуального события — ровно та секунда, где зритель теряет интерес и уходит. Ниже — четыре исправления, применённые ко всем 10 сценариям в этой редакции.
+
+1. **COLD OPEN TEASE** — добавлен нулевой кадр (0.0–0.8s): доля секунды из развязки истории (момент триггер-кадра или финального примирения), смазанная быстрым движением камеры, без контекста. Это классический приём «открытой петли»: зритель не понимает, что видит, и досматривает, чтобы узнать, как к этому пришли. Хронологическая история начинается сразу после, с `SHOT 1`.
+2. **ПЛОТНОСТЬ СОБЫТИЙ В ПЕРВЫЕ 5 СЕКУНД** — каждый сегмент таймлайна теперь короче и содержит одно новое визуальное событие, а не паузу на объяснение контекста; секция, где раньше был спад (бывший `SHOT 2`), сжата и ускорена.
+3. **CONTINUOUS MOTION RULE** — камера больше нигде не «замирает» дольше 1.5 секунды без нового события или мотивированного движения. Статичный кадр — самый частый визуальный сигнал «здесь можно пролистать».
+4. **ECHO CLOSE** — последний кадр видео визуально рифмуется с кадром-тизером из первой секунды (та же композиция, но уже разрешённая), закрывая открытую петлю и вознаграждая тех, кто досмотрел.
 
 ---
 
@@ -67,6 +76,15 @@
 
 ### TRIGGER FRAME RULE (новое)
 У каждого сценария есть ровно один кадр-триггер — секунда, когда предмет-символ физически меняется (падает / рвётся / стирается / гнётся). До этой секунды — «публичная маска» ребёнка, после — снятие маски. Все эффекты в этом кадре синхронны, без задержки между ними.
+
+### COLD OPEN TEASE RULE (новое, v2.1)
+Первые 0.8 секунды видео — это не начало истории, а сверхкороткая нехронологическая вставка кадра из развязки (обычно — триггер-кадр или финальное объятие/примирение), снятая с быстрым смазанным движением камеры, без контекста и без узнаваемых деталей крупным планом. Она не объясняется и не повторяется в этом виде дальше. После неё — жёсткий монтажный переход к `SHOT 1`, с которого начинается хронологический рассказ.
+
+### CONTINUOUS MOTION RULE (новое, v2.1)
+Ни один план во всём ролике не остаётся полностью статичным дольше 1.5 секунды: либо новое событие в кадре, либо мотивированное движение камеры (лёгкий наезд, дыхание рук, панорама вслед за персонажем). Полностью «замёрзший» кадр — главный визуальный сигнал для зрителя, что можно листать дальше.
+
+### ECHO CLOSE RULE (новое, v2.1)
+Последний план видео повторяет композицию кадра-тизера из первых 0.8 секунд, но теперь уже полностью читаемую и разрешённую — так открытая в начале петля закрывается именно в конце, а не раньше.
 
 ### Палитра приложения
 Из `lib/theme/app_theme.dart`, зелёно-мятная, не синяя: `#00985E` primary green, `#00CE7F` bright, `#007A4D` deep, `#FFFFFF` / `#F5F5F5` / `#F3F3F3` / `#F2F2F7`, мятные карточки `#E5F7F0` / `#EBF9F3`, текст `#1A1A1A` / `#333333` / `#666666`, разделители `#E8E8E8` / `#E0E0E0`.
@@ -153,7 +171,13 @@ GENERAL REQUIREMENTS: identical face, glasses, hair, outfit, and proportions acr
 Это применяется одинаково к каждому из 10 сценариев. AI-рендер остаётся чистым (без текста, без музыки — см. `NO ON-SCREEN TEXT RULE`), но **после экспорта** в монтажке (CapCut/аналог) добавляются два элемента: оверлей-хук первых 1.5 секунд и трендовый звук под немой SFX-рендер. Это стандартная механика роста Reels, она не противоречит правилам чистоты AI-рендера.
 
 ### 5.1 Почему хук решает всё
-Instagram Reels в первую очередь измеряет удержание в первые 1–2 секунды и досмотр до конца. Все 10 сценариев уже устроены так, что первый кадр — это сам конфликт (лента прячется, закладка вынимается, шоколадка возвращается на полку), без разгона — это правильно, это сохраняется. Дополнительно перед публикацией накладывается **оверлей-хук** — 3–6 слов крупным контрастным текстом, который проговаривает то, что видно, но ещё резче формулирует вопрос. Он не рендерится AI-моделью, добавляется вручную.
+Instagram Reels в первую очередь измеряет удержание в первые 1–2 секунды и досмотр до конца. Данные показали спад именно на 3–5 секунде — это была «спокойная» вторая сцена без нового события. В v2.1 таймлайн видео перестроен (см. «Ревизия v2.1» выше): `TEASE` в первые 0.8 секунды создаёт открытый вопрос, а все сегменты первых 5 секунд стали короче и плотнее по событиям.
+
+При монтаже накладываются **два оверлей-текста**, не один:
+- **0.0–1.5s** — хук-вопрос под кадр-тизер, 3–6 слов, крупный контрастный текст. Он должен резонировать с тем, что мелькнуло в тизере, но не объяснять его до конца.
+- **~7.5–8.5s (на триггер-кадре)** — короткая повторная фраза-«крюк», которая возвращает внимание тех, кто досматривает на автомате: например, повторяет вопрос из первого оверлея другими словами или добавляет «досмотри до конца». Это стандартный приём ре-хука в середине ролика для Reels/TikTok.
+
+Оба текста не рендерятся AI-моделью — накладываются вручную в монтажке поверх готового чистого видео.
 
 ### 5.2 Формула подписи (caption)
 Каждая подпись строится по одной и той же формуле, независимо от сценария:
@@ -207,8 +231,9 @@ Truey занял второе место. Папа искренне радует
 
 Growth-угол: хук читается без звука за 1 секунду («ребёнок прячет собственную награду») — это чистый паттерн-прерыватель для скролла. Тема «мы хвалим только победу» откликается у родителей спортивных детей — широкая, но конкретная аудитория.
 
-## Оверлей-хук (для монтажа, 0–1.5 сек)
-`Он занял второе место. И спрятал ленту.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Он занял второе место. И спрятал ленту.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — папа ещё не знает, что он держал в кроссовке.`
 
 ## Палитра
 Пол спортзала `#D9C7A3`, холодный верхний свет `#E8EEF2`, разметка `#2E6E8E`, стены/маты `#C8CCC6`, тени `#3A3630`, лента `#B9C2C9` с тесьмой `#4A6FA5`, чужая золотая медаль `#D4AF37`, экран приложения `#FFFFFF / #E5F7F0 / #00985E / #00CE7F / #1A1A1A`.
@@ -268,21 +293,22 @@ STORYBOARD NUMBER RULE: all panel numbers, borders, and gutters in @image1 are p
 
 LOCATION MAP: FOREGROUND — wooden gym floor, low bench. MIDGROUND — families, scoring area, gradually emptying. BACKGROUND — folded bleachers, high windows. Key light from the high windows, cool daylight, no warm bulbs.
 
-FIRST FRAME: extreme close-up of small hands folding the silver-blue ribbon into a tight square, blurred celebration behind, matching panel 1 exactly.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the story's resolution: the father kneeling on the gym floor, carefully unfolding the crumpled ribbon, Truey's eyes shining. No context, no readable detail, over almost before it registers. Hard cut into SHOT 1, which opens the chronological story with small hands folding the ribbon into a tight square, matching panel 1 exactly.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds; no other cuts. Combine the 16 panels into 6 connected cinematic shots, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds; no other cuts. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological cinematic shots, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS tracking. Shot 3 — 29° CU. Shot 4 — 29° CU easing to 18° ECU at the trigger frame. Shot 5 — 47° MS, slow kneel-down move. Shot 6 — 29° CU. No drift mid-segment.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS tracking. Shot 3 — 29° CU. Shot 4 — 29° CU easing to 18° ECU at the trigger frame. Shot 5 — 47° MS, slow kneel-down move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, smooth motivated moves only, no unmotivated drift, stable framing, subtle depth of field.
+CAMERA: eye-level, smooth motivated moves only. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds — every segment carries either a new visual event or a slow motivated move (push-in, gentle handheld breathing, short pan). No unmotivated drift.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. Small hands fold the ribbon into a tight square; rack focus to Truey's face holding a small proud smile.
-2.0s–4.5s — SHOT 2, THE MISSED MOMENT. Truey lifts the ribbon toward his arriving father, who opens his arms toward the winning family instead and gives Truey a quick head-pat, never touching a phone.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. The ribbon moves behind his back and creases under his fingers; his face holds a brave smile among other children; he sits and pushes the ribbon into his sneaker.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The hall empties, lights dim. TRIGGER FRAME at approximately 8.5s: Truey stands, and on this exact single frame the crumpled ribbon slips from the sneaker and lands on the floor precisely as his father's hand freezes mid-zip on the sports bag — both events lock to the same instant, no delay between them. His brave smile fades and tears gather silently. No sobbing.
-9.3s–12.3s — SHOT 5, THE FATHER NOTICES. The father sees the ribbon, kneels to Truey's eye level, picks it up, and carefully unfolds it; the creases remain. No lecture, no instant fix. Hold their eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the father's phone held low between them — the first phone in the film. Minimal ChildFocus UI in #00985E/#00CE7F/#E5F7F0/#FFFFFF/#1A1A1A, only words "ChildFocus", "Truey", "Task", "Start". He taps "Start" once, puts the phone away. End on both sitting on the bench, the creased ribbon open between them.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the father kneeling, unfolding the crumpled ribbon, Truey's eyes shining — under one second, no context given. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. Small hands fold the ribbon into a tight square; rack focus to Truey's face holding a small proud smile.
+2.3s–4.2s — SHOT 2, THE MISSED MOMENT. Truey lifts the ribbon toward his arriving father, who opens his arms toward the winning family instead and gives Truey a quick head-pat, never touching a phone; camera keeps moving with the arrival, no static hold.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. The ribbon moves behind his back and creases under his fingers; his face holds a brave smile among other children; he sits and pushes the ribbon into his sneaker.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The hall empties, lights dim. TRIGGER FRAME at approximately 8.0s: Truey stands, and on this exact single frame the crumpled ribbon slips from the sneaker and lands on the floor precisely as his father's hand freezes mid-zip on the sports bag — both events lock to the same instant, no delay between them. His brave smile fades and tears gather silently. No sobbing.
+9.0s–12.0s — SHOT 5, THE FATHER NOTICES. The father sees the ribbon, kneels to Truey's eye level, picks it up, and carefully unfolds it; the creases remain. No lecture, no instant fix. Hold their eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the father's phone held low between them — the first phone in the film. Minimal ChildFocus UI in #00985E/#00CE7F/#E5F7F0/#FFFFFF/#1A1A1A, only words "ChildFocus", "Truey", "Task", "Start". He taps "Start" once, puts the phone away. End on both sitting on the bench, the creased ribbon open between them — the same composition as the 0.0s tease, now fully resolved and readable.
 
 PERFORMANCE: Truey — pride, restrained disappointment, private sadness breaking only after the trigger frame, cautious relief at the end, never theatrical crying. Father — genuine warmth misdirected, then quiet realization, then full presence; never scolding, never guilty theatrics.
 
@@ -296,9 +322,9 @@ AUDIO: distant cheering fading, sneaker squeaks, a bouncing ball far away, bag z
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio or franchise.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds total, real-time speed throughout, no slow motion, no on-screen text anywhere except the panel-15/shot-6 phone whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds total, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text anywhere except the shot-6 phone whitelist.
 
-POSITIVE LOCKS: Truey's and the father's faces, hair, wardrobe stay 100% identical to @image1 in every shot. The ribbon is single, real, and its creases never disappear. The trigger frame — ribbon hitting the floor, father's hand freezing on the bag zipper — happens on one exact synchronized instant, not staggered. No phone before 12.3s. No tears before the trigger frame. No trophy swap. No storyboard numbers ever rendered. No readable environmental text besides the phone whitelist.
+POSITIVE LOCKS: Truey's and the father's faces, hair, wardrobe stay 100% identical to @image1 in every shot, including the tease. The ribbon is single, real, and its creases never disappear. The trigger frame — ribbon hitting the floor, father's hand freezing on the bag zipper — happens on one exact synchronized instant, not staggered. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. No trophy swap. No storyboard numbers ever rendered. No readable environmental text besides the phone whitelist.
 ```
 
 ## Публикация в Instagram
@@ -328,8 +354,9 @@ Children read our excitement long before they read our words. Sometimes they nee
 
 Growth-угол: «сейчас, минутку» — фраза, которую произносил буквально каждый родитель; узнаваемость мгновенная. Момент, когда ребёнок перестаёт просить, страшнее истерики — сильный эмоциональный крюк для сохранений/репостов.
 
-## Оверлей-хук (0–1.5 сек)
-`Она попросила два раза. Потом перестала просить.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Она попросила два раза. Потом перестала просить.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — она уже решила больше не просить.`
 
 ## Палитра
 Корпуса машин `#F2F4F3`, мятное свечение `#CFE9DF`, ночное окно `#1E2A2E`, хром/барабаны `#A9B4B8`, стулья `#8E8B84`, закладка `#E48A6A`, обложка книги `#5C6E7A`, экран приложения — стандартный.
@@ -389,21 +416,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — plastic chair, folding table. MIDGROUND — row of machines with mint glow, gradually emptying. BACKGROUND — black night window with faint reflections. Cold white ceiling light plus mint glow, no warm bulbs.
 
-FIRST FRAME: extreme close-up of the handmade bookmark resting on the book's first page in small hands, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: the mother sitting on the laundromat floor, the book open on her knees, Sunny leaning against her shoulder. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with the bookmark resting on the book's first page in small hands, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU with rack focus. Shot 2 — 47° MS with a match cut. Shot 3 — 29° CU. Shot 4 — 18° macro insert easing to 29° CU at the trigger frame. Shot 5 — 47° MS, floor-level move. Shot 6 — 29° CU.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU with rack focus. Shot 2 — 47° MS with a match cut. Shot 3 — 29° CU. Shot 4 — 18° macro insert easing to 29° CU at the trigger frame. Shot 5 — 47° MS, floor-level move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, motivated moves only, one match cut on the spinning drum for time compression, stable framing otherwise.
+CAMERA: eye-level, motivated moves only, one match cut on the spinning drum for time compression. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds — every segment carries either a new visual event or a slow motivated move.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. The bookmark rests on the first page; slow rack focus reveals Sunny's hopeful face and the mint glow behind her.
-2.0s–4.5s — SHOT 2, FIRST AND SECOND ASK. Sunny lifts the book; the mother raises one finger, arms full of laundry. A match cut on the spinning drum compresses time; Sunny asks again; the mother repeats the gesture while turning a dial, never holding a phone.
-4.5s–6.8s — SHOT 3, PUBLIC PATIENCE. Sunny keeps a small brave smile with the other customer still behind her, lowers the book to her knees; the customer picks up a basket and leaves.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The laundromat is now empty and quiet. TRIGGER FRAME at approximately 8.2s: on one exact frame the bookmark leaves the page in a macro insert precisely as the mother's hand completes turning the machine dial for the second time in the background — both actions lock to the same instant. Sunny closes the book, pockets the bookmark; her brave smile disappears and tears gather silently while the drum keeps spinning. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the round glass door, puts down the basket, sits on the floor at eye level, calm open hands. No lecture, no theatrical apology.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End on the mother on the floor, book open on her knees, Sunny leaning against her shoulder, laundry still spinning and unfolded behind them.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the mother on the floor, book open, Sunny leaning on her shoulder — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. The bookmark rests on the first page; rack focus reveals Sunny's hopeful face and the mint glow behind her.
+2.3s–4.2s — SHOT 2, FIRST AND SECOND ASK. Sunny lifts the book; the mother raises one finger, arms full of laundry. A match cut on the spinning drum compresses time; Sunny asks again; the mother repeats the gesture while turning a dial, never holding a phone; camera keeps a slow following move, no static hold.
+4.2s–6.3s — SHOT 3, PUBLIC PATIENCE. Sunny keeps a small brave smile with the other customer still behind her, lowers the book to her knees; the customer picks up a basket and leaves.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The laundromat is now empty and quiet. TRIGGER FRAME at approximately 8.0s: on one exact frame the bookmark leaves the page in a macro insert precisely as the mother's hand completes turning the machine dial for the second time in the background — both actions lock to the same instant. Sunny closes the book, pockets the bookmark; her brave smile disappears and tears gather silently while the drum keeps spinning. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the round glass door, puts down the basket, sits on the floor at eye level, calm open hands. No lecture, no theatrical apology.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End on the mother on the floor, book open on her knees, Sunny leaning against her shoulder, laundry still spinning and unfolded behind them — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Sunny — hope and patience, a small brave smile in public, quiet tears only after the trigger frame, cautious relief at the end, never sobbing. Mother — tired warmth throughout, never irritated, dropping into quiet realization and full presence at shot 5.
 
@@ -417,9 +445,9 @@ AUDIO: washing machine hum, spinning drum, coins and metal clicks, a distant str
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion, no on-screen text besides the shot-6 phone whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 phone whitelist.
 
-POSITIVE LOCKS: Sunny's and the mother's faces, hair, wardrobe stay 100% identical to @image1. One single book, one single bookmark, never duplicated, never a tablet. Trigger frame — bookmark leaving the page and the mother's dial-turn completing — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame. No storyboard numbers ever rendered.
+POSITIVE LOCKS: Sunny's and the mother's faces, hair, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single book, one single bookmark, never duplicated, never a tablet. Trigger frame — bookmark leaving the page and the mother's dial-turn completing — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. No storyboard numbers ever rendered.
 ```
 
 ## Публикация в Instagram
@@ -449,8 +477,9 @@ Crafty рисует семью, пока мама заслушалась пох�
 
 Growth-угол: самый «страшный» хук во всей подборке — ребёнок буквально стирает себя из семьи. Тема сравнения с другим ребёнком — одна из самых стыдных и обсуждаемых родительских тем, высокий потенциал сохранений.
 
-## Оверлей-хук (0–1.5 сек)
-`Он взял ластик и стёр себя из своей семьи.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Он взял ластик и стёр себя из своей семьи.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — на рисунке его больше нет.`
 
 ## Палитра
 Стены поликлиники `#DCEDE6`, пол/потолок `#EDEFF0`, кресла `#A8C4D4`, тени `#59696B`, бумага `#FAF7F0`, ластик `#E7A9A0`, графит `#4A4A4A`, экран приложения — стандартный.
@@ -512,21 +541,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — low table with the drawing paper. MIDGROUND — waiting chairs, the other family, gradually emptying. BACKGROUND — water cooler, corridor. Even clinical daylight, soft and shadowless, no warm bulbs.
 
-FIRST FRAME: extreme close-up of an eraser rubbing out the smallest figure on the family drawing, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: the mother's hand holding the paper steady as Crafty draws himself back into the family, the ghost outline visible. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with an eraser rubbing out the smallest figure, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, motivated moves only, stable framing, subtle depth of field.
+CAMERA: eye-level, motivated moves only, subtle depth of field. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds — every segment carries either a new visual event or a slow motivated move.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. An eraser rubs out the smallest pencil figure, leaving crumbs and a ghost outline; controlled rack focus lifts to Crafty's concentrated face.
-2.0s–4.5s — SHOT 2, THE COMPARISON. Crafty lifts the drawing to show his mother; she gently lowers his hand without looking, gives a warm knee-touch, keeps admiring the other mother's son. Never a phone in her hands.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Crafty holds a small brave smile among people, clinic light reflected in his glasses, eyes dropping to his own small figure in the drawing.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The other family is called in and the room empties. TRIGGER FRAME at approximately 8.4s: on one exact frame the eraser removes the final pencil stroke of his own figure precisely as an offscreen chime signals the other family being called — both events lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother sees the erased space, quiet realization, kneels at eye level with open hands, no lecture, no taking the pencil. He hands her the paper. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with her holding the paper steady while Crafty draws himself back in with uneven lines, the erased area still rough.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the mother holding the paper as Crafty draws himself back in — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. An eraser rubs out the smallest pencil figure, leaving crumbs and a ghost outline; controlled rack focus lifts to Crafty's concentrated face.
+2.3s–4.2s — SHOT 2, THE COMPARISON. Crafty lifts the drawing to show his mother; she gently lowers his hand without looking, gives a warm knee-touch, keeps admiring the other mother's son. Never a phone in her hands; camera keeps a slow motivated move, no static hold.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Crafty holds a small brave smile among people, clinic light reflected in his glasses, eyes dropping to his own small figure in the drawing.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The other family is called in and the room empties. TRIGGER FRAME at approximately 8.0s: on one exact frame the eraser removes the final pencil stroke of his own figure precisely as an offscreen chime signals the other family being called — both events lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother sees the erased space, quiet realization, kneels at eye level with open hands, no lecture, no taking the pencil. He hands her the paper. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with her holding the paper steady while Crafty draws himself back in with uneven lines, the erased area still rough — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Crafty — quiet concentration and pride, a small brave smile in public, silent tears only after the trigger frame, cautious courage at the end drawing himself back in. Mother — genuine social warmth toward the other family, dropping into quiet realization and full presence at shot 5, never guilty theatrics.
 
@@ -540,9 +570,9 @@ AUDIO: quiet waiting-room ambience, distant corridor steps, a soft door, indisti
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
 
-POSITIVE LOCKS: Crafty's and the mother's faces, glasses, wardrobe stay 100% identical to @image1. One single drawing, the ghost outline never disappears, never a clean replacement sheet, never the mother drawing for him. Trigger frame — final eraser stroke and the offscreen chime — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame.
+POSITIVE LOCKS: Crafty's and the mother's faces, glasses, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single drawing, the ghost outline never disappears, never a clean replacement sheet, never the mother drawing for him. Trigger frame — final eraser stroke and the offscreen chime — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame.
 ```
 
 ## Публикация в Instagram
@@ -572,8 +602,9 @@ Sunny хочет купить шоколадку для больной подр�
 
 Growth-угол: ритмичный, почти комедийный по монтажу хук («положили-вернули, положили-вернули») переворачивается в драму за 4 секунды — сильный контраст держит внимание. Вина здесь не про запрет сладкого, а про то, что не спросили «зачем» — тонкий и незаезженный угол.
 
-## Оверлей-хук (0–1.5 сек)
-`Она не хотела шоколадку себе. Никто не спросил, для кого.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Она не хотела шоколадку себе. Никто не спросил, для кого.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — открытка уже спрятана в кармане.`
 
 ## Палитра
 Люминесцентный свет `#F7F9F6`, свечение полок `#BFD8C9`, глубина рядов `#2C3A33`, металл `#9AA3A0`, обёртка `#A63A3A`, открытка `#FFF3E2`, ночное стекло `#1B2320`, экран приложения — стандартный.
@@ -633,21 +664,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — the cart and shelf-height hands. MIDGROUND — long aisles, gradually emptying. BACKGROUND — cashier, dark exit doors. Cold fluorescent light throughout, night outside.
 
-FIRST FRAME: extreme close-up of a small hand placing the red chocolate bar into the cart as an adult hand lifts it out, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: mother and daughter walking back into the aisle together, chocolate bar and bent card in Sunny's hands. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with a small hand placing the chocolate bar into the cart, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS tracking along the aisle. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 47° MS two-shot.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS tracking along the aisle. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 47° MS two-shot easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, one long aisle tracking shot, otherwise stable, subtle depth of field, consistent screen direction.
+CAMERA: eye-level, one long aisle tracking shot, otherwise stable, subtle depth of field, consistent screen direction. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. A small hand places the chocolate bar in the cart; an adult hand lifts it out and returns it to the shelf; the cart moves on. Repeat the gesture once more in the same fluid movement so the pattern reads instantly.
-2.0s–4.5s — SHOT 2, WHAT SHE WAS CARRYING. Sunny walks half a step behind holding the card with its drawing, presses the chocolate against it, lifts both toward her mother, who is comparing packages and never looks down or touches a phone. She puts the bar back and touches Sunny's shoulder kindly.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Sunny holds a small brave smile with the cashier and one distant shopper visible; cut to the checkout belt carrying only adult groceries as she watches them pass.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The last shopper leaves, the exit area quiets. TRIGGER FRAME at approximately 8.3s: on one exact frame the card's corner bends going into her jacket pocket precisely as the checkout belt reaches its last item with no chocolate on it — both events lock to the same instant. Her brave smile disappears near the dark glass doors and tears gather silently as she looks back toward the sweets aisle. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the dark exit glass, stops the cart, kneels to her eye level with open hands; Sunny takes out the bent card and shows the drawing. No lecture, no theatrical apology. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with both walking back into the aisle together, chocolate bar and bent card in Sunny's hands.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of mother and daughter walking back into the aisle together, chocolate and card in hand — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. A small hand places the chocolate bar in the cart; an adult hand lifts it out and returns it to the shelf; the cart moves on. Repeat the gesture once more in the same fluid movement so the pattern reads instantly.
+2.3s–4.2s — SHOT 2, WHAT SHE WAS CARRYING. Sunny walks half a step behind holding the card with its drawing, presses the chocolate against it, lifts both toward her mother, who is comparing packages and never looks down or touches a phone. She puts the bar back and touches Sunny's shoulder kindly.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Sunny holds a small brave smile with the cashier and one distant shopper visible; cut to the checkout belt carrying only adult groceries as she watches them pass.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The last shopper leaves, the exit area quiets. TRIGGER FRAME at approximately 8.0s: on one exact frame the card's corner bends going into her jacket pocket precisely as the checkout belt reaches its last item with no chocolate on it — both events lock to the same instant. Her brave smile disappears near the dark glass doors and tears gather silently as she looks back toward the sweets aisle. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the dark exit glass, stops the cart, kneels to her eye level with open hands; Sunny takes out the bent card and shows the drawing. No lecture, no theatrical apology. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with both walking back into the aisle together, chocolate bar and bent card in Sunny's hands — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Sunny — quiet determination, a small brave smile in public, silent tears only after the trigger frame, cautious relief at the end, never begging or whining. Mother — efficient tiredness throughout, never angry, dropping into quiet realization and full presence at shot 5.
 
@@ -661,9 +693,9 @@ AUDIO: fluorescent hum, cart wheels on hard floor, distant freezer motors, a che
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist.
 
-POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1. One single chocolate bar, one single card with a bent corner that never straightens. Trigger frame — card bending and the empty checkout belt — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame.
+POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single chocolate bar, one single card with a bent corner that never straightens. Trigger frame — card bending and the empty checkout belt — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame.
 ```
 
 ## Публикация в Instagram
@@ -693,8 +725,9 @@ Truey боится глубины и молча показывает очки п
 
 Growth-угол: физиологичный, бессловесный хук (побелевшие костяшки) плюс контраст «улыбка снаружи / тишина и пузыри под водой» — сильный визуальный крюк, который хорошо смотрится даже без звука в ленте.
 
-## Оверлей-хук (0–1.5 сек)
-`Он не сказал, что боится. Он просто улыбнулся.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Он не сказал, что боится. Он просто улыбнулся.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — под водой он совсем один.`
 
 ## Палитра
 Вода `#4FB6C4`, глубина `#12657A`, плитка `#EDF3F4`, дымка `#BFE3E8`, тени под водой `#0C3A47`, очки `#E07A3F`, полотенце `#DCE3E0`, экран приложения — стандартный.
@@ -754,21 +787,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — pool edge, wet tiles. MIDGROUND — lane ropes, the swimming group, gradually swimming away. BACKGROUND — the glass barrier and parents' area. Cool aquamarine light with moving caustics, no warm bulbs.
 
-FIRST FRAME: extreme close-up of small hands gripping orange goggles, knuckles white, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: father and son sitting on the pool edge, feet in the water, goggles resting on the tiles between them. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with small hands gripping the orange goggles, knuckles white, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, including one clean underwater shot, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, including one clean underwater shot, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU with rack focus. Shot 2 — 29° MS. Shot 3 — 29° CU. Shot 4 — 18° underwater macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, floor-level move. Shot 6 — 29° CU.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU with rack focus. Shot 2 — 29° MS. Shot 3 — 29° CU. Shot 4 — 18° underwater macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, floor-level move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, motivated moves only, one clean underwater shot with muffled sound, stable framing, consistent screen direction.
+CAMERA: eye-level, motivated moves only, one clean underwater shot with muffled sound, consistent screen direction. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. Small hands grip the goggles, knuckles white, water caustics moving; quick rack focus to Truey producing an instant bright smile toward the other children — the contradiction between hands and smile must read within the first second.
-2.0s–4.5s — SHOT 2, THE SILENT ASK. Truey looks into the deep water, steps back, turns to his father behind the glass and lifts the goggles slightly. The father smiles broadly with a warm encouraging gesture, never holding a phone.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Truey nods, manufactures confidence, pulls the goggles on too tight so the strap marks his temple; he moves to the edge, toes over the tiles, one small tremor in his foot.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. He jumps; cut to a clean underwater shot, muffled sound, rising bubbles. TRIGGER FRAME at approximately 7.8s: on one exact frame one lens fills with water precisely as his body crosses fully below the surface — the moment reads as a single clean instant, not gradual. He surfaces at the wall, coughing quietly, the group already gone. His brave smile is gone. No sobbing, no drowning.
-9.3s–12.3s — SHOT 5, THE FATHER NOTICES. The father sees the fear through the fogged goggles, comes to the edge, crouches at eye level, wraps a towel around him. No lecture, no push to try again. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with father and son sitting on the pool edge, feet in the water, goggles resting on the tiles between them, deep water still there.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of father and son on the pool edge, goggles resting between them — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. Small hands grip the goggles, knuckles white, water caustics moving; quick rack focus to Truey producing an instant bright smile toward the other children — the contradiction between hands and smile must read within the first second.
+2.3s–4.2s — SHOT 2, THE SILENT ASK. Truey looks into the deep water, steps back, turns to his father behind the glass and lifts the goggles slightly. The father smiles broadly with a warm encouraging gesture, never holding a phone.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Truey nods, manufactures confidence, pulls the goggles on too tight so the strap marks his temple; he moves to the edge, toes over the tiles, one small tremor in his foot.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. He jumps; cut to a clean underwater shot, muffled sound, rising bubbles. TRIGGER FRAME at approximately 8.0s: on one exact frame one lens fills with water precisely as his body crosses fully below the surface — the moment reads as a single clean instant, not gradual. He surfaces at the wall, coughing quietly, the group already gone. His brave smile is gone. No sobbing, no drowning.
+9.0s–12.0s — SHOT 5, THE FATHER NOTICES. The father sees the fear through the fogged goggles, comes to the edge, crouches at eye level, wraps a towel around him. No lecture, no push to try again. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with father and son sitting on the pool edge, feet in the water, goggles resting on the tiles between them, deep water still there — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Truey — hidden fear behind rapid public smiles, quiet distress only after the trigger frame underwater and at the wall, cautious relief at the end, the fear is not cured. Father — genuine warm encouragement, dropping into quiet realization and full presence at shot 5, never mocking or hostile.
 
@@ -782,9 +816,9 @@ AUDIO: indoor pool reverb, distant children's voices with no recognizable words,
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist.
 
-POSITIVE LOCKS: Truey's and the father's faces, wardrobe stay 100% identical to @image1. One single pair of goggles, hair stays wet after the jump. Trigger frame — lens filling with water as he crosses the surface — happens as one clean instant. No phone before 12.3s. No tears before the trigger frame. No rescue drama, no drowning.
+POSITIVE LOCKS: Truey's and the father's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single pair of goggles, hair stays wet after the jump. Trigger frame — lens filling with water as he crosses the surface — happens as one clean instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. No rescue drama, no drowning.
 ```
 
 ## Публикация в Instagram
@@ -814,8 +848,9 @@ Sunny делает билет на свой первый самостоятел�
 
 Growth-угол: «помахали, не подняв глаз» — микрожест, который узнаёт почти каждый родитель; хук про взрослый разговор поверх детского момента — недоэксплуатированная тема по сравнению с «телефон в руках».
 
-## Оверлей-хук (0–1.5 сек)
-`Она сделала билет, чтобы её посмотрели. Никто не посмотрел.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Она сделала билет, чтобы её посмотрели. Никто не посмотрел.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — билет уже лежит на полу.`
 
 ## Палитра
 Лёд `#EAF2F7`, синева катка `#9FC4DE`, бортик `#D8DEE3`, тени/трибуны `#33424E`, резиновый пол `#4B5560`, билет `#F1E3C6`, рисунок на билете `#5A6472`, экран приложения — стандартный.
@@ -877,21 +912,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — the boards and rubber walkway. MIDGROUND — the ice with skaters, gradually emptying. BACKGROUND — distant stands, dimming lights. Cold rink lighting throughout, no warm bulbs.
 
-FIRST FRAME: extreme close-up of a small hand holding up the handmade paper ticket, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: the mother standing at the boards, creased ticket in hand, watching Sunny skate. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with a small hand holding up the paper ticket, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, including one following skating shot, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, including one following skating shot, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 63° WS following shot easing to 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 47° MS.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 63° WS following shot easing to 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 47° MS easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, one following skating shot, otherwise stable, consistent rink geography and screen direction.
+CAMERA: eye-level, one following skating shot, otherwise stable, consistent rink geography and screen direction. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. A small hand holds up the paper ticket with its pencil skater and star; rack focus reveals Sunny excited and her mother reaching for it — the invitation must read within the first second.
-2.0s–4.5s — SHOT 2, THE MOMENT IS TAKEN. The mother takes the ticket with a genuine smile; another adult arrives and starts a friendly conversation; the mother turns toward her and slides the ticket into her coat pocket, never holding a phone.
-4.5s–6.8s — SHOT 3, THE LAP NOBODY WATCHED. Follow Sunny from behind as she pushes off and skates her first solo lap, unsteady but determined, cold breath visible; she completes the lap and opens her arms toward the boards; her mother waves back automatically without turning her head; close on Sunny's small brave smile among other skaters.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. TRIGGER FRAME at approximately 8.0s: on one exact frame the paper ticket slips from the coat pocket and lands on the wet rubber floor precisely as Sunny's arms complete opening at the end of her lap — both events lock to the same instant across the two locations. The session ends, lights dim, the rink empties. Her brave smile disappears and tears gather silently in the cold air. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother notices the ticket on the floor, picks it up, quiet realization as she looks at the drawing then the empty ice. She comes to the boards, kneels at eye level, holds the damp dirty ticket carefully. No lecture, no over-apology. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with the mother standing at the boards, creased ticket in hand, watching Sunny skate the lap again on the dim empty ice, watched from the first push to the last.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the mother at the boards holding the creased ticket, watching Sunny skate — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. A small hand holds up the paper ticket with its pencil skater and star; rack focus reveals Sunny excited and her mother reaching for it — the invitation must read within the first second.
+2.3s–4.2s — SHOT 2, THE MOMENT IS TAKEN. The mother takes the ticket with a genuine smile; another adult arrives and starts a friendly conversation; the mother turns toward her and slides the ticket into her coat pocket, never holding a phone.
+4.2s–6.3s — SHOT 3, THE LAP NOBODY WATCHED. Follow Sunny from behind as she pushes off and skates her first solo lap, unsteady but determined, cold breath visible; she completes the lap and opens her arms toward the boards; her mother waves back automatically without turning her head; close on Sunny's small brave smile among other skaters.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. TRIGGER FRAME at approximately 8.0s: on one exact frame the paper ticket slips from the coat pocket and lands on the wet rubber floor precisely as Sunny's arms complete opening at the end of her lap — both events lock to the same instant across the two locations. The session ends, lights dim, the rink empties. Her brave smile disappears and tears gather silently in the cold air. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother notices the ticket on the floor, picks it up, quiet realization as she looks at the drawing then the empty ice. She comes to the boards, kneels at eye level, holds the damp dirty ticket carefully. No lecture, no over-apology. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with the mother standing at the boards, creased ticket in hand, watching Sunny skate the lap again on the dim empty ice, watched from the first push to the last — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Sunny — excitement and concentration, a small brave smile in public, silent tears only after the trigger frame, cautious pride at the end, never a triumphant celebration. Mother — genuine social warmth toward the acquaintance, dropping into quiet realization and full presence at shot 5.
 
@@ -905,9 +941,9 @@ AUDIO: skate blades cutting ice, rink reverb, distant skaters, indistinct adult 
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist.
 
-POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1. One single ticket, permanently creased once trampled, never cleaned or duplicated. Trigger frame — ticket falling and Sunny's arms opening — happens on one synchronized instant across locations. No phone before 12.3s. No tears before the trigger frame. No medal, no cheering crowd.
+POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single ticket, permanently creased once trampled, never cleaned or duplicated. Trigger frame — ticket falling and Sunny's arms opening — happens on one synchronized instant across locations. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. No medal, no cheering crowd.
 ```
 
 ## Публикация в Instagram
@@ -937,8 +973,9 @@ Truey несколько дней носил вырезку в кармане, �
 
 Growth-угол: ярлык «он у нас стеснительный» — фраза, которую произносит буквально любой родитель без злого умысла; зеркало барбершопа даёт визуально сильный двойной кадр (папа и сын одновременно).
 
-## Оверлей-хук (0–1.5 сек)
-`Он репетировал эти слова три дня. Мы ответили за него за секунду.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Он репетировал эти слова три дня. Мы ответили за него за секунду.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — вырезка падает прямо в его стриженые волосы.`
 
 ## Палитра
 Мятная плитка `#CFE7DE`, хром `#B7BEC2`, кресло `#24282A`, зеркала `#DCE3E4`, пол/стойка `#8C8478`, бумага вырезки `#F4EFE6`, накидка `#3C4448`, экран приложения — стандартный.
@@ -1000,21 +1037,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — the barber chair and mirror. MIDGROUND — the waiting bench, the other customer, leaving mid-film. BACKGROUND — the shop window. Cool daylight throughout, no warm bulbs.
 
-FIRST FRAME: extreme close-up of small hands holding the worn magazine cutout, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: Truey himself holding the unfolded cutout out to the barber, father standing back. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with small hands holding the worn magazine cutout, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots, using mirror framing, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots, using mirror framing, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 29° CU in the mirror. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 29° CU in the mirror. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, mirror framing kept physically correct, otherwise stable, motivated moves only.
+CAMERA: eye-level, mirror framing kept physically correct, otherwise motivated moves only. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. Small hands hold the worn cutout, creased from days in a pocket; rack focus to Truey in the chair, cape on, gathering his courage.
-2.0s–4.5s — SHOT 2, ANSWERED FOR. The barber asks Truey directly; he opens his mouth and starts lifting the cutout; his father answers first, describes the usual short cut, ruffles his hair, never holding a phone.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Truey's face in the mirror holds a small brave smile as the barber works; his father gestures "he's the quiet one" to the other customer; Truey hears it, looks down; under the cape the cutout folds in half, then again.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. Cut hair falls on the cape and floor; the other customer leaves, the shop quiets. TRIGGER FRAME at approximately 8.6s: on one exact frame the cape comes off and the folded paper falls into the cut hair precisely as the last lock of cut hair lands beside it — both drops lock to the same instant. Truey's brave smile disappears in the mirror and tears gather silently. No sobbing.
-9.3s–12.3s — SHOT 5, THE FATHER NOTICES. The father picks up the paper, unfolds it, understands, crouches at eye level with open hands. Truey points at the picture and finally speaks. No theatrical apology. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with Truey himself holding the unfolded cutout out to the barber, father standing back, hair still short, paper still creased.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of Truey holding the unfolded cutout out to the barber, father standing back — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. Small hands hold the worn cutout, creased from days in a pocket; rack focus to Truey in the chair, cape on, gathering his courage.
+2.3s–4.2s — SHOT 2, ANSWERED FOR. The barber asks Truey directly; he opens his mouth and starts lifting the cutout; his father answers first, describes the usual short cut, ruffles his hair, never holding a phone.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Truey's face in the mirror holds a small brave smile as the barber works; his father gestures "he's the quiet one" to the other customer; Truey hears it, looks down; under the cape the cutout folds in half, then again.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. Cut hair falls on the cape and floor; the other customer leaves, the shop quiets. TRIGGER FRAME at approximately 8.0s: on one exact frame the cape comes off and the folded paper falls into the cut hair precisely as the last lock of cut hair lands beside it — both drops lock to the same instant. Truey's brave smile disappears in the mirror and tears gather silently. No sobbing.
+9.0s–12.0s — SHOT 5, THE FATHER NOTICES. The father picks up the paper, unfolds it, understands, crouches at eye level with open hands. Truey points at the picture and finally speaks. No theatrical apology. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with Truey himself holding the unfolded cutout out to the barber, father standing back, hair still short, paper still creased — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Truey — rehearsed courage, a small brave smile in public, silent tears only after the trigger frame, cautious confidence at the end speaking for himself. Father — genuine sociable warmth, dropping into quiet realization and full presence at shot 5, never hostile.
 
@@ -1028,9 +1066,9 @@ AUDIO: clipper hum, scissors, a spray bottle, hair falling on the cape, quiet sh
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist.
 
-POSITIVE LOCKS: Truey's and the father's faces, wardrobe stay 100% identical to @image1. One single cutout, permanently fold-lined, never flattened perfectly or duplicated. Hair changes length exactly once and never regrows. Trigger frame — folded paper and last hair lock falling together — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame.
+POSITIVE LOCKS: Truey's and the father's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single cutout, permanently fold-lined, never flattened perfectly or duplicated. Hair changes length exactly once and never regrows. Trigger frame — folded paper and last hair lock falling together — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame.
 ```
 
 ## Публикация в Instagram
@@ -1060,8 +1098,9 @@ Sunny с гордостью сажает кривой росток грязны�
 
 Growth-угол: это самая «безобидная» и узнаваемая вина в подборке — перфекционизм из любви — поэтому она бьёт по самой широкой аудитории родителей, не вызывая защитной реакции («я же не злюсь на ребёнка, я просто помогаю»).
 
-## Оверлей-хук (0–1.5 сек)
-`Она гордилась кривым ростком. Мы сделали его "правильным" за 10 секунд.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Она гордилась кривым ростком. Мы сделали его "правильным" за 10 секунд.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — она только что отдёрнула руку.`
 
 ## Палитра
 Запотевшее стекло `#D6E6DE`, листва `#4C7A5A`, земля `#4A3B2E`, конденсат `#B8C7C1`, стаканчик `#EFD97A`, росток `#8CC26A`, стол `#7E6B52`, экран приложения — стандартный.
@@ -1121,21 +1160,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — the potting table, cups, soil. MIDGROUND — other children and parents, leaving mid-film. BACKGROUND — fogged condensation-covered glass. Soft humid diffused daylight throughout, no direct sunbeams.
 
-FIRST FRAME: extreme close-up of small dirty hands patting soil around the crooked sprout, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: two cups side by side, one straight with a broken leaf, one crooked and fresh, both pairs of hands dirty. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with small dirty hands patting soil around the crooked sprout, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots with macro inserts, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots with macro inserts, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 18° macro two-shot on both pairs of hands.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 29° CU. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 18° macro two-shot on both pairs of hands.
 
-CAMERA: eye-level, macro inserts on hands and soil, otherwise stable, consistent table geography.
+CAMERA: eye-level, macro inserts on hands and soil, consistent table geography. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. Small dirty hands pat soil around the crooked sprout; adult hands enter and pull it out of the soil; rack focus to Sunny's proud face freezing — the correction must read within the first second.
-2.0s–4.5s — SHOT 2, THE HELPFUL CORRECTION. The mother replants the sprout perfectly straight, presses the soil firmly, wipes the cup rim, sets the result on the table, gently cleans Sunny's hands. Warm, efficient, well-meant, never holding a phone, never scolding.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Sunny holds a small brave smile as other children plant messily and laugh behind her; she hides her clean hands behind her back, reaches toward a second empty cup, hesitates.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The class ends, families leave, condensation runs down the glass. TRIGGER FRAME at approximately 8.1s: on one exact frame Sunny's hand pulls back from the second cup precisely as her mother wipes the last smear of soil off her own fingers with the cloth — both hand movements lock to the same instant. Sunny looks at her clean palms, brave smile gone, tears gather silently. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the fogged glass, kneels beside her, pushes an empty cup and soil tray toward her, deliberately puts her own hands behind her back. No demonstration, no lecture. Sunny looks at the cup, then at her mother.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End on two cups side by side, one straight with a broken leaf, one crooked and fresh, both pairs of hands dirty again.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the two cups side by side, both pairs of hands dirty — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. Small dirty hands pat soil around the crooked sprout; adult hands enter and pull it out of the soil; rack focus to Sunny's proud face freezing — the correction must read within the first second.
+2.3s–4.2s — SHOT 2, THE HELPFUL CORRECTION. The mother replants the sprout perfectly straight, presses the soil firmly, wipes the cup rim, sets the result on the table, gently cleans Sunny's hands. Warm, efficient, well-meant, never holding a phone, never scolding.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Sunny holds a small brave smile as other children plant messily and laugh behind her; she hides her clean hands behind her back, reaches toward a second empty cup, hesitates.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The class ends, families leave, condensation runs down the glass. TRIGGER FRAME at approximately 8.0s: on one exact frame Sunny's hand pulls back from the second cup precisely as her mother wipes the last smear of soil off her own fingers with the cloth — both hand movements lock to the same instant. Sunny looks at her clean palms, brave smile gone, tears gather silently. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother sees Sunny's reflection in the fogged glass, kneels beside her, pushes an empty cup and soil tray toward her, deliberately puts her own hands behind her back. No demonstration, no lecture. Sunny looks at the cup, then at her mother.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End on two cups side by side, one straight with a broken leaf, one crooked and fresh, both pairs of hands dirty again — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Sunny — pride and confusion, a small brave smile in public, silent tears only after the trigger frame, cautious courage reaching for soil again at the end. Mother — warm helpful efficiency, dropping into quiet realization and restraint at shot 5, never hostile.
 
@@ -1149,9 +1189,9 @@ AUDIO: greenhouse ambience, soil crumbling, water drops on glass, a watering can
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist.
 
-POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1. Two cups only, the broken leaf never repairs, nothing blooms instantly. Trigger frame — Sunny's hand pulling back and the mother's last wipe — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame.
+POSITIVE LOCKS: Sunny's and the mother's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. Two cups only, the broken leaf never repairs, nothing blooms instantly. Trigger frame — Sunny's hand pulling back and the mother's last wipe — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame.
 ```
 
 ## Публикация в Instagram
@@ -1181,8 +1221,9 @@ Sometimes helping means putting our own hands behind our back.
 
 Growth-угол: самая болезненная для родителя мысль во всей подборке — «он не рассказал, потому что берёг меня» — вызывает не защиту, а немедленное узнавание и часто слёзы в комментариях, что двигает охваты сильнее, чем что-либо ещё.
 
-## Оверлей-хук (0–1.5 сек)
-`У него порвалась лямка. Он промолчал — мама и так на пределе.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `У него порвалась лямка. Он промолчал — мама и так на пределе.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — лямка вот-вот не выдержит.`
 
 ## Палитра
 Плитка платформы `#2F5F63`, свет ламп `#DCE7E6`, бетон `#7B8481`, тоннель `#14201F`, кожа рюкзака `#7A5A3C`, толстовка `#2F4A34`, стекло вагона `#3E5B60`, экран приложения — стандартный.
@@ -1242,21 +1283,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — the platform edge near both characters. MIDGROUND — commuters and the train, gradually leaving. BACKGROUND — the black tunnel. Cold artificial light throughout, no warm lamps.
 
-FIRST FRAME: extreme close-up of small fingers pinching the torn leather strap together, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: the mother carrying the backpack by its intact strap, sitting beside Crafty on the bench. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with small fingers pinching the torn leather strap together, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots with macro inserts and reflection framing, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots with macro inserts and reflection framing, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 29° CU with an 18° macro insert. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, crouch-down move. Shot 6 — 47° MS.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS two-shot. Shot 3 — 29° CU with an 18° macro insert. Shot 4 — 18° macro easing to 29° CU at the trigger frame. Shot 5 — 47° MS, crouch-down move. Shot 6 — 47° MS easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, reflection framing in the tiled wall and train glass, otherwise stable, consistent platform geography.
+CAMERA: eye-level, reflection framing in the tiled wall and train glass, consistent platform geography. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. Small fingers pinch the torn strap together so the bag doesn't fall; rack focus to Crafty looking up and instantly producing a small smile — the hidden effort must read within the first second.
-2.0s–4.5s — SHOT 2, THE SWALLOWED SENTENCE. Crafty turns toward his mother, starts to open his mouth; she exhales heavily, closes her eyes, presses her temples — pure fatigue, no phone. He closes his mouth and quietly turns the backpack so the tear faces away.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Crafty holds a small brave smile among tired commuters, gripping the strap tighter; the train arrives, wind moves his hair; a passenger brushes past and he grips harder; macro insert of leather fibers separating.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. Passengers board, the train leaves, the platform empties into deep quiet. TRIGGER FRAME at approximately 8.5s: on one exact frame the stitching finally gives way, the tear widening, precisely as the train doors close fully behind the last boarding passenger — both events lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing.
-9.3s–12.3s — SHOT 5, THE MOTHER NOTICES. The mother sees the torn strap and his face reflected in the tiled wall and departing train glass; her exhaustion turns into quiet realization, shoulders softening. She crouches to his eye level and takes the weight of the backpack out of his hand. No scolding, no tape. He finally shows her the tear and speaks. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with her carrying the backpack by its intact strap over her own shoulder, sitting beside Crafty on the bench, the tear still visible.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the mother carrying the backpack, sitting beside Crafty on the bench — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. Small fingers pinch the torn strap together so the bag doesn't fall; rack focus to Crafty looking up and instantly producing a small smile — the hidden effort must read within the first second.
+2.3s–4.2s — SHOT 2, THE SWALLOWED SENTENCE. Crafty turns toward his mother, starts to open his mouth; she exhales heavily, closes her eyes, presses her temples — pure fatigue, no phone. He closes his mouth and quietly turns the backpack so the tear faces away.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Crafty holds a small brave smile among tired commuters, gripping the strap tighter; the train arrives, wind moves his hair; a passenger brushes past and he grips harder; macro insert of leather fibers separating.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. Passengers board, the train leaves, the platform empties into deep quiet. TRIGGER FRAME at approximately 8.0s: on one exact frame the stitching finally gives way, the tear widening, precisely as the train doors close fully behind the last boarding passenger — both events lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing.
+9.0s–12.0s — SHOT 5, THE MOTHER NOTICES. The mother sees the torn strap and his face reflected in the tiled wall and departing train glass; her exhaustion turns into quiet realization, shoulders softening. She crouches to his eye level and takes the weight of the backpack out of his hand. No scolding, no tape. He finally shows her the tear and speaks. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the mother's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. She taps "Start", puts the phone away. End with her carrying the backpack by its intact strap over her own shoulder, sitting beside Crafty on the bench, the tear still visible — the same composition as the 0.0s tease, now fully resolved.
 
 PERFORMANCE: Crafty — hesitation and protective silence, a small brave smile in public, silent tears only after the trigger frame, cautious relief at the end. Mother — pure fatigue and stress throughout, never anger, dropping into quiet realization and softened presence at shot 5.
 
@@ -1270,9 +1312,9 @@ AUDIO: metro ambience, an approaching train with rising wind, brakes, doors, foo
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
 
-POSITIVE LOCKS: Crafty's and the mother's faces, wardrobe stay 100% identical to @image1. One single torn strap, never repaired or taped. Trigger frame — stitching giving way and the train doors closing — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame. The mother must never look angry, only tired and then present.
+POSITIVE LOCKS: Crafty's and the mother's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single torn strap, never repaired or taped. Trigger frame — stitching giving way and the train doors closing — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. The mother must never look angry, only tired and then present.
 ```
 
 ## Публикация в Instagram
@@ -1302,8 +1344,9 @@ Not because he was afraid of us. Because he saw how tired we were.
 
 Growth-угол: самая «вежливая» и от того самая грустная вина — подарок принят с улыбкой, но не увиден. Аэропорт даёт естественный таймер (очередь на посадку), который держит напряжение до последней секунды ролика.
 
-## Оверлей-хук (0–1.5 сек)
-`Он сделал сердечко сам. Мы убрали его в карман чемодана, не взглянув.`
+## Оверлей-хук (для монтажа)
+0.0–1.5s: `Он сделал сердечко сам. Мы убрали его в карман чемодана, не взглянув.`
+~7.5–8.5s (ре-хук на триггер-кадре): `Досмотри — папа не может найти сердечко в кармане.`
 
 ## Палитра
 Серо-голубой свет `#C6D3DC`, терминал `#F1F4F6`, окна/небо `#E3EDF2`, кресла `#3E4E5E`, чемодан `#40464C`, бумажное сердечко `#D9614F`, кожа рюкзака `#7A5A3C`, экран приложения — стандартный.
@@ -1365,21 +1408,22 @@ STORYBOARD NUMBER RULE: panel numbers, borders, and gutters in @image1 are produ
 
 LOCATION MAP: FOREGROUND — Crafty, father, and suitcase near the gate. MIDGROUND — the boarding line and seating, gradually emptying. BACKGROUND — large windows with aircraft silhouettes. Pale gray-blue morning light throughout, no warm lamps.
 
-FIRST FRAME: extreme close-up of a small open palm holding the paper heart keychain, matching panel 1.
+FIRST FRAME: a 0.8-second non-chronological TEASE — a fast, motion-blurred glimpse of the resolution: the father putting the bent paper heart into his shirt pocket over his chest, holding Crafty's hand. No context, no readable detail. Hard cut into SHOT 1, which opens the chronological story with a small open palm holding the paper heart keychain, matching panel 1.
 
-FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds, combining the 16 panels into 6 connected shots with macro inserts, never a slideshow.
+FORMAT MODE: one continuous take with internal HARD CUTs at the stated seconds. Opens with a 0.8s non-chronological TEASE, then combines the 16 panels into 6 connected chronological shots with macro inserts, never a slideshow.
 
-OPTICS: Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 18° macro insert to 29° CU. Shot 4 — 29° CU easing to 18° ECU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU.
+OPTICS: Shot 0 (tease) — 18° ECU, fast blurred push. Shot 1 — 18° ECU. Shot 2 — 47° MS. Shot 3 — 18° macro insert to 29° CU. Shot 4 — 29° CU easing to 18° ECU at the trigger frame. Shot 5 — 47° MS, kneel-down move. Shot 6 — 29° CU easing to 18° ECU on the echo close.
 
-CAMERA: eye-level, motivated moves only, stable framing, consistent gate geography.
+CAMERA: eye-level, motivated moves only, consistent gate geography. CONTINUOUS MOTION RULE: no shot holds fully static longer than 1.5 seconds.
 
 ACTION:
-0.0s–2.0s — SHOT 1, HOOK. A small open palm holds the paper heart with its drawing; an adult hand, already busy with a suitcase handle and a travel card, takes it without stopping and slips it into a coat pocket unlooked at; rack focus to Crafty's hopeful face.
-2.0s–4.5s — SHOT 2, THE GIFT THAT WAS NEVER OPENED. Crafty starts explaining what's drawn on the heart, pointing with one finger; the line moves, the father ruffles his hair, kneels briefly for a hug, and while checking his suitcase absent-mindedly moves the heart from his coat into the outer suitcase pocket. Never holding or looking at a phone.
-4.5s–6.8s — SHOT 3, PUBLIC MASK. Macro insert of the zipper closing over the paper heart, bending one corner; cut to Crafty among other travelers holding a small brave smile and waving as his father joins the boarding line; his mother stands quietly behind him.
-6.8s–9.3s — SHOT 4, PRIVATE BREAK. The line advances, the seating area empties, ambient noise thins out. TRIGGER FRAME at approximately 8.2s: on one exact frame Crafty's hand drops mid-wave precisely as his father's suitcase wheel completes one full rotation while joining the line ahead — both actions lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing, no running after his father.
-9.3s–12.3s — SHOT 5, THE FATHER NOTICES. In the line, the father reaches into his coat pocket for the heart, finds it empty, quiet realization; he turns and sees Crafty's face across the emptying gate area, steps out of the line, walks back, kneels at his son's eye level, opens the suitcase pocket, takes out the bent paper heart, and looks at the drawing properly for the first time while Crafty explains it. No dramatic running, no missed flight. Hold eye contact.
-12.3s–15.0s — SHOT 6, SMALL STEP. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with the father putting the bent paper heart into his shirt pocket over his chest, holding Crafty's hand while boarding continues behind them. The heart stays bent, the trip still happens.
+0.0s–0.8s — SHOT 0, COLD OPEN TEASE. Fast blurred glimpse of the father putting the heart into his shirt pocket, holding Crafty's hand — under one second, no context. Hard cut.
+0.8s–2.3s — SHOT 1, HOOK. A small open palm holds the paper heart with its drawing; an adult hand, already busy with a suitcase handle and a travel card, takes it without stopping and slips it into a coat pocket unlooked at; rack focus to Crafty's hopeful face.
+2.3s–4.2s — SHOT 2, THE GIFT THAT WAS NEVER OPENED. Crafty starts explaining what's drawn on the heart, pointing with one finger; the line moves, the father ruffles his hair, kneels briefly for a hug, and while checking his suitcase absent-mindedly moves the heart from his coat into the outer suitcase pocket. Never holding or looking at a phone.
+4.2s–6.3s — SHOT 3, PUBLIC MASK. Macro insert of the zipper closing over the paper heart, bending one corner; cut to Crafty among other travelers holding a small brave smile and waving as his father joins the boarding line; his mother stands quietly behind him.
+6.3s–9.0s — SHOT 4, PRIVATE BREAK. The line advances, the seating area empties, ambient noise thins out. TRIGGER FRAME at approximately 8.0s: on one exact frame Crafty's hand drops mid-wave precisely as his father's suitcase wheel completes one full rotation while joining the line ahead — both actions lock to the same instant. His brave smile disappears and tears gather silently behind his glasses. No sobbing, no running after his father.
+9.0s–12.0s — SHOT 5, THE FATHER NOTICES. In the line, the father reaches into his coat pocket for the heart, finds it empty, quiet realization; he turns and sees Crafty's face across the emptying gate area, steps out of the line, walks back, kneels at his son's eye level, opens the suitcase pocket, takes out the bent paper heart, and looks at the drawing properly for the first time while Crafty explains it. No dramatic running, no missed flight. Hold eye contact.
+12.0s–15.0s — SHOT 6, SMALL STEP + ECHO CLOSE. About one second of the father's phone held low, first phone in the film. Minimal ChildFocus UI, whitelist words only. He taps "Start", puts the phone away. End with the father putting the bent paper heart into his shirt pocket over his chest, holding Crafty's hand while boarding continues behind them — the same composition as the 0.0s tease, now fully resolved. The heart stays bent, the trip still happens.
 
 PERFORMANCE: Crafty — hope and brave politeness, a small brave smile in public, silent tears only after the trigger frame, cautious warmth at the end. Father — genuine warmth and travel distraction, dropping into quiet realization and full presence at shot 5, never cold or dismissive on purpose.
 
@@ -1393,9 +1437,9 @@ AUDIO: terminal ambience, rolling suitcase wheels, distant aircraft, footsteps o
 
 STYLE: fully photoreal-quality 3D cartoon animated movie look, cinematic, original design, never imitating a named studio.
 
-OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
+OUTPUT SETTINGS: 9:16 vertical, 15 seconds, real-time speed throughout, no slow motion except the fast blur inherent to the 0.8s tease, no on-screen text besides the shot-6 whitelist and the "M" on the hoodie.
 
-POSITIVE LOCKS: Crafty's and the father's faces, wardrobe stay 100% identical to @image1. One single paper heart, permanently bent once creased, never straightened or duplicated. Trigger frame — Crafty's hand dropping and the suitcase wheel completing its rotation — happens on one synchronized instant. No phone before 12.3s. No tears before the trigger frame. No missed flight, no cancelled trip.
+POSITIVE LOCKS: Crafty's and the father's faces, wardrobe stay 100% identical to @image1 in every shot, including the tease. One single paper heart, permanently bent once creased, never straightened or duplicated. Trigger frame — Crafty's hand dropping and the suitcase wheel completing its rotation — happens on one synchronized instant. No shot is fully static longer than 1.5s. The closing frame visually echoes the 0.0s tease. No phone before 12.0s. No tears before the trigger frame. No missed flight, no cancelled trip.
 ```
 
 ## Публикация в Instagram
@@ -1421,17 +1465,19 @@ A gift from a child is a sentence. It only counts if someone reads it.
 1. Сначала сгенерировать три карты персонажей (`Prompt 0.1–0.3`) один раз и сохранить как референсы — без них лица героев «поплывут» между сценариями.
 2. Прогнать раскадровку (`Prompt A`) в GPT Image 2 с приложенной картой нужного героя, проверить по чек-листу: телефон только в панели 15, слёзы только после триггер-панели (11–13 в зависимости от сценария), предмет-символ не меняет форму сам, локация пустеет к финалу.
 3. Прогнать видео (`Prompt B`) в Seedance 2.0 Pro с раскадровкой как `@image1`, тестировать в 480–720p, финал собирать в 1080p. Kling 3.0 — запасной вариант, если лица/эмоции держатся хуже.
-4. При расхождениях — правка вторым сообщением в тот же чат, а не перегенерация с нуля.
-5. Готовое видео (без текста и музыки со словами) отдать на монтаж: наложить оверлей-хук первых 1.5 сек, трендовый звук под немой SFX-рендер, обложку — кадр до триггера.
-6. Публиковать не чаще одного сценария в 2–3 дня, чередуя героя/локацию, чтобы лента @childfocusai не выглядела монотонной.
-7. В первый час после публикации — оставить закреплённый комментарий-вопрос (указан под каждым сценарием) для стимулирования обсуждения.
+4. **Обязательно проверить сам ролик на удержание до монтажа**: (а) есть ли в кадре 0.0–0.8s нечитаемый быстрый тизер, а не хронологическое начало; (б) нет ли ни одного статичного плана дольше 1.5 секунды без нового события; (в) совпадает ли по композиции последний план с тизером (echo close). Если модель «съела» тизер или сделала его слишком длинным/понятным — перегенерировать этот сегмент отдельным сообщением.
+5. При расхождениях — правка вторым сообщением в тот же чат, а не перегенерация с нуля.
+6. Готовое видео (без текста и музыки со словами) отдать на монтаж: наложить два оверлей-текста (хук на 0–1.5s и ре-хук на 7.5–8.5s), трендовый звук под немой SFX-рендер, обложку — кадр до триггера (не сам тизер).
+7. Публиковать не чаще одного сценария в 2–3 дня, чередуя героя/локацию, чтобы лента @childfocusai не выглядела монотонной.
+8. В первый час после публикации — оставить закреплённый комментарий-вопрос (указан под каждым сценарием) для стимулирования обсуждения.
 
 ## 8. Метрики роста, которые стоит отслеживать по каждому ролику
 
+- **Удержание по секундам (retention curve), особенно на 3–5 секунде** — именно там был провал в предыдущей версии. Если после внедрения `COLD OPEN TEASE` и `CONTINUOUS MOTION RULE` спад на этой отметке сохраняется, следующий шаг — тестово укоротить ролик до 12–13 секунд, урезав `SHOT 3` (публичная маска), а не хук.
 - Досмотр до конца (retention) — главный сигнал алгоритма Reels.
 - Соотношение сохранений к просмотрам (saves/views) — показывает, что тема «болит» и вернутся пересмотреть.
 - Соотношение репостов в директ к просмотрам — показывает узнаваемость («это про нас»).
 - Прирост подписчиков за 48 часов после публикации конкретного ролика — прямой показатель, работает ли CTA на подписку.
 - Комментарии-признания («и у нас так было») — качественный сигнал, что хук и подпись выбрали правильную боль.
 
-По итогам первых 3–4 опубликованных сценариев стоит сравнить эти метрики между историями и в следующей партии сценариев усиливать тот тип хука (физический жест / словесный ярлык / упущенный момент), который дал лучший retention и лучший saves/views.
+По итогам первых 3–4 опубликованных сценариев по новой редакции стоит в первую очередь сравнить кривую удержания на 0–5 секунде с предыдущими роликами. Если провал ушёл — усиливать связку «тизер + плотный монтаж» и в следующей партии. Если провал остался на той же секунде — проблема не в структуре, а в самом крюке: пробовать другой физический хук (жест / словесный ярлык / упущенный момент) для той же локации.
