@@ -104,9 +104,21 @@
 
 ---
 
-## 4. Карты персонажей (Prompt 0) — генерируются один раз
+## 4. Карты персонажей (Prompt 0) — нужны, только если героя ещё не существует
 
-Раньше в v1 сценарии ссылались на «референс героя», но не было промпта, как этот референс собрать. В примере 1 (день рождения) карта персонажа — три вертикальные панели (лицо, тело без головы, тело сзади с головой). Ниже — адаптация этого приёма для трёх стилизованных 3D-героев ChildFocus: не фотореализм, а «кино-3D» уровня фильма, чтобы карта потом одинаково хорошо ложилась и в раскадровку, и в видео.
+**Важное уточнение: если герои уже готовы (финальные 3D-рендеры, уже используются в приложении/материалах), этот шаг полностью пропускается.** Ниже он был добавлен на случай, если герой ещё не создан. Раньше в v1 сценарии ссылались на «референс героя», но не было промпта, как этот референс собрать с нуля — этот раздел закрывает именно этот случай, а не заменяет уже готовый арт.
+
+**Если у вас уже есть готовое изображение героя (как в вашем случае) — используйте его напрямую как `@sunny_ref` / `@truey_ref` / `@crafty_ref`, никакой дополнительной генерации не требуется.** Требования к такому изображению минимальны:
+
+- Персонаж в полный рост, лицом к камере (или близко к нему) — это даёт модели пропорции и общий силуэт.
+- Лицо разборчиво видно (можно не крупным планом, но не в профиль и не спиной).
+- Один и тот же герой на всех изображениях, которые вы используете под одним именем, — если у героя есть несколько версий/нарядов, выбирайте одно каноничное изображение как основной референс.
+
+Фон, свет и обстановка на референсном фото **не имеют значения** и не будут скопированы: во все промпты ниже уже добавлено явное указание брать из референса только лицо/причёску/одежду/пропорции, а фон, свет и посторонних людей на фото — игнорировать. Это специально сделано, чтобы можно было спокойно использовать бытовые фото героя (в коридоре школы, в танцевальной студии и т.д.), а не только чистый студийный рендер.
+
+Что действительно стоит проверить перед стартом — соответствуют ли готовые визуалы героев текстовому описанию в разделе «Герои» ниже (одежда, причёска, аксессуары). Если у вас уже устоявшийся ростер (например, не 3 героя, а больше, или внешность отличается от описанного) — пришлите, какое имя соответствует какому изображению, и я обновлю текстовые описания под реальные референсы, чтобы промпты не противоречили картинке.
+
+Если героя ещё нет и нужно создать его с нуля (стиль «кино-3D», не фотореализм) — используйте промпты ниже. Карта персонажа — три вертикальные панели (лицо, тело без головы, тело сзади с головой), приём взят из примера 1 (день рождения) и адаптирован под стилизованных 3D-героев ChildFocus.
 
 Сгенерировать один раз на каждого героя, сохранить как `@sunny_ref`, `@truey_ref`, `@crafty_ref`, использовать во всех сценариях ниже.
 
@@ -247,7 +259,7 @@ STORY TITLE: "Second Place"
 
 LOCATION MAP: FOREGROUND — a polished wooden gym floor with court markings, a low bench near the wall. MIDGROUND — families and children still in sports uniforms, a scoring area. BACKGROUND — folded bleachers, high windows. Light source: cool daylight from high windows, half the ceiling lights already switched off by the final panels.
 
-CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's face, hair, and proportions. TRUEY: boy 6–8 years old, large brown eyes, warm brown hair styled upward, olive-green zip hoodie over a dark charcoal T-shirt, taupe joggers, white sneakers with green accents, no logos. His performance is subtle: pride, restrained disappointment, private sadness, cautious relief — never theatrical.
+CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. TRUEY: boy 6–8 years old, large brown eyes, warm brown hair styled upward, olive-green zip hoodie over a dark charcoal T-shirt, taupe joggers, white sneakers with green accents, no logos. His performance is subtle: pride, restrained disappointment, private sadness, cautious relief — never theatrical.
 
 FATHER: loving, energetic, slightly tired man, 34–40, short dark hair, light stubble, slate-gray zip jacket, white T-shirt, dark jeans, gray sneakers, sports bag. Identical in every panel. Warm and enthusiastic, never angry or mocking.
 
@@ -370,7 +382,7 @@ STORY TITLE: "One More Minute"
 
 LOCATION MAP: FOREGROUND — a plastic chair and a folding table near the machines. MIDGROUND — a row of front-loading washing machines with mint glow, one other customer folding clothes. BACKGROUND — a black night window. Light source: cold white ceiling light plus mint machine glow, black night outside.
 
-CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's face, hair, and proportions. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, white sneakers, no logos. Performance: hope, patience, restrained disappointment, quiet sadness, cautious relief — never theatrical.
+CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, white sneakers, no logos. Performance: hope, patience, restrained disappointment, quiet sadness, cautious relief — never theatrical.
 
 MOTHER: loving, exhausted woman, 30–36, dark blonde messy low ponytail, oversized gray cardigan, cream T-shirt, faded jeans, flat shoes, carries a laundry basket. Identical in every panel. Tired and kind, never irritated or dismissive.
 
@@ -493,7 +505,7 @@ STORY TITLE: "He Erased Himself"
 
 LOCATION MAP: FOREGROUND — a low table with pictographic toys and the drawing paper. MIDGROUND — waiting chairs with Crafty, his mother, and another mother with her son. BACKGROUND — a water cooler and a corridor. Light source: even clinical daylight, soft and shadowless, slightly cold.
 
-CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's face, glasses, hair, and proportions. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack. Performance: concentration, restrained disappointment, quiet sadness, cautious relief — never theatrical.
+CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's identity — face, glasses, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack. Performance: concentration, restrained disappointment, quiet sadness, cautious relief — never theatrical.
 
 MOTHER: loving, slightly anxious woman, 33–39, dark hair in a low half-updo, beige knit sweater, white blouse collar, dark trousers, loafers, small handbag. Identical in every panel. Warm and social, never cruel or mocking.
 
@@ -618,7 +630,7 @@ STORY TITLE: "The Chocolate Bar"
 
 LOCATION MAP: FOREGROUND — the shopping cart and shelves at hand height. MIDGROUND — long aisles, Sunny and her mother walking. BACKGROUND — a single cashier and the dark exit doors. Light source: cold fluorescent ceiling light, night outside the windows.
 
-CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's face, hair, and proportions. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, white sneakers. Performance: determination, restrained disappointment, quiet sadness, cautious relief — never theatrical.
+CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, blue jeans, white sneakers. Performance: determination, restrained disappointment, quiet sadness, cautious relief — never theatrical.
 
 MOTHER: loving, exhausted woman, 32–38, still in work clothes, dark brown hair in a tight low bun, charcoal coat, plain blouse, straight trousers, low heels, canvas tote in the cart. Identical in every panel. Efficient and tired, never angry or loudly refusing.
 
@@ -741,7 +753,7 @@ STORY TITLE: "He Is Just Scared"
 
 LOCATION MAP: FOREGROUND — the pool edge and wet tiles. MIDGROUND — lane ropes, a shallow and deep section, a coach and children. BACKGROUND — a glass barrier separating a small parents' area. Light source: cool aquamarine indoor pool light with moving water caustics on the ceiling.
 
-CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's face, hair, and proportions. TRUEY: boy 6–8, large brown eyes, warm brown hair styled upward; in the pool plain dark green swim shorts and orange goggles; his hoodie only appears bench-side. Performance: hidden fear, forced confidence, quiet distress, cautious relief — never theatrical.
+CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. TRUEY: boy 6–8, large brown eyes, warm brown hair styled upward; in the pool plain dark green swim shorts and orange goggles; his hoodie only appears bench-side. Performance: hidden fear, forced confidence, quiet distress, cautious relief — never theatrical.
 
 FATHER: loving, energetic man, 34–40, short dark hair, light stubble, gray sports jacket, white T-shirt, dark trousers, towel over his arm. Identical in every panel. Encouraging and warm, never mocking or forcing.
 
@@ -864,7 +876,7 @@ STORY TITLE: "A Ticket for the First Lap"
 
 LOCATION MAP: FOREGROUND — the boards and the rubber-floored walkway. MIDGROUND — the ice rink with skaters. BACKGROUND — distant empty stands, dimming lights toward the end. Light source: cold rink lighting, white ice, blue shadows, dimmed in the final panels.
 
-CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's face, hair, and proportions. SUNNY: girl 5–7, chestnut hair in two low ponytails; on the ice white figure skates and a gray knit hat; her sneakers appear only near the boards. Performance: excitement, concentration, restrained disappointment, quiet sadness, cautious pride — never theatrical.
+CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. SUNNY: girl 5–7, chestnut hair in two low ponytails; on the ice white figure skates and a gray knit hat; her sneakers appear only near the boards. Performance: excitement, concentration, restrained disappointment, quiet sadness, cautious pride — never theatrical.
 
 MOTHER: loving, sociable woman, 32–38, chestnut hair in a loose braid, quilted burgundy coat, gray scarf, dark jeans, winter boots. Identical in every panel. Warm and polite, never angry or dismissive.
 
@@ -989,7 +1001,7 @@ STORY TITLE: "He Wanted to Say It Himself"
 
 LOCATION MAP: FOREGROUND — the barber chair and the mirror. MIDGROUND — a waiting bench, another customer. BACKGROUND — a window with cool daylight. Light source: cool daylight from the shop window, mint tiles, chrome highlights, no warm bulbs.
 
-CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's face, hair, and proportions; his hair starts slightly longer and becomes shorter after the haircut, but face and proportions never change. TRUEY: boy 6–8, large brown eyes, warm brown hair, olive-green hoodie, charcoal T-shirt, taupe joggers, white sneakers, dark barber cape in the chair. Performance: rehearsed courage, restrained disappointment, quiet sadness, cautious confidence — never theatrical.
+CHARACTER REFERENCE: @truey_ref is the only source of truth for Truey's identity — face, hair, outfit, and proportions only; ignore any background, location, lighting, or other people present in the reference image. His hair starts slightly longer and becomes shorter after the haircut, but his face and proportions never change. TRUEY: boy 6–8, large brown eyes, warm brown hair, olive-green hoodie, charcoal T-shirt, taupe joggers, white sneakers, dark barber cape in the chair. Performance: rehearsed courage, restrained disappointment, quiet sadness, cautious confidence — never theatrical.
 
 FATHER: loving, sociable man, 34–40, short dark hair, light stubble, navy overshirt, white T-shirt, dark jeans, brown boots. Identical in every panel. Friendly and confident; his "he's the quiet one" label is affectionate and thoughtless, not hostile.
 
@@ -1114,7 +1126,7 @@ STORY TITLE: "The Crooked Sprout"
 
 LOCATION MAP: FOREGROUND — the wooden potting table with cups and soil. MIDGROUND — other children and parents planting. BACKGROUND — fogged greenhouse glass with condensation. Light source: soft diffused daylight through fogged glass, humid and slightly cool.
 
-CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's face, hair, and proportions. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, jeans, white sneakers; hands dirty from panel 1 until wiped clean, then clean until the final panel where dirty again. Performance: pride, confusion, restrained disappointment, quiet sadness, cautious courage — never theatrical.
+CHARACTER REFERENCE: @sunny_ref is the only source of truth for Sunny's identity — face, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. SUNNY: girl 5–7, chestnut hair in two low ponytails, denim jacket, turquoise sweater, jeans, white sneakers; hands dirty from panel 1 until wiped clean, then clean until the final panel where dirty again. Performance: pride, confusion, restrained disappointment, quiet sadness, cautious courage — never theatrical.
 
 MOTHER: loving, well-organized woman, 32–38, light brown neat ponytail, sage cardigan, white blouse, dark jeans, clean sneakers, a folded cloth in her pocket. Identical in every panel. Caring and helpful; her perfectionism is affectionate, never hostile.
 
@@ -1237,7 +1249,7 @@ STORY TITLE: "The Torn Strap"
 
 LOCATION MAP: FOREGROUND — the platform edge near Crafty and his mother. MIDGROUND — tired commuters, an arriving and departing train. BACKGROUND — the black tunnel. Light source: cold artificial platform light, teal tiles, no warm lamps.
 
-CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's face, glasses, hair, and proportions. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack with a torn strap. Performance: hesitation, protective silence, restrained strain, quiet sadness, cautious relief — never theatrical.
+CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's identity — face, glasses, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack with a torn strap. Performance: hesitation, protective silence, restrained strain, quiet sadness, cautious relief — never theatrical.
 
 MOTHER: loving, deeply exhausted woman, 33–39, dark hair in a loosening low bun, long gray wool coat, black work bag, dark trousers, flat ankle boots. Identical in every panel. Her exhaustion reads as fatigue and stress, never as anger or rejection.
 
@@ -1360,7 +1372,7 @@ STORY TITLE: "The Heart in the Suitcase"
 
 LOCATION MAP: FOREGROUND — Crafty, his father, and the suitcase near the gate. MIDGROUND — the boarding line and rows of seats, emptying over time. BACKGROUND — large windows with aircraft silhouettes. Light source: pale gray-blue morning light through large terminal windows, no warm interior lamps.
 
-CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's face, glasses, hair, and proportions. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack. Performance: hope, brave politeness, quiet sadness, cautious warmth — never theatrical.
+CHARACTER REFERENCE: @crafty_ref is the only source of truth for Crafty's identity — face, glasses, hair, outfit, and proportions only. Ignore any background, location, lighting, or other people present in the reference image; they must not appear or influence this scene. CRAFTY: boy 6–8, round glasses, chestnut hair brushed upward, dark green hoodie with letter "M", brown corduroy trousers, white sneakers, brown leather backpack. Performance: hope, brave politeness, quiet sadness, cautious warmth — never theatrical.
 
 FATHER: loving, preoccupied man, 34–40, dressed for business travel, short dark hair, light stubble, dark gray wool coat, light blue shirt, navy trousers, dark leather shoes, charcoal cabin suitcase, plain unmarked travel card. Identical in every panel. Warm and rushed, never cold or dismissive on purpose.
 
