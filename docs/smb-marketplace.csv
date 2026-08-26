@@ -1,399 +1,439 @@
 ﻿key;ru;en;zh
-smb-mkp.common.calculateBtn;Рассчитать стоимость;-;-
-smb-mkp.common.addToBasketBtn;Добавить в корзину;-;-
-smb-mkp.common.saveBtn;Сохранить;-;-
-smb-mkp.common.fields.city;Город размещения;-;-
-smb-mkp.common.fields.period;Период размещения;-;-
-smb-mkp.common.fields.category;Категория;-;-
-smb-mkp.common.fields.impressions;Количество показов;-;-
-smb-mkp.common.fields.duration;Длительность;-;-
-smb-mkp.common.fields.budget;Бюджет;-;-
-smb-mkp.common.fields.selectedStations;Выбранные станции;-;-
-smb-mkp.common.fields.selectedChannels;Выбранные каналы;-;-
-smb-mkp.common.fields.surfacesTotal;Всего поверхностей;-;-
-smb-mkp.common.fields.spotsTotal;Всего выходов;-;-
-smb-mkp.common.fields.avgCost;Средняя ставка;-;-
-smb-mkp.common.fields.analyticsPeriod;Период отчёта;-;-
-smb-mkp.common.fields.format;Формат;-;-
-smb-mkp.common.fields.mediaTypes;Типы медиа;-;-
-smb-mkp.common.fields.subscriptionPeriod;Срок подписки;-;-
-smb-mkp.common.fields.numberOfUsers;Количество пользователей;-;-
-smb-mkp.common.fields.numberOfCalculations;Количество расчетов;-;-
-smb-mkp.common.fields.tokensCount;Количество токенов;-;-
-smb-mkp.common.fields.telegramBots;Телеграм-боты;-;-
-smb-mkp.common.fields.reportCost;Стоимость отчёта;-;-
-smb-mkp.common.fields.subscriptionCost;Стоимость подписки;-;-
-smb-mkp.common.fields.costPerMonth;Стоимость в месяц;-;-
-smb-mkp.common.fields.tariff;Тариф;-;-
-smb-mkp.common.fields.packetGoal;Цель;-;-
-smb-mkp.common.fields.packet;Пакет;-;-
-smb-mkp.common.weekDays.mon.short;Пн;-;-
-smb-mkp.common.weekDays.tue.short;Вт;-;-
-smb-mkp.common.weekDays.wed.short;Ср;-;-
-smb-mkp.common.weekDays.thu.short;Чт;-;-
-smb-mkp.common.weekDays.fri.short;Пт;-;-
-smb-mkp.common.weekDays.sat.short;Сб;-;-
-smb-mkp.common.weekDays.sun.short;Вс;-;-
-smb-mkp.errorMessages.regionRequired;Пожалуйста, укажите город;-;-
-smb-mkp.errorMessages.categoryRequired;Пожалуйста, укажите категорию;-;-
-smb-mkp.errorMessages.periodRequired;Пожалуйста, укажите период;-;-
-smb-mkp.errorMessages.periodStartMin;Дата начала не может быть ранее {date};- {date};- {date}
-smb-mkp.errorMessages.periodStartMax;Дата начала не может быть позднее {date};- {date};- {date}
-smb-mkp.errorMessages.periodEndMax;Дата окончания не может быть позднее {date};- {date};- {date}
-smb-mkp.errorMessages.minBudget;Минимальный бюджет {value};- {value};- {value}
-smb-mkp.errorMessages.durationRequired;Пожалуйста, укажите длину ролика;-;-
-smb-mkp.errorMessages.subscriptionPeriodRequired;Пожалуйста, укажите срок подписки;-;-
-smb-mkp.errorMessages.calculateDataRequired;Пожалуйста, укажите все данные, чтобы мы могли рассчитать стоимость;-;-
-smb-mkp.errorMessages.invalidDurationRange;Длина ролика должна быть не менее {min} и не более {max} сек.;- {min} - {max} -;- {min} - {max} -
-smb-mkp.pluralForms.month.one;месяц;-;-
-smb-mkp.pluralForms.month.few;месяца;-;-
-smb-mkp.pluralForms.month.many;месяцев;-;-
-smb-mkp.pluralForms.second.one;секунда;-;-
-smb-mkp.pluralForms.second.few;секунды;-;-
-smb-mkp.pluralForms.second.many;секунд;-;-
-smb-mkp.pluralForms.bot.one;бот;-;-
-smb-mkp.pluralForms.bot.few;бота;-;-
-smb-mkp.pluralForms.bot.many;ботов;-;-
-smb-mkp.composables.calculators.durationSeconds;{value} сек.;{value} -;{value} -
-smb-mkp.composables.calculators.summary.region;Регион размещения;-;-
-smb-mkp.composables.calculators.summary.category;Категория продукта;-;-
-smb-mkp.composables.calculators.summary.dates;Даты размещения;-;-
-smb-mkp.composables.calculators.summary.duration;Длина ролика;-;-
-smb-mkp.composables.calculators.summary.spotsTotal;Всего выходов;-;-
-smb-mkp.composables.calculators.summary.subscriptionPeriod;Срок подписки;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.tv;TV;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.radio;Радио;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.dooh;DOOH;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.press;Пресса;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.olv;OLV;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.telegram;Телеграм;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.ooh;OOH;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.summary.period;Период отчёта;-;-
-smb-mkp.composables.calculators.useAnalyticsCalculator.summary.mediaTypes;Типы медиа;-;-
-smb-mkp.composables.calculators.useAOneCalculator.errorMessages.tokensCountRequired;Пожалуйста, укажите количество токенов;-;-
-smb-mkp.composables.calculators.useBOneTvpCalculator.summary.budget;Бюджет;-;-
-smb-mkp.composables.calculators.useBOneTvpCalculator.errorMessages.budgetRequired;Пожалуйста, укажите бюджет;-;-
-smb-mkp.composables.calculators.useDataHubbleCalculator.errorMessages.dataVolumeRequired;Пожалуйста, укажите объем данных;-;-
-smb-mkp.composables.calculators.useDoohCalculator.summary.selectedChannels;Всего поверхностей;-;-
-smb-mkp.composables.calculators.useDoohCalculator.summary.avgCost;Средняя ставка;-;-
-smb-mkp.composables.calculators.useDoohCalculator.summary.impressions;Кол-во показов;-;-
-smb-mkp.composables.calculators.useDoohCalculator.errorMessages.minBudget;Минимальный бюджет {value};- {value};- {value}
-smb-mkp.composables.calculators.useDoohCalculator.errorMessages.formatsRequired;Пожалуйста, укажите хотя бы один формат;-;-
-smb-mkp.composables.calculators.useDoohCalculator.errorMessages.selectedChannelsRequired;Пожалуйста, выберите хотя бы одну поверхность;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.format;Формат;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.size;Размер;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.ots.title;OTS;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.ots.description;OTS — (Opportunity To See) — количество контактов, полученных в ходе рекламной компании;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.grp.title;GRP;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.grp.description;GRP (Gross Rating Point) — это показатель, который используется для оценки охвата и частоты показов наружной рекламы;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.cost;Цена;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.title;Разрешено/Запрещено;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.allowed;Разрешено;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.forbidden;Запрещено;-;-
-smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsSearch.notifications.addressNotFound;Адрес не удалось найти;-;-
-smb-mkp.composables.calculators.useImpressionsCalculator.summary.impressions;Количество показов;-;-
-smb-mkp.composables.calculators.useImpressionsCalculator.errorMessages.minImpressions;Минимум {count} показов;- {count} -;- {count} -
-smb-mkp.composables.calculators.usePacketCalculator.summary.goal;Цель;-;-
-smb-mkp.composables.calculators.usePacketCalculator.summary.packet;Пакет;-;-
-smb-mkp.composables.calculators.usePrometheusCalculator.errorMessages.minTelegramBots;Минимум: {value};- {value};- {value}
-smb-mkp.composables.calculators.useRadioCalculator.summary.selectedStations;Станций;-;-
-smb-mkp.composables.calculators.useRadioCalculator.errorMessages.scheduleRequired;Пожалуйста, заполните выходы в эфир;-;-
-smb-mkp.composables.calculators.useRadioCalculator.strategies.max.label;Прайм Тайм;-;-
+smb-mkp.common.calculateBtn;Рассчитать стоимость;Calculate Price;计算价格
+smb-mkp.common.addToBasketBtn;Добавить в корзину;Add to cart;加入购物车
+smb-mkp.common.saveBtn;Сохранить;Save;保存
+smb-mkp.common.fields.city;Город размещения;City of stay;入住城市
+smb-mkp.common.fields.period;Период размещения;Stay dates;入住日期
+smb-mkp.common.fields.category;Категория;Category;房型
+smb-mkp.common.fields.impressions;Количество показов;Number of views;浏览次数
+smb-mkp.common.fields.duration;Длительность;Duration;时长
+smb-mkp.common.fields.budget;Бюджет;Budget;预算
+smb-mkp.common.fields.selectedStations;Выбранные станции;Selected stations;已选车站
+smb-mkp.common.fields.selectedChannels;Выбранные каналы;Selected Channels;已选频道
+smb-mkp.common.fields.surfacesTotal;Всего поверхностей;Total advertising spaces;广告位总数
+smb-mkp.common.fields.spotsTotal;Всего выходов;Total Outputs;总播出量
+smb-mkp.common.fields.avgCost;Средняя ставка;Average rate;平均费率
+smb-mkp.common.fields.analyticsPeriod;Период отчёта;Reporting period;报告期
+smb-mkp.common.fields.format;Формат;Format;格式
+smb-mkp.common.fields.mediaTypes;Типы медиа;Media types;媒体类型
+smb-mkp.common.fields.subscriptionPeriod;Срок подписки;Subscription period;订阅期
+smb-mkp.common.fields.numberOfUsers;Количество пользователей;Number of users;用户数量
+smb-mkp.common.fields.numberOfCalculations;Количество расчетов;Number of calculations;计算次数
+smb-mkp.common.fields.tokensCount;Количество токенов;Number of tokens;代币数量
+smb-mkp.common.fields.telegramBots;Телеграм-боты;Telegram bots;Telegram 机器人
+smb-mkp.common.fields.reportCost;Стоимость отчёта;Report cost;报告费用
+smb-mkp.common.fields.subscriptionCost;Стоимость подписки;Subscription cost;订阅费用
+smb-mkp.common.fields.costPerMonth;Стоимость в месяц;Monthly cost;月费
+smb-mkp.common.fields.tariff;Тариф;Plan;套餐
+smb-mkp.common.fields.packetGoal;Цель;Purpose;用途
+smb-mkp.common.fields.packet;Пакет;Plan;套餐
+smb-mkp.common.weekDays.mon.short;Пн;Mon;周一
+smb-mkp.common.weekDays.tue.short;Вт;Tue;周二
+smb-mkp.common.weekDays.wed.short;Ср;Wed;周三
+smb-mkp.common.weekDays.thu.short;Чт;Thu;周四
+smb-mkp.common.weekDays.fri.short;Пт;Fri;周五
+smb-mkp.common.weekDays.sat.short;Сб;Sat;周六
+smb-mkp.common.weekDays.sun.short;Вс;Sun;周日
+smb-mkp.errorMessages.regionRequired;Пожалуйста, укажите город;Please select a city;请选择一个城市
+smb-mkp.errorMessages.categoryRequired;Пожалуйста, укажите категорию;Please select a category;请选择类别
+smb-mkp.errorMessages.periodRequired;Пожалуйста, укажите период;Please specify the period;请指定时间段
+smb-mkp.errorMessages.periodStartMin;Дата начала не может быть ранее {date};The start date cannot be earlier than {date};开始日期不能早于 {date}
+smb-mkp.errorMessages.periodStartMax;Дата начала не может быть позднее {date};The start date cannot be later than {date};开始日期不能晚于 {date}
+smb-mkp.errorMessages.periodEndMax;Дата окончания не может быть позднее {date};The end date cannot be later than {date};结束日期不能晚于 {date}
+smb-mkp.errorMessages.minBudget;Минимальный бюджет {value};Minimum budget {value};最低预算 {value}
+smb-mkp.errorMessages.durationRequired;Пожалуйста, укажите длину ролика;Please specify the video length;请指定视频时长
+smb-mkp.errorMessages.subscriptionPeriodRequired;Пожалуйста, укажите срок подписки;Please specify the subscription term;请指定订阅期限
+smb-mkp.errorMessages.calculateDataRequired;Пожалуйста, укажите все данные, чтобы мы могли рассчитать стоимость;Please provide all the details so we can calculate the cost;请提供所有详细信息，以便我们计算费用
+smb-mkp.errorMessages.invalidDurationRange;Длина ролика должна быть не менее {min} и не более {max} сек.;The video must be at least {min} and no more than {max} seconds long.;视频时长必须至少为 {min} 秒，且不得超过 {max} 秒。
+smb-mkp.pluralForms.month.one;месяц;month;月
+smb-mkp.pluralForms.month.few;месяца;month;月
+smb-mkp.pluralForms.month.many;месяцев;months;个月
+smb-mkp.pluralForms.second.one;секунда;second;秒
+smb-mkp.pluralForms.second.few;секунды;seconds;秒
+smb-mkp.pluralForms.second.many;секунд;seconds;秒
+smb-mkp.pluralForms.bot.one;бот;bot;bot
+smb-mkp.pluralForms.bot.few;бота;bot;bot
+smb-mkp.pluralForms.bot.many;ботов;bots;机器人
+smb-mkp.composables.calculators.durationSeconds;{value} сек.;{value} sec.;{value} 秒
+smb-mkp.composables.calculators.summary.region;Регион размещения;Location;位置
+smb-mkp.composables.calculators.summary.category;Категория продукта;Product category;产品类别
+smb-mkp.composables.calculators.summary.dates;Даты размещения;Advertising Dates;广告投放日期
+smb-mkp.composables.calculators.summary.duration;Длина ролика;Video Length;视频时长
+smb-mkp.composables.calculators.summary.spotsTotal;Всего выходов;Total Outputs;总播出量
+smb-mkp.composables.calculators.summary.subscriptionPeriod;Срок подписки;Subscription period;订阅期
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.tv;TV;TV;电视
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.radio;Радио;Radio;广播
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.dooh;DOOH;DOOH;数字户外广告（DOOH）
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.press;Пресса;Print;印刷媒体
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.olv;OLV;OLV;OLV
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.telegram;Телеграм;Telegram;Telegram
+smb-mkp.composables.calculators.useAnalyticsCalculator.mediaTypes.ooh;OOH;OOH;户外广告
+smb-mkp.composables.calculators.useAnalyticsCalculator.summary.period;Период отчёта;Reporting period;报告期
+smb-mkp.composables.calculators.useAnalyticsCalculator.summary.mediaTypes;Типы медиа;Media types;媒体类型
+smb-mkp.composables.calculators.useAOneCalculator.errorMessages.tokensCountRequired;Пожалуйста, укажите количество токенов;Please specify the number of tokens;请指定代币数量
+smb-mkp.composables.calculators.useBOneTvpCalculator.summary.budget;Бюджет;Budget;预算
+smb-mkp.composables.calculators.useBOneTvpCalculator.errorMessages.budgetRequired;Пожалуйста, укажите бюджет;Please specify your budget;请指定您的预算
+smb-mkp.composables.calculators.useDataHubbleCalculator.errorMessages.dataVolumeRequired;Пожалуйста, укажите объем данных;Please specify the data volume;请指定数据量
+smb-mkp.composables.calculators.useDoohCalculator.summary.selectedChannels;Всего поверхностей;Total advertising spaces;广告位总数
+smb-mkp.composables.calculators.useDoohCalculator.summary.avgCost;Средняя ставка;Average rate;平均费率
+smb-mkp.composables.calculators.useDoohCalculator.summary.impressions;Кол-во показов;Number of impressions;展示次数
+smb-mkp.composables.calculators.useDoohCalculator.errorMessages.minBudget;Минимальный бюджет {value};Minimum budget {value};最低预算 {value}
+smb-mkp.composables.calculators.useDoohCalculator.errorMessages.formatsRequired;Пожалуйста, укажите хотя бы один формат;Please select at least one format;请至少选择一种广告形式
+smb-mkp.composables.calculators.useDoohCalculator.errorMessages.selectedChannelsRequired;Пожалуйста, выберите хотя бы одну поверхность;Please select at least one ad placement;请至少选择一个广告位
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.format;Формат;Format;格式
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.size;Размер;Size;尺寸
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.ots.title;OTS;OTS;OTS
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.ots.description;OTS — (Opportunity To See) — количество контактов, полученных в ходе рекламной компании;OTS (Opportunity To See) — the number of impressions generated during an advertising campaign;OTS（Opportunity To See，即“曝光机会”）——广告活动期间产生的展示次数
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.grp.title;GRP;GRP;GRP
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.grp.description;GRP (Gross Rating Point) — это показатель, который используется для оценки охвата и частоты показов наружной рекламы;GRP (Gross Rating Point) is a metric used to measure the reach and frequency of outdoor advertising;GRP（总收视点）是用于衡量户外广告覆盖率和频次的指标
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.cost;Цена;Price;价格
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.title;Разрешено/Запрещено;Allowed/Prohibited;允许/禁止
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.allowed;Разрешено;Allowed;允许
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsFilters.isSelected.forbidden;Запрещено;Prohibited;禁止
+smb-mkp.composables.calculators.useDoohCalculator.useDoohChannelsSearch.notifications.addressNotFound;Адрес не удалось найти;Address not found;未找到该地址
+smb-mkp.composables.calculators.useImpressionsCalculator.summary.impressions;Количество показов;Number of views;浏览次数
+smb-mkp.composables.calculators.useImpressionsCalculator.errorMessages.minImpressions;Минимум {count} показов;Minimum {count} views;至少 {count} 次浏览
+smb-mkp.composables.calculators.usePacketCalculator.summary.goal;Цель;Purpose;用途
+smb-mkp.composables.calculators.usePacketCalculator.summary.packet;Пакет;Plan;套餐
+smb-mkp.composables.calculators.usePrometheusCalculator.errorMessages.minTelegramBots;Минимум: {value};Minimum: {value};最低：{value}
+smb-mkp.composables.calculators.useRadioCalculator.summary.selectedStations;Станций;Stations;电台
+smb-mkp.composables.calculators.useRadioCalculator.errorMessages.scheduleRequired;Пожалуйста, заполните выходы в эфир;Please fill in the airtime slots;请填写播出时段
+smb-mkp.composables.calculators.useRadioCalculator.strategies.max.label;Прайм Тайм;Prime Time;黄金时段
 smb-mkp.composables.calculators.useRadioCalculator.strategies.max.description;"По одному выходу в самые прослушиваемые часы на радио
 Будни: с 8 до 10 и с 17 до 20
-Выходные: с 11 до 16";-;-
-smb-mkp.composables.calculators.useRadioCalculator.strategies.min.label;Бюджетная;-;-
+Выходные: с 11 до 16";"One spot during the radio’s peak listening hours
+Weekdays: 8 a.m. to 10 a.m. and 5 p.m. to 8 p.m.
+Weekends: 11 a.m. to 4 p.m.";"在电台收听高峰时段播放一个广告位
+工作日：上午8点至10点，下午5点至8点
+周末：上午11点至下午4点"
+smb-mkp.composables.calculators.useRadioCalculator.strategies.min.label;Бюджетная;Budget;预算
 smb-mkp.composables.calculators.useRadioCalculator.strategies.min.description;"По одному выходу в самые недорогие часы на радио
 Будни: с 7 до 8 и с 20 до 22
-Выходные: с 7 до 9 и с 21 до 22";-;-
-smb-mkp.composables.calculators.useRadioCalculator.strategies.custom.label;Своя сетка;-;-
-smb-mkp.composables.calculators.useRadioCalculator.strategies.custom.description;График выходов, настраиваемый вручную;-;-
-smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestPrice;Лучшая цена;-;-
-smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestReach;Лучший охват;-;-
-smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestRating;Лучший рейтинг;-;-
-smb-mkp.composables.calculators.useRadioCalculator.sortBy.cheapestFirst;Сначала дешевле;-;-
-smb-mkp.composables.calculators.useRadioCalculator.sortBy.expensiveFirst;Сначала дороже;-;-
-smb-mkp.composables.calculators.useRadioCalculator.sortBy.highestRatingFirst;Сначала выше рейтинг;-;-
-smb-mkp.composables.calculators.useRadioCalculator.sortBy.lowestRatingFirst;Сначала ниже рейтинг;-;-
-smb-mkp.composables.calculators.useTvRegionalCalculator.summary.selectedChannels;Каналов;-;-
-smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelBudget;Бюджет канала {channel} не может быть меньше {value};- {channel} - {value};- {channel} - {value}
-smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelDailySpot;Выходы в день канала {channel} не может быть меньше {value};- {channel} - {value};- {channel} - {value}
-smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelTrp;TRP канала {channel} не может быть меньше {value};- {channel} - {value};- {channel} - {value}
-smb-mkp.composables.calculators.useTvRegionalCalculator.metrics.budget;Бюджет;-;-
-smb-mkp.composables.calculators.useTvRegionalCalculator.metrics.dailySpot;Выходы в день;-;-
-smb-mkp.composables.calculators.useTvRegionalCalculator.sortBy.cheapestFirst;Сначала дешевле;-;-
-smb-mkp.composables.calculators.useTvRegionalCalculator.sortBy.expensiveFirst;Сначала дороже;-;-
-smb-mkp.composables.calculators.useVOneCalculator.summary.numberOfUsers;Количество пользователей;-;-
-smb-mkp.composables.calculators.useVOneCalculator.summary.numberOfCalculations;Количество расчетов;-;-
-smb-mkp.composables.calculators.useVOneCalculator.errorMessages.minNumberOfUsers;Минимальное количество пользователей {count};- {count};- {count}
-smb-mkp.composables.useGetBudgetDisplay.minType;от {value};- {value};- {value}
-smb-mkp.components.smbMarketplaceCatalog.searchField.placeholder;Например: Реклама на радио;-;-
-smb-mkp.components.smbMarketplaceCatalog.regionField.label;Регион;-;-
-smb-mkp.components.smbMarketplaceCatalog.mediaTypeField.label;Тип медиа;-;-
-smb-mkp.components.smbMarketplaceCatalog.searchResultsTitle;Результаты поиска по запросу;-;-
-smb-mkp.components.smbMarketplaceCatalog.states.loading.title;Загружаем результаты, пожалуйста подождите;-;-
-smb-mkp.components.smbMarketplaceCatalog.states.loading.subtitle;Поиск может занять до нескольких минут;-;-
-smb-mkp.components.smbMarketplaceCatalog.smbMarketplaceCatalogCategory.collapseBtn;Скрыть;-;-
-smb-mkp.components.smbMarketplaceCatalog.smbMarketplaceCatalogCategory.expandBtn;Показать все;-;-
-smb-mkp.components.smbMarketplaceOrderSuccess.title;Ваш заказ был сформирован;-;-
-smb-mkp.components.smbMarketplaceOrderSuccess.description;Мы свяжемся с вами в ближайшее время для подтверждения информации и формирования Медиаплана;-;-
-smb-mkp.components.smbMarketplaceOrderSuccess.descriptionSecondary;А пока вы можете войти на платформу SAMBA — это будет необходимо для дальнейшей работы с Рекламной кампанией;-;-
-smb-mkp.components.smbMarketplaceOrderSuccess.ordersBtn;Перейти к заказам;-;-
-smb-mkp.components.smbMarketplaceOrderSuccess.homeBtn;Вернуться к покупкам;-;-
-smb-mkp.components.smbMarketplaceProductCard.minBudget;от {budget};- {budget};- {budget}
-smb-mkp.components.smbMarketplaceRecommendedProducts.title;Может быть интересно;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.totalBudget;Суммарный бюджет;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.withoutVat;до НДС;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.vat;Сумма НДС;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.totalBudgetWithVat;Суммарный бюджет с НДС;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.emptyDescription;Вы можете добавить медиа в корзину, чтобы перейти к оформлению;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.nameField.title;Имя;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.nameField.placeholder;Укажите ваше имя;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.promoCodeField.title;Промокод;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.promoCodeField.placeholder;Введите промокод;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.submitBtn;Отправить заказ;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.chooseMediaBtn;Выбрать медиа;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.signInBtn;Войти для заказа;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItems.states.empty;Корзина пуста. Пожалуйста, добавьте медиа, чтобы продолжить;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.fillDataBtn;Заполнить данные;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.editBtn;Редактировать;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.collapseBtn;Скрыть;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.showMoreBtn;Показать больше;-;-
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.hoursMinutesSeconds;{hours}ч {minutes}м {seconds}с;{hours} - {minutes} - {seconds} -;{hours} - {minutes} - {seconds} -
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.minutesSeconds;{minutes}м {seconds}с;{minutes} - {seconds} -;{minutes} - {seconds} -
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.seconds;{seconds} сек.;{seconds} -;{seconds} -
-smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.emptyValueTooltip;Необходимо заполнить данные;-;-
-smb-mkp.components.smbMarketplaceProduct.editTitle;Редактирование «{title}»;- {title} -;- {title} -
-smb-mkp.components.smbMarketplaceProduct.backToBasketBtn;Вернуться в корзину;-;-
-smb-mkp.components.smbMarketplaceProduct.downloadReportExampleBtn;Скачать пример отчета;-;-
-smb-mkp.components.smbMarketplaceProduct.subscriptionPeriodMonths;{value} мес.;{value} -;{value} -
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.minBudget;Минимальный бюджет;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.description;О продукте;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.audience;Аудитория;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.audienceSize;{count} уникальных пользователей в месяц по всей России;{count} -;{count} -
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.adFormats;Форматы рекламы;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.targetings;Возможность настроить таргеты;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.male;М;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.female;Ж;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.all;М/Ж;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.title;Готовые{mobileLineBreak}стратегии;- {mobileLineBreak} -;- {mobileLineBreak} -
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.chip;для вашего бизнеса;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.imgAlt;ТВ и Digital TV;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.selectStrategyBtn;Подобрать стратегию;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.getTermsBtn;Получить условия;-;-
-smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductFaq.title;Вопросы и ответы;-;-
-smb-mkp.components.modals.individualConditionsModal.title;Запрос индивидуальных условий;-;-
-smb-mkp.components.modals.individualConditionsModal.nameField.title;Имя;-;-
-smb-mkp.components.modals.individualConditionsModal.nameField.placeholder;Как вас зовут?;-;-
-smb-mkp.components.modals.individualConditionsModal.contactMethodField.title;Как с вами связаться?;-;-
-smb-mkp.components.modals.individualConditionsModal.phoneField.placeholder;Номер телефона;-;-
-smb-mkp.components.modals.individualConditionsModal.phoneField.placeholderWithMethod;Номер телефона в {method};- {method};- {method}
-smb-mkp.components.modals.individualConditionsModal.commentField.placeholder;Укажите свои пожелания (опционально);-;-
-smb-mkp.components.modals.individualConditionsModal.policyAcceptField.label;Я даю согласие на обработку своих персональных данных и соглашаюсь с {policyLink};- {policyLink};- {policyLink}
-smb-mkp.components.modals.individualConditionsModal.policyAcceptField.policyLink;политикой конфиденциальности;-;-
-smb-mkp.components.modals.individualConditionsModal.policyAcceptField.error;Подтвердите согласие с политикой конфиденциальности;-;-
-smb-mkp.components.modals.individualConditionsModal.submitBtn;Отправить заявку;-;-
-smb-mkp.components.calculators.fields.regionField.title;Город размещения;-;-
-smb-mkp.components.calculators.fields.regionField.placeholder;Регион;-;-
-smb-mkp.components.calculators.fields.periodField.title;Период размещения;-;-
-smb-mkp.components.calculators.fields.periodField.selectedDays;Выбрано дней:;-;-
-smb-mkp.components.calculators.fields.categoryField.title;Категория продукта;-;-
-smb-mkp.components.calculators.fields.categoryField.placeholder;Выберите категорию;-;-
-smb-mkp.components.calculators.fields.subscriptionPeriodField.title;Срок подписки;-;-
-smb-mkp.components.calculators.fields.expectedBudgetField.title;Ожидаемый бюджет;-;-
-smb-mkp.components.calculators.fields.expectedBudgetField.placeholder;В рублях;-;-
-smb-mkp.components.calculators.summary.noDataTextCommon;Пожалуйста, настройте параметры размещения для того, чтобы увидеть расчет стоимости;-;-
-smb-mkp.components.calculators.summary.noDataTextAlt;Пожалуйста, настройте параметры размещения для того, чтобы увидеть расчет стоимости;-;-
-smb-mkp.components.calculators.calculatorSummaryBase.discount;Скидка {percent};- {percent};- {percent}
-smb-mkp.components.calculators.calculatorSummaryBase.priceTitle;Бюджет до НДС;-;-
-smb-mkp.components.calculators.calculatorSummaryBase.chatBtn;Есть вопрос? Спросить в чате;-;-
-smb-mkp.components.calculators.individualConditionsRequest.title;Нужны индивидуальные условия?;-;-
-smb-mkp.components.calculators.individualConditionsRequest.requestBtn;Запросить индивидуальные условия;-;-
+Выходные: с 7 до 9 и с 21 до 22";"One spot during the least expensive radio hours
+Weekdays: 7–8 a.m. and 8–10 p.m.
+Weekends: 7 a.m. to 9 a.m. and 9 p.m. to 10 p.m.";"在广播费用最低时段播放一个广告
+工作日：上午7点至8点，晚上8点至10点
+周末：上午7点至9点，以及晚上9点至10点"
+smb-mkp.composables.calculators.useRadioCalculator.strategies.custom.label;Своя сетка;Custom schedule;自定义排期
+smb-mkp.composables.calculators.useRadioCalculator.strategies.custom.description;График выходов, настраиваемый вручную;Manually customizable broadcast schedule;可手动自定义的播出时间表
+smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestPrice;Лучшая цена;Best price;最优惠价格
+smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestReach;Лучший охват;Best reach;最佳覆盖率
+smb-mkp.composables.calculators.useRadioCalculator.stationTags.bestRating;Лучший рейтинг;Best rating;最佳收视率
+smb-mkp.composables.calculators.useRadioCalculator.sortBy.cheapestFirst;Сначала дешевле;Cheapest first;从最便宜开始
+smb-mkp.composables.calculators.useRadioCalculator.sortBy.expensiveFirst;Сначала дороже;Most Expensive First;最贵优先
+smb-mkp.composables.calculators.useRadioCalculator.sortBy.highestRatingFirst;Сначала выше рейтинг;Highest rating first;评分最高优先
+smb-mkp.composables.calculators.useRadioCalculator.sortBy.lowestRatingFirst;Сначала ниже рейтинг;Sort by lowest rating first;按评分从低到高排序
+smb-mkp.composables.calculators.useTvRegionalCalculator.summary.selectedChannels;Каналов;Channels;频道
+smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelBudget;Бюджет канала {channel} не может быть меньше {value};The budget for channel {channel} cannot be less than {value};频道 {channel} 的预算不得低于 {value}
+smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelDailySpot;Выходы в день канала {channel} не может быть меньше {value};The number of daily airings for channel {channel} cannot be less than {value};频道 {channel} 的每日播出次数不得少于 {value}
+smb-mkp.composables.calculators.useTvRegionalCalculator.errorMessages.minChannelTrp;TRP канала {channel} не может быть меньше {value};The TRP for channel {channel} cannot be less than {value};频道 {channel} 的 TRP 不得低于 {value}
+smb-mkp.composables.calculators.useTvRegionalCalculator.metrics.budget;Бюджет;Budget;预算
+smb-mkp.composables.calculators.useTvRegionalCalculator.metrics.dailySpot;Выходы в день;Daily Impressions;每日展示量
+smb-mkp.composables.calculators.useTvRegionalCalculator.sortBy.cheapestFirst;Сначала дешевле;Cheapest first;从最便宜开始
+smb-mkp.composables.calculators.useTvRegionalCalculator.sortBy.expensiveFirst;Сначала дороже;Most Expensive First;最贵优先
+smb-mkp.composables.calculators.useVOneCalculator.summary.numberOfUsers;Количество пользователей;Number of users;用户数量
+smb-mkp.composables.calculators.useVOneCalculator.summary.numberOfCalculations;Количество расчетов;Number of calculations;计算次数
+smb-mkp.composables.calculators.useVOneCalculator.errorMessages.minNumberOfUsers;Минимальное количество пользователей {count};Minimum number of users {count};最小用户数 {count}
+smb-mkp.composables.useGetBudgetDisplay.minType;от {value};from {value};起 {value}
+smb-mkp.components.smbMarketplaceCatalog.searchField.placeholder;Например: Реклама на радио;For example: Radio advertising;例如：广播广告
+smb-mkp.components.smbMarketplaceCatalog.regionField.label;Регион;Region;地区
+smb-mkp.components.smbMarketplaceCatalog.mediaTypeField.label;Тип медиа;Media type;媒体类型
+smb-mkp.components.smbMarketplaceCatalog.searchResultsTitle;Результаты поиска по запросу;Search results for this query;此查询的搜索结果
+smb-mkp.components.smbMarketplaceCatalog.states.loading.title;Загружаем результаты, пожалуйста подождите;Loading results, please wait;正在加载结果，请稍候
+smb-mkp.components.smbMarketplaceCatalog.states.loading.subtitle;Поиск может занять до нескольких минут;The search may take up to a few minutes;搜索可能需要几分钟时间
+smb-mkp.components.smbMarketplaceCatalog.smbMarketplaceCatalogCategory.collapseBtn;Скрыть;Hide;隐藏
+smb-mkp.components.smbMarketplaceCatalog.smbMarketplaceCatalogCategory.expandBtn;Показать все;Show all;显示全部
+smb-mkp.components.smbMarketplaceOrderSuccess.title;Ваш заказ был сформирован;Your order has been created;您的订单已创建
+smb-mkp.components.smbMarketplaceOrderSuccess.description;Мы свяжемся с вами в ближайшее время для подтверждения информации и формирования Медиаплана;We will contact you shortly to confirm the details and create a media plan;我们将尽快与您联系，以确认详细信息并制定媒体计划
+smb-mkp.components.smbMarketplaceOrderSuccess.descriptionSecondary;А пока вы можете войти на платформу SAMBA — это будет необходимо для дальнейшей работы с Рекламной кампанией;In the meantime, you can log in to the SAMBA platform—this will be necessary to continue working on your advertising campaign;在此期间，您可以登录 SAMBA 平台——这是继续推进您的广告活动所必需的
+smb-mkp.components.smbMarketplaceOrderSuccess.ordersBtn;Перейти к заказам;Go to Orders;前往“订单”
+smb-mkp.components.smbMarketplaceOrderSuccess.homeBtn;Вернуться к покупкам;Return to shopping;返回购物
+smb-mkp.components.smbMarketplaceProductCard.minBudget;от {budget};from {budget};预算为 {budget}
+smb-mkp.components.smbMarketplaceRecommendedProducts.title;Может быть интересно;You Might Be Interested In;您可能感兴趣
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.totalBudget;Суммарный бюджет;Total budget;总预算
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.withoutVat;до НДС;excluding VAT;不含增值税
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.vat;Сумма НДС;VAT amount;增值税金额
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.totalBudgetWithVat;Суммарный бюджет с НДС;Total budget including VAT;含增值税的总预算
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.emptyDescription;Вы можете добавить медиа в корзину, чтобы перейти к оформлению;You can add media to your cart to proceed to checkout;您可以将媒体添加到购物车，然后进入结账
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.nameField.title;Имя;Name;姓名
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.nameField.placeholder;Укажите ваше имя;Enter your name;请输入您的姓名
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.promoCodeField.title;Промокод;Promo Code;优惠码
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.promoCodeField.placeholder;Введите промокод;Enter a promo code;请输入优惠码
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.submitBtn;Отправить заказ;Submit Order;提交订单
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.chooseMediaBtn;Выбрать медиа;Select media;选择媒体
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketInfoPanel.signInBtn;Войти для заказа;Log in to place an order;登录下单
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItems.states.empty;Корзина пуста. Пожалуйста, добавьте медиа, чтобы продолжить;Your cart is empty. Please add media to continue;您的购物车为空。请添加媒体以继续
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.fillDataBtn;Заполнить данные;Fill in your details;填写您的详细信息
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.editBtn;Редактировать;Edit;编辑
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.collapseBtn;Скрыть;Hide;隐藏
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.showMoreBtn;Показать больше;Show more;显示更多
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.hoursMinutesSeconds;{hours}ч {minutes}м {seconds}с;{hours}h {minutes}m {seconds}s;{hours}h {minutes}m {seconds}s
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.minutesSeconds;{minutes}м {seconds}с;{minutes} min {seconds} s;{minutes} 分钟 {seconds} 秒
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.durationFormat.seconds;{seconds} сек.;{seconds} sec.;{seconds} 秒。
+smb-mkp.components.smbMarketplaceBasket.smbMarketplaceBasketItem.emptyValueTooltip;Необходимо заполнить данные;Please fill in the information;请填写信息
+smb-mkp.components.smbMarketplaceProduct.editTitle;Редактирование «{title}»;Edit “{title}”;编辑“{title}”
+smb-mkp.components.smbMarketplaceProduct.backToBasketBtn;Вернуться в корзину;Return to the shopping cart;返回购物车
+smb-mkp.components.smbMarketplaceProduct.downloadReportExampleBtn;Скачать пример отчета;Download a sample report;下载示例报告
+smb-mkp.components.smbMarketplaceProduct.subscriptionPeriodMonths;{value} мес.;{value} months;{value} 个月
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.minBudget;Минимальный бюджет;Minimum budget;最低预算
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.description;О продукте;About the product;关于产品
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.audience;Аудитория;Audience;受众
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.audienceSize;{count} уникальных пользователей в месяц по всей России;{count} unique users per month across Russia;俄罗斯境内每月{count}名独立用户
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.adFormats;Форматы рекламы;Ad formats;广告形式
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.targetings;Возможность настроить таргеты;Ability to customize targeting;可自定义定向
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.male;М;M;M
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.female;Ж;F;F
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductAbout.sex.all;М/Ж;M/F;男/女
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.title;Готовые{mobileLineBreak}стратегии;Ready-made{mobileLineBreak}strategies;现成的{mobileLineBreak}策略
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.chip;для вашего бизнеса;for your business;适用于您的业务
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.imgAlt;ТВ и Digital TV;TV and Digital TV;电视与数字电视
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.selectStrategyBtn;Подобрать стратегию;Choose a strategy;选择策略
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductBanner.getTermsBtn;Получить условия;Get Terms;获取条款
+smb-mkp.components.smbMarketplaceProduct.smbMarketplaceProductFaq.title;Вопросы и ответы;Questions and Answers;常见问题
+smb-mkp.components.modals.individualConditionsModal.title;Запрос индивидуальных условий;Request Custom Terms;申请定制条款
+smb-mkp.components.modals.individualConditionsModal.nameField.title;Имя;Name;姓名
+smb-mkp.components.modals.individualConditionsModal.nameField.placeholder;Как вас зовут?;What is your name?;您的姓名是？
+smb-mkp.components.modals.individualConditionsModal.contactMethodField.title;Как с вами связаться?;How can we contact you?;我们如何联系您？
+smb-mkp.components.modals.individualConditionsModal.phoneField.placeholder;Номер телефона;Phone number;电话号码
+smb-mkp.components.modals.individualConditionsModal.phoneField.placeholderWithMethod;Номер телефона в {method};Phone number in {method};{method} 中的电话号码
+smb-mkp.components.modals.individualConditionsModal.commentField.placeholder;Укажите свои пожелания (опционально);Please specify your requests (optional);请说明您的需求（可选）
+smb-mkp.components.modals.individualConditionsModal.policyAcceptField.label;Я даю согласие на обработку своих персональных данных и соглашаюсь с {policyLink};I consent to the processing of my personal data and agree to {policyLink};我同意处理我的个人数据，并同意 {policyLink}
+smb-mkp.components.modals.individualConditionsModal.policyAcceptField.policyLink;политикой конфиденциальности;Privacy Policy;隐私政策
+smb-mkp.components.modals.individualConditionsModal.policyAcceptField.error;Подтвердите согласие с политикой конфиденциальности;Confirm your agreement to the privacy policy;确认您同意隐私政策
+smb-mkp.components.modals.individualConditionsModal.submitBtn;Отправить заявку;Submit request;提交请求
+smb-mkp.components.calculators.fields.regionField.title;Город размещения;City of stay;入住城市
+smb-mkp.components.calculators.fields.regionField.placeholder;Регион;Region;地区
+smb-mkp.components.calculators.fields.periodField.title;Период размещения;Stay dates;入住日期
+smb-mkp.components.calculators.fields.periodField.selectedDays;Выбрано дней:;Number of days selected:;已选天数：
+smb-mkp.components.calculators.fields.categoryField.title;Категория продукта;Product category;产品类别
+smb-mkp.components.calculators.fields.categoryField.placeholder;Выберите категорию;Select a category;选择类别
+smb-mkp.components.calculators.fields.subscriptionPeriodField.title;Срок подписки;Subscription period;订阅期
+smb-mkp.components.calculators.fields.expectedBudgetField.title;Ожидаемый бюджет;Estimated budget;预计预算
+smb-mkp.components.calculators.fields.expectedBudgetField.placeholder;В рублях;In rubles;单位：卢布
+smb-mkp.components.calculators.summary.noDataTextCommon;Пожалуйста, настройте параметры размещения для того, чтобы увидеть расчет стоимости;Please configure your ad placement settings to view the cost estimate;请配置广告投放设置以查看费用预估
+smb-mkp.components.calculators.summary.noDataTextAlt;Пожалуйста, настройте параметры размещения для того, чтобы увидеть расчет стоимости;Please configure your ad placement settings to view the cost estimate;请配置广告投放设置以查看费用预估
+smb-mkp.components.calculators.calculatorSummaryBase.discount;Скидка {percent};{percent} discount;{percent} 折扣
+smb-mkp.components.calculators.calculatorSummaryBase.priceTitle;Бюджет до НДС;Budget (excluding VAT);预算（不含增值税）
+smb-mkp.components.calculators.calculatorSummaryBase.chatBtn;Есть вопрос? Спросить в чате;Have a question? Ask in chat;有疑问？请在聊天中提问
+smb-mkp.components.calculators.individualConditionsRequest.title;Нужны индивидуальные условия?;Need custom terms?;需要定制条款吗？
+smb-mkp.components.calculators.individualConditionsRequest.requestBtn;Запросить индивидуальные условия;Request custom terms;申请定制条款
 smb-mkp.components.calculators.calculatorSummaryChangesTip.text;"Вы внесли изменения, необходимо
-пересчитать итог.";"-
--";"-
--"
-smb-mkp.components.calculators.calculatorSummaryChangesTip.cancelBtn;Отменить;-;-
-smb-mkp.components.calculators.calculatorFormSubmitBtn.calculateBtn;Рассчитать стоимость;-;-
-smb-mkp.components.calculators.calculatorFormSubmitBtn.recalculateBtn;Пересчитать;-;-
-smb-mkp.components.calculators.calculatorFormDuration.title;Длина ролика;-;-
-smb-mkp.components.calculators.calculatorFormDuration.customDurationField.checkboxLabel;Указать свой хронометраж;-;-
-smb-mkp.components.calculators.calculatorFormDuration.customDurationField.placeholder;Например: 60;-;-
-smb-mkp.components.calculators.calculatorFormDuration.customDurationField.append;Секунд;-;-
-smb-mkp.components.calculators.analyticsCalculator.regionField.title;Регион;-;-
-smb-mkp.components.calculators.analyticsCalculator.periodField.title;Период отчёта;-;-
-smb-mkp.components.calculators.analyticsCalculator.periodField.placeholder;Выберите период;-;-
-smb-mkp.components.calculators.analyticsCalculator.categoryField.title;Категория;-;-
-smb-mkp.components.calculators.analyticsCalculator.mediaTypesField.title;Типы медиа;-;-
-smb-mkp.components.calculators.analyticsCalculator.mediaTypesField.placeholder;Выберите типы медиа;-;-
-smb-mkp.components.calculators.analyticsCalculator.errorMessages.mediaTypesRequired;Пожалуйста, укажите типы медиа;-;-
-smb-mkp.components.calculators.analyticsCalculator.analyticsCalculatorSummary.priceTitle;Стоимость отчёта;-;-
-smb-mkp.components.calculators.aOneCalculator.tokensCountField.title;Количество токенов в месяц;-;-
+пересчитать итог.";"You've made changes; please
+recalculate the total.";"您已进行修改；请
+重新计算总金额。"
+smb-mkp.components.calculators.calculatorSummaryChangesTip.cancelBtn;Отменить;Cancel;取消
+smb-mkp.components.calculators.calculatorFormSubmitBtn.calculateBtn;Рассчитать стоимость;Calculate Price;计算价格
+smb-mkp.components.calculators.calculatorFormSubmitBtn.recalculateBtn;Пересчитать;Recalculate;重新计算
+smb-mkp.components.calculators.calculatorFormDuration.title;Длина ролика;Video Length;视频时长
+smb-mkp.components.calculators.calculatorFormDuration.customDurationField.checkboxLabel;Указать свой хронометраж;Specify your runtime;请指定时长
+smb-mkp.components.calculators.calculatorFormDuration.customDurationField.placeholder;Например: 60;For example: 60;例如：60
+smb-mkp.components.calculators.calculatorFormDuration.customDurationField.append;Секунд;Seconds;秒
+smb-mkp.components.calculators.analyticsCalculator.regionField.title;Регион;Region;地区
+smb-mkp.components.calculators.analyticsCalculator.periodField.title;Период отчёта;Reporting period;报告期
+smb-mkp.components.calculators.analyticsCalculator.periodField.placeholder;Выберите период;Select a period;选择一个时间段
+smb-mkp.components.calculators.analyticsCalculator.categoryField.title;Категория;Category;房型
+smb-mkp.components.calculators.analyticsCalculator.mediaTypesField.title;Типы медиа;Media types;媒体类型
+smb-mkp.components.calculators.analyticsCalculator.mediaTypesField.placeholder;Выберите типы медиа;Select media types;选择媒体类型
+smb-mkp.components.calculators.analyticsCalculator.errorMessages.mediaTypesRequired;Пожалуйста, укажите типы медиа;Please specify media types;请指定媒体类型
+smb-mkp.components.calculators.analyticsCalculator.analyticsCalculatorSummary.priceTitle;Стоимость отчёта;Report cost;报告费用
+smb-mkp.components.calculators.aOneCalculator.tokensCountField.title;Количество токенов в месяц;Number of tokens per month;每月代币数量
 smb-mkp.components.calculators.aOneCalculator.tokensCountField.tooltip.p0;"50 млн токенов в подписке XS хватит (без подписки Mediascope), например, для:
 Выгрузки всех выходов рекламы во всех медиа в категории «Одежда и обувь»:
-За 1.5 месяца + 1 500 креативов";-;-
+За 1.5 месяца + 1 500 креативов";"50 million tokens in the XS subscription are enough (without a Mediascope subscription), for example, for:
+Uploading all ad placements across all media in the “Clothing and Footwear” category:
+For 1.5 months + 1,500 creatives";"例如，XS 订阅中的 5000 万个代币（无需 Mediascope 订阅）足以用于：
+上传“服装与鞋类”类别下所有媒体渠道的全部广告位：
+1.5个月 + 1,500个创意"
 smb-mkp.components.calculators.aOneCalculator.tokensCountField.tooltip.p1;"Или выгрузки всех выходов рекламы во всех медиа в категории «Транспортные услуги»:
-За 4 месяца + 2000 креативов";-;-
+За 4 месяца + 2000 креативов";"Or to upload all ad placements across all media in the “Transportation Services” category:
+Over 4 months + 2,000 creatives";"或者上传“交通服务”类别下所有媒体的全部广告位：
+超过 4 个月 + 2,000 个创意"
 smb-mkp.components.calculators.aOneCalculator.tokensCountField.tooltip.p2;"Или для расчёта отчёта о всех выходах программ в национальном ТВ с выгрузкой всех измерений и расчётом всех метрик:
-За полгода";-;-
+За полгода";"Or to generate a report on all program airings on national TV, including all measurement data and metric calculations:
+For half a year";"或者生成一份关于全国电视所有节目播出情况的报告，包括所有测量数据和指标计算：
+需半年"
 smb-mkp.components.calculators.aOneCalculator.tokensCountField.tooltip.p3;"Или для получения:
-16 000 креативов";-;-
-smb-mkp.components.calculators.aOneCalculator.aOneCalculatorSummary.priceTitle;Стоимость в месяц;-;-
-smb-mkp.components.calculators.bOneTvpCalculator.budgetField.title;Бюджет;-;-
-smb-mkp.components.calculators.bOneTvpCalculator.budgetField.placeholder;Укажите бюджет;-;-
-smb-mkp.components.calculators.bOneTvpCalculator.bOneTvpCalculatorSummary.priceTitle;Стоимость подписки;-;-
-smb-mkp.components.calculators.dataHubbleCalculator.dataVolumeField.title;Объём данных и кол-во клиентов в месяц;-;-
-smb-mkp.components.calculators.dataHubbleCalculator.dataHubbleCalculatorSummary.priceTitle;Стоимость в месяц;-;-
-smb-mkp.components.calculators.doohCalculator.budgetField.title;Планируемый бюджет;-;-
-smb-mkp.components.calculators.doohCalculator.budgetField.placeholder;В рублях;-;-
-smb-mkp.components.calculators.doohCalculator.formatField.title;Формат;-;-
-smb-mkp.components.calculators.doohCalculator.formatField.placeholder;Выберите формат;-;-
-smb-mkp.components.calculators.doohCalculator.channelsEdit.states.loading;Загружаем список поверхностей;-;-
-smb-mkp.components.calculators.doohCalculator.channelsEdit.states.empty.text;Нет доступных поверхностей;-;-
+16 000 креативов";"Or to generate:
+16,000 creatives";"或生成：
+16,000个创意素材"
+smb-mkp.components.calculators.aOneCalculator.aOneCalculatorSummary.priceTitle;Стоимость в месяц;Monthly cost;月费
+smb-mkp.components.calculators.bOneTvpCalculator.budgetField.title;Бюджет;Budget;预算
+smb-mkp.components.calculators.bOneTvpCalculator.budgetField.placeholder;Укажите бюджет;Specify your budget;请指定您的预算
+smb-mkp.components.calculators.bOneTvpCalculator.bOneTvpCalculatorSummary.priceTitle;Стоимость подписки;Subscription cost;订阅费用
+smb-mkp.components.calculators.dataHubbleCalculator.dataVolumeField.title;Объём данных и кол-во клиентов в месяц;Data volume and number of clients per month;每月数据流量及客户数量
+smb-mkp.components.calculators.dataHubbleCalculator.dataHubbleCalculatorSummary.priceTitle;Стоимость в месяц;Monthly cost;月费
+smb-mkp.components.calculators.doohCalculator.budgetField.title;Планируемый бюджет;Planned budget;计划预算
+smb-mkp.components.calculators.doohCalculator.budgetField.placeholder;В рублях;In rubles;单位：卢布
+smb-mkp.components.calculators.doohCalculator.formatField.title;Формат;Format;格式
+smb-mkp.components.calculators.doohCalculator.formatField.placeholder;Выберите формат;Select a format;选择格式
+smb-mkp.components.calculators.doohCalculator.channelsEdit.states.loading;Загружаем список поверхностей;Loading the list of spaces;正在加载空间列表
+smb-mkp.components.calculators.doohCalculator.channelsEdit.states.empty.text;Нет доступных поверхностей;No surfaces available;无可用场地
 smb-mkp.components.calculators.doohCalculator.channelsEdit.states.empty.hint;"Для выбора поверхностей
-укажите город и бюджет";-;-
+укажите город и бюджет";"To select properties
+, please specify a city and budget";"要选择房源
+，请指定城市和预算"
 smb-mkp.components.calculators.doohCalculator.channelsEdit.states.info.text;"Вы можете {accentText}
-и их расположение на карте";- {accentText};- {accentText}
-smb-mkp.components.calculators.doohCalculator.channelsEdit.states.info.accentText;выбрать поверхности;-;-
-smb-mkp.components.calculators.doohCalculator.channelsEdit.states.mapsLoadError;Ошибка загрузки карт. Пожалуйста, обновите страницу;-;-
+и их расположение на карте";"You can {accentText}
+and their location on the map";"您可以 {accentText}
+及其在地图上的位置"
+smb-mkp.components.calculators.doohCalculator.channelsEdit.states.info.accentText;выбрать поверхности;select listings;筛选房源
+smb-mkp.components.calculators.doohCalculator.channelsEdit.states.mapsLoadError;Ошибка загрузки карт. Пожалуйста, обновите страницу;Error loading maps. Please refresh the page;加载地图时出错。请刷新页面
 smb-mkp.components.calculators.doohCalculator.doohCalculatorSummary.noDataSelectChannels;"Пожалуйста, выберите
-поверхности";-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.recalcHint;Вы внесли изменения, необходимо пересчитать итог.;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.group;Группировать стороны;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.multipleSelect;Массовый выбор;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.search;Поиск;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.zoomIn;Приблизить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.zoomOut;Отдалить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.closeBtn;Закрыть;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.saveBtn;Сохранить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.recalcTotalBtn;Пересчитать итог;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.title;Выход из редактирования;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.text;Закрытие этого окна приведет к потере текущих изменений вы уверены?;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.closeConfirmBtn;Да, закрыть;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.cancelBtn;Отменить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.backBtn;Назад;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.startBtn;Начать работу;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.nextStepBtn;Следующий шаг;-;-
+поверхности";"Please select
+surfaces";"请选择
+地面类型"
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.recalcHint;Вы внесли изменения, необходимо пересчитать итог.;"You have made changes; the total needs to be recalculated.";您已进行修改；需要重新计算总数。
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.group;Группировать стороны;Group sides;分组边
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.multipleSelect;Массовый выбор;Bulk selection;批量选择
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.search;Поиск;Search;搜索
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.zoomIn;Приблизить;Zoom In;放大
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.zoomOut;Отдалить;Zoom out;缩小
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.closeBtn;Закрыть;Close;关闭
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.saveBtn;Сохранить;Save;保存
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.recalcTotalBtn;Пересчитать итог;Recalculate total;重新计算总计
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.title;Выход из редактирования;Exit editing;退出编辑
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.text;Закрытие этого окна приведет к потере текущих изменений вы уверены?;Closing this window will cause you to lose your current changes. Are you sure?;关闭此窗口将导致您当前的更改丢失。您确定吗？
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.closeConfirmBtn;Да, закрыть;Yes, close;是，关闭
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsCancelConfirmModal.cancelBtn;Отменить;Cancel;取消
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.backBtn;Назад;Back;返回
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.startBtn;Начать работу;Get Started;开始
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.nextStepBtn;Следующий шаг;Next Step;下一步
 smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.welcome.title;"Добро пожаловать
-в редактор поверхностей!";-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.welcome.text;Выбирайте точки на карте, ищите{mobileLineBreak}и фильтруйте{desktopLineBreak}по нужным параметрам;-{mobileLineBreak}-{desktopLineBreak}-;-{mobileLineBreak}-{desktopLineBreak}-
+в редактор поверхностей!";"Welcome
+to the surface editor!";"欢迎
+欢迎使用曲面编辑器！"
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.welcome.text;Выбирайте точки на карте, ищите{mobileLineBreak}и фильтруйте{desktopLineBreak}по нужным параметрам;Select points on the map, search{mobileLineBreak}and filter{desktopLineBreak}by the parameters you need;在地图上选择点，搜索{mobileLineBreak}并根据所需参数进行筛选{desktopLineBreak}
 smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.included.title;"Все уже включено,
-оставьте только нужное";-;-
+оставьте только нужное";"Everything is already included—
+just keep what you need";"所有功能一应俱全——
+只需保留您所需的内容"
 smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.included.text;"Все поверхности добавлены в расчёт.
-Исключайте лишние по одной или списком";-;-
+Исключайте лишние по одной или списком";"All surfaces are included in the calculation.
+Exclude unnecessary ones one by one or using a list";"所有区域均包含在计算中。
+可逐个排除不需要的区域，或通过列表进行筛选"
 smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.filters.title;"Фильтры, группировка
-и массовый выбор поверхностей";-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.filters.text;Фильтруйте список, объединяйте в группы и отмечайте сразу{desktopLineBreak}несколько поверхностей;-{desktopLineBreak}-;-{desktopLineBreak}-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.recalc.title;Пересчитайте кампанию, чтобы увидеть{desktopLineBreak}обновлённую среднюю ставку и показы;-{desktopLineBreak}-;-{desktopLineBreak}-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.recalc.text;После изменений нажмите «Пересчитать», чтобы увидеть{desktopLineBreak}новую стоимость{mobileLineBreak}и прогноз показов;-{desktopLineBreak}-{mobileLineBreak}-;-{desktopLineBreak}-{mobileLineBreak}-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.hint;Чтобы выбрать поверхность, кликните на нее с нажатой клавишей {modifierBtn};- {modifierBtn};- {modifierBtn}
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.selected;Выбрано поверхностей для перехода в статус;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.selectAllBtn;Выбрать все;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.applyBtn;Применить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.nextBtn;Далее;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.cancelBtn;Отменить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.setStatusText;Выберите статус размещения, который будет присвоен поверхностям. Далее вы сможете выбрать эти поверхности.;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.statusField.title;Статус размещения;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.status.exclude;Исключить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.status.include;Включить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.title.setStatus;Массовое изменение статуса поверхностей;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.title.selectChannels;Отметьте нужные поверхности;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.notifications.cancelled;Изменения отменены;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.notifications.saved;Изменения сохранены;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.title;Наружная реклама;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.budget;Бюджет:;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.channelsTotal;Всего поверхностей:;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.sumsWithoutVat;Все суммы указаны до НДС;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.avgCost;Средняя ставка;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.impressions;Показы;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.title;Бюджет;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.saveBtn;Сохранить;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.title;Бюджет (до НДС), ₽;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.placeholder;В рублях;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.minHint;Минимальный бюджет — {minBudget};- {minBudget};- {minBudget}
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.errorMessages.min;Бюджет должен быть не менее {minBudget};- {minBudget};- {minBudget}
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsFilters.title;Фильтрация;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsFilters.resetAllBtn;Сбросить все фильтры;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.noPhoto;Нет фотографии;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.channelIncluded;Поверхность включена;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.channelExcluded;Поверхность исключена;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.yandex;Яндекс;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.yandexPanoramaTitle;Панорама в Яндекс Картах;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.googlePanoramaTitle;Панорама в Google Maps;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.format;Формат:;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.size;Размер:;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.cost;Рекомендуемая ставка:;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.ots;OTS;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.grp;GRP;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.title;Поиск;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.placeholder;Поиск;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.channels;Стороны;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.number;Номер: {number};- {number};- {number}
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.addresses;Адреса;-;-
-smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.notFound;По вашему запросу ничего не найдено;-;-
-smb-mkp.components.calculators.impressionsCalculator.impressionsField.title;Количество показов;-;-
-smb-mkp.components.calculators.impressionsCalculator.impressionsField.placeholder;Показы;-;-
-smb-mkp.components.calculators.packetCalculator.goalField.title;Цель;-;-
-smb-mkp.components.calculators.packetCalculator.goalField.placeholder;Выберите цель;-;-
-smb-mkp.components.calculators.packetCalculator.packetCalculatorSummary.priceTitle;Бюджет до НДС;-;-
-smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.fromCost;от {value};- {value};- {value}
-smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.selectedBtn;Выбран;-;-
-smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.selectBtn;Выбрать этот пакет;-;-
-smb-mkp.components.calculators.prometheusCalculator.telegramBotsField.checkboxLabel;Добавить Телеграм-бота;-;-
-smb-mkp.components.calculators.prometheusCalculator.telegramBotsField.tooltip;Телеграм-бот присылает уведомления о новых креативах по выбранным категориям. Добавьте один или несколько ботов и настройте каждый под свою категорию продуктов;-;-
-smb-mkp.components.calculators.prometheusCalculator.prometheusCalculatorSummary.priceTitle;Стоимость подписки;-;-
+и массовый выбор поверхностей";"Filters, grouping,
+and bulk selection of surfaces";"筛选、分组、
+以及批量选择表面"
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.filters.text;Фильтруйте список, объединяйте в группы и отмечайте сразу{desktopLineBreak}несколько поверхностей;Filter the list, group items, and select {desktopLineBreak}multiple surfaces at once;筛选列表、分组项目，并一次性选择 {desktopLineBreak}多个广告位
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.recalc.title;Пересчитайте кампанию, чтобы увидеть{desktopLineBreak}обновлённую среднюю ставку и показы;Recalculate the campaign to see{desktopLineBreak}the updated average bid and impressions;重新计算广告系列以查看{desktopLineBreak}更新后的平均出价和展示量
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsOnboarding.steps.recalc.text;После изменений нажмите «Пересчитать», чтобы увидеть{desktopLineBreak}новую стоимость{mobileLineBreak}и прогноз показов;After making changes, click “Recalculate” to see{desktopLineBreak}the new cost{mobileLineBreak}and impression forecast;完成更改后，点击“重新计算”以查看{desktopLineBreak}新的成本{mobileLineBreak}和展示量预测
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.hint;Чтобы выбрать поверхность, кликните на нее с нажатой клавишей {modifierBtn};To select a surface, click on it while holding down the {modifierBtn} key;要选择展示位，请按住 {modifierBtn} 键并单击该展示位
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.selected;Выбрано поверхностей для перехода в статус;Surfaces selected to be moved to status;已选中的展示位将转为以下状态
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.selectAllBtn;Выбрать все;Select all;全选
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.applyBtn;Применить;Apply;应用
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.nextBtn;Далее;Next;下一步
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.cancelBtn;Отменить;Cancel;取消
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.setStatusText;Выберите статус размещения, который будет присвоен поверхностям. Далее вы сможете выбрать эти поверхности.;Select the placement status to be assigned to the surfaces. You can then select these surfaces.;选择要分配给曲面的放置状态。然后，您可以选择这些曲面。
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.statusField.title;Статус размещения;Placement status;放置状态
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.status.exclude;Исключить;Exclude;排除
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.status.include;Включить;Include;包含
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.title.setStatus;Массовое изменение статуса поверхностей;Bulk Change of Surface Status;批量更改表面状态
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.title.selectChannels;Отметьте нужные поверхности;Select the desired surfaces;选择所需的表面
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.notifications.cancelled;Изменения отменены;Changes canceled;更改已取消
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsMultipleEdit.notifications.saved;Изменения сохранены;Changes saved;更改已保存
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.title;Наружная реклама;Outdoor advertising;户外广告
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.budget;Бюджет:;Budget:;预算：
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.channelsTotal;Всего поверхностей:;Total number of surfaces:;广告位总数：
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.sumsWithoutVat;Все суммы указаны до НДС;All amounts are listed before VAT;所有金额均为不含增值税的价格
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.avgCost;Средняя ставка;Average rate;平均费率
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.impressions;Показы;Impressions;曝光量
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.title;Бюджет;Budget;预算
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.saveBtn;Сохранить;Save;保存
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.title;Бюджет (до НДС), ₽;Budget (excluding VAT), ₽;预算（不含增值税），₽
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.placeholder;В рублях;In rubles;单位：卢布
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.minHint;Минимальный бюджет — {minBudget};Minimum budget — {minBudget};最低预算 — {minBudget}
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsInfoPanel.doohChannelsBudgetMetricModal.budgetField.errorMessages.min;Бюджет должен быть не менее {minBudget};The budget must be at least {minBudget};预算必须至少为 {minBudget}
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsFilters.title;Фильтрация;Filters;筛选条件
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsFilters.resetAllBtn;Сбросить все фильтры;Clear all filters;清除所有筛选条件
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.noPhoto;Нет фотографии;No photo;无照片
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.channelIncluded;Поверхность включена;Outdoor space included;含户外空间
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.channelExcluded;Поверхность исключена;Surface excluded;不含表面积
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.yandex;Яндекс;Yandex;Yandex
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.yandexPanoramaTitle;Панорама в Яндекс Картах;Panorama on Yandex Maps;Yandex地图上的全景图
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.googlePanoramaTitle;Панорама в Google Maps;Panorama on Google Maps;Google地图全景图
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.format;Формат:;Format:;格式：
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.size;Размер:;Size:;尺寸：
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.cost;Рекомендуемая ставка:;Recommended bid:;建议出价：
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.ots;OTS;OTS;OTS
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsDetail.grp;GRP;GRP;GRP
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.title;Поиск;Search;搜索
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.placeholder;Поиск;Search;搜索
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.channels;Стороны;Parties;参与方
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.number;Номер: {number};Number: {number};编号：{number}
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.addresses;Адреса;Addresses;地址
+smb-mkp.components.calculators.doohCalculator.doohChannelsModal.doohChannelsSearch.notFound;По вашему запросу ничего не найдено;No results found for your query;未找到与您的查询匹配的结果
+smb-mkp.components.calculators.impressionsCalculator.impressionsField.title;Количество показов;Number of views;浏览次数
+smb-mkp.components.calculators.impressionsCalculator.impressionsField.placeholder;Показы;Impressions;曝光量
+smb-mkp.components.calculators.packetCalculator.goalField.title;Цель;Purpose;用途
+smb-mkp.components.calculators.packetCalculator.goalField.placeholder;Выберите цель;Select a goal;选择目标
+smb-mkp.components.calculators.packetCalculator.packetCalculatorSummary.priceTitle;Бюджет до НДС;Budget (excluding VAT);预算（不含增值税）
+smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.fromCost;от {value};from {value};起 {value}
+smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.selectedBtn;Выбран;Selected;已选
+smb-mkp.components.calculators.packetCalculator.packetCalculatorPackets.packetCalculatorPacket.selectBtn;Выбрать этот пакет;Select this package;选择此套餐
+smb-mkp.components.calculators.prometheusCalculator.telegramBotsField.checkboxLabel;Добавить Телеграм-бота;Add a Telegram bot;添加一个Telegram机器人
+smb-mkp.components.calculators.prometheusCalculator.telegramBotsField.tooltip;Телеграм-бот присылает уведомления о новых креативах по выбранным категориям. Добавьте один или несколько ботов и настройте каждый под свою категорию продуктов;The Telegram bot sends notifications about new creatives in your selected categories. Add one or more bots and configure each one for your specific product category;Telegram 机器人会发送您所选类别中新增创意作品的通知。您可以添加一个或多个机器人，并针对每个产品类别分别进行配置
+smb-mkp.components.calculators.prometheusCalculator.prometheusCalculatorSummary.priceTitle;Стоимость подписки;Subscription cost;订阅费用
 smb-mkp.components.calculators.radioCalculator.radioCalculatorSummary.noDataSelectStations;"Пожалуйста, выберите
-радиостанции из списка";-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.title;Список радиостанций;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.sortByTitle;Сортировать по;-;-
+радиостанции из списка";"Please select
+radio stations from the list";"请从列表中选择
+从列表中选择广播电台"
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.title;Список радиостанций;List of radio stations;电台列表
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.sortByTitle;Сортировать по;Sort by;按
 smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.loadingText;"Загружаем
-список радиостанций";-;-
+список радиостанций";"Loading
+the list of radio stations";"正在加载
+广播电台列表"
 smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.infoText;"Выберите {infoTextAccent}
-для того, чтобы увидеть доступные радиостанции";- {infoTextAccent};- {infoTextAccent}
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.infoTextAccent;город размещения;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStationsList.title;Доступные радиостанции;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.rating;Рейтинг:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.estimatedTooltip;Оценка сервиса SAMBA;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.mediascopeTooltip;По данным Mediascope;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.age;{age} лет;{age} -;{age} -
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.reachPercentDaily;Дневной охват:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.dailySpot;Количество выходов:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.tslDaily;Ср. время прослушивания:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.hoursMinutesSeconds;{hours}ч {minutes}м {seconds}с;{hours} - {minutes} - {seconds} -;{hours} - {minutes} - {seconds} -
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.minutesSeconds;{minutes}м {seconds}с;{minutes} - {seconds} -;{minutes} - {seconds} -
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.seconds;{seconds}с;{seconds} -;{seconds} -
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.sex.male;М;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.sex.female;Ж;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.deselectBtn;Отменить выбор;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.selectBtn;Выбрать;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.title;Сетка выходов в эфир;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.currentStrategy;Текущая стратегия:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.expectedWeeklySpots;Ожидаемое количество выходов в эфир в неделю:;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.editBtn;Редактировать сетку выходов;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.collapseBtn;Скрыть сетку выходов;-;-
-smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.resetBtn;Сбросить таблицу;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.channelsField.title;ТВ-каналы для размещения;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.metricTitle;Метрика для изменения:;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.sortByTitle;Сортировать по;-;-
+для того, чтобы увидеть доступные радиостанции";"Select {infoTextAccent}
+to view available radio stations";"选择 {infoTextAccent}
+以查看可用的广播电台"
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStations.infoTextAccent;город размещения;City;城市
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStationsList.title;Доступные радиостанции;Available radio stations;可收听的电台
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.rating;Рейтинг:;Rating:;评分：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.estimatedTooltip;Оценка сервиса SAMBA;SAMBA Service Rating;SAMBA 服务评分
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.mediascopeTooltip;По данным Mediascope;According to Mediascope;根据 Mediascope 数据
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.age;{age} лет;{age} years;{age}岁
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.reachPercentDaily;Дневной охват:;Daily reach:;日均覆盖人数：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.dailySpot;Количество выходов:;Number of broadcasts:;播出次数：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.tslDaily;Ср. время прослушивания:;Average listening time:;平均收听时长：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.hoursMinutesSeconds;{hours}ч {minutes}м {seconds}с;{hours}h {minutes}m {seconds}s;{hours}h {minutes}m {seconds}s
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.minutesSeconds;{minutes}м {seconds}с;{minutes} min {seconds} s;{minutes} 分钟 {seconds} 秒
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.durationFormat.seconds;{seconds}с;{seconds}s;{seconds}s
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.sex.male;М;M;M
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.sex.female;Ж;F;F
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.deselectBtn;Отменить выбор;Deselect;取消选择
+smb-mkp.components.calculators.radioCalculator.radioCalculatorStation.selectBtn;Выбрать;Select;选择
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.title;Сетка выходов в эфир;Broadcast Schedule;播出时间表
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.currentStrategy;Текущая стратегия:;Current strategy:;当前策略：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.expectedWeeklySpots;Ожидаемое количество выходов в эфир в неделю:;Expected number of broadcasts per week:;预计每周播出次数：
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.editBtn;Редактировать сетку выходов;Edit the broadcast schedule;编辑直播安排
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.collapseBtn;Скрыть сетку выходов;Hide the broadcast schedule;隐藏播出时间表
+smb-mkp.components.calculators.radioCalculator.radioCalculatorSchedule.resetBtn;Сбросить таблицу;Clear the table;清空表格
+smb-mkp.components.calculators.tvRegionalCalculator.channelsField.title;ТВ-каналы для размещения;TV channels for placement;待安排的电视频道
+smb-mkp.components.calculators.tvRegionalCalculator.metricTitle;Метрика для изменения:;Metric to change:;要更改的指标：
+smb-mkp.components.calculators.tvRegionalCalculator.sortByTitle;Сортировать по;Sort by;按
 smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorSummary.noDataSelectChannels;"Пожалуйста, выберите
-ТВ-каналы из списка";-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.loadingText;Загружаем список ТВ-каналов;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.noDataText;Для выбора ТВ-каналов — укажите город размещения;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.channel;Канал;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.dailySpot;Выходы в день;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.budget;Бюджет;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.trp;Объем рейтингов;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.dailySpotField.title;Выходы в день;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.budgetField.title;Бюджет;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.trpField.title;Объем рейтингов;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.addCheckboxLabel;Добавить;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorNoData.text;Для выбора ТВ-каналов — укажите город размещения;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorLoader.loading;Загружаем список ТВ-каналов;-;-
-smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorLoader.updating;Обновляем список ТВ-каналов;-;-
-smb-mkp.components.calculators.vOneCalculator.numberOfUsersField.title;Количество пользователей;-;-
-smb-mkp.components.calculators.vOneCalculator.numberOfUsersField.placeholder;Укажите кол-во пользователей;-;-
-smb-mkp.components.calculators.vOneCalculator.numberOfCalculationsField.title;Количество расчетов;-;-
-smb-mkp.components.calculators.vOneCalculator.numberOfCalculationsField.placeholder;Укажите кол-во расчетов;-;-
-smb-mkp.components.calculators.vOneCalculator.individualConditionsRequest.title;Нужна индивидуальная подписка?;-;-
-smb-mkp.components.calculators.vOneCalculator.individualConditionsRequest.description;Доступна подписка Enterprise от 300 000 ₽ в месяц, запросите индивидуальные условия у менеджера;-;-
-smb-mkp.components.calculators.vOneCalculator.vOneCalculatorSummary.priceTitle;Стоимость подписки;-;-
+ТВ-каналы из списка";"Please select
+TV channels from the list";"请选择
+列表中的电视频道"
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.loadingText;Загружаем список ТВ-каналов;Loading the list of TV channels;正在加载电视频道列表
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.noDataText;Для выбора ТВ-каналов — укажите город размещения;To select TV channels, specify your city;要选择电视频道，请指定您的城市
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.channel;Канал;Channel;频道
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.dailySpot;Выходы в день;Daily Impressions;每日展示量
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.budget;Бюджет;Budget;预算
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsTable.headers.trp;Объем рейтингов;Audience reach;受众覆盖范围
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.dailySpotField.title;Выходы в день;Daily Impressions;每日展示量
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.budgetField.title;Бюджет;Budget;预算
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.trpField.title;Объем рейтингов;Audience reach;受众覆盖范围
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorChannelsList.addCheckboxLabel;Добавить;Add;添加
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorNoData.text;Для выбора ТВ-каналов — укажите город размещения;To select TV channels, specify your city;要选择电视频道，请指定您的城市
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorLoader.loading;Загружаем список ТВ-каналов;Loading the list of TV channels;正在加载电视频道列表
+smb-mkp.components.calculators.tvRegionalCalculator.tvRegionalCalculatorLoader.updating;Обновляем список ТВ-каналов;Updating the list of TV channels;正在更新电视频道列表
+smb-mkp.components.calculators.vOneCalculator.numberOfUsersField.title;Количество пользователей;Number of users;用户数量
+smb-mkp.components.calculators.vOneCalculator.numberOfUsersField.placeholder;Укажите кол-во пользователей;Specify the number of users;指定用户数量
+smb-mkp.components.calculators.vOneCalculator.numberOfCalculationsField.title;Количество расчетов;Number of calculations;计算次数
+smb-mkp.components.calculators.vOneCalculator.numberOfCalculationsField.placeholder;Укажите кол-во расчетов;Specify the number of billing cycles;指定计费周期数
+smb-mkp.components.calculators.vOneCalculator.individualConditionsRequest.title;Нужна индивидуальная подписка?;Need a custom subscription?;需要定制订阅方案吗？
+smb-mkp.components.calculators.vOneCalculator.individualConditionsRequest.description;Доступна подписка Enterprise от 300 000 ₽ в месяц, запросите индивидуальные условия у менеджера;"Enterprise subscriptions are available starting at 300,000 ₽ per month; contact a manager to request customized terms";企业订阅套餐起价为每月 300,000 ₽；请联系客户经理申请定制条款
+smb-mkp.components.calculators.vOneCalculator.vOneCalculatorSummary.priceTitle;Стоимость подписки;Subscription cost;订阅费用
