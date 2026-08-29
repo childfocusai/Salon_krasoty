@@ -1,6 +1,6 @@
 # 4/20. Введение: бумаги и первая сделка
 
-*Published 2026-03-03. Source: https://ilyastrebulaev.substack.com/p/venture-capital-101-introduction*
+*Опубликовано 2026-03-03. Источник: https://ilyastrebulaev.substack.com/p/venture-capital-101-introduction*
 
 **Коротко:** открываю конспекты стэнфордского курса по венчурному капиталу (venture capital) для всех. В этом тексте разберём, как работают условия по денежным потокам, как ликвидационная преференция (liquidation preference) влияет на то, сколько вы получите, и как конвертируемые привилегированные акции (convertible preferred stock) дают инвестору преимущество — база, которую стоит знать фаундеру (founder) стартапа.
 

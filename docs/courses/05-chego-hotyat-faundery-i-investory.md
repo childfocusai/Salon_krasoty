@@ -1,6 +1,6 @@
 # 5/20. Чего хотят фаундеры и инвесторы
 
-*Published 2026-03-07. Source: https://ilyastrebulaev.substack.com/p/venture-capital-101-what-founders*
+*Опубликовано 2026-03-07. Источник: https://ilyastrebulaev.substack.com/p/venture-capital-101-what-founders*
 
 В 2004 году Eduardo Saverin подписал акционерное соглашение (shareholder agreement), которое давало ему 3 млн акций Facebook. Через два месяца Mark Zuckerberg выпустил 9 млн новых акций — и мгновенно разводнил (dilution) долю Saverin с 24% до меньше чем 10%. Saverin отдал свои права голоса (voting rights) и интеллектуальную собственность (intellectual property). Он не до конца понял, что контракт разрешал.
 
